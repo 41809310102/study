@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 int reverse(int x){
 	int a = 0;
@@ -10,12 +10,13 @@ int reverse(int x){
 		a = b + x % 10;
 		x = x / 10;
 	}
-
+}
 int main()
 {
 	int a;
 	printf("请输入你要反转的数\n");
 	scanf("%d", &a);
-	reverse(a);
-
+	int c=reverse(a);
+	printf("%d\n",c);
+	return 0;
 }

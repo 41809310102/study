@@ -1,24 +1,111 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 
+
 #include <stdio.h>
-int Fun(int x){
-	int a = 0;
-	while (x)
-	{
-		int b = (unsigned)a * 10;
-		if (b / 10 != a)
-	    return 0;
-		a = b + x % 10;
-		x = x / 10;
-	}
-}
 
-int main()
+void Init(int arr[], int len)
+
 {
-	int a;
-	printf("请输入你要反转的数\n");
-	scanf("%d", &a);
-	int num = Fun(a);
-	printf("%d", num);
+
+	int i = 0;
+
+	for (i = 0; i<len; i++)
+
+	{
+
+		arr[i] = 0;
+
+	}
+
+}
+
+
+
+
+
+void Print(int arr[], int len)
+
+{
+
+	int i = 0;
+
+	for (i = 0; i<len; i++)
+
+	{
+
+		printf("%d ", arr[i]);
+
+	}
+
+	printf("\n");
+
+}
+
+
+
+
+
+void Reverse(int *arr[], int len)
+
+{
+
+	int left = 0;
+
+	int right = len - 1;
+
+
+	while (left<right)
+
+	{
+
+		int *t= arr[left];
+
+		arr[left] = arr[right];
+
+		arr[right] = *t;
+
+		left++;
+
+		right--;
+
+	}
 
 
 }
+
+int main(){
+
+		int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+		int arr1[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+		int arr2[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+		int len = sizeof(arr) / sizeof(arr[0]);
+
+		Init( arr, len);
+		for (int i = 0; i< len; i++)
+
+		{
+
+			printf("%d\n", arr[i]);
+		}
+		Print(arr1,  len);
+		for (int i = 0; i< len; i++)
+
+		{
+
+			printf("%d\n", arr1[i]);
+
+		}
+
+		Reverse(*arr2, len);
+
+		for (int i = 0; i< len; i++)
+
+		{
+
+			printf("%d\n", arr2[i]);
+
+		}
+
+		return 0;
+
+	}
+
