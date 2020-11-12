@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS 
 
 #include <stdio.h>
-
-void Init(int arr[], int len)
+//数组初始化为0
+void Init(int arr[], int len)  
 
 {
 
@@ -21,7 +21,7 @@ void Init(int arr[], int len)
 
 
 
-
+//打印数组
 void Print(int arr[], int len)
 
 {
@@ -42,9 +42,8 @@ void Print(int arr[], int len)
 
 
 
-
-
-void Reverse(int *arr[], int len)
+//将数组逆置
+void Reverse(int arr[], int len)
 
 {
 
@@ -57,11 +56,11 @@ void Reverse(int *arr[], int len)
 
 	{
 
-		int *t= arr[left];
+		int t= arr[left];
 
 		arr[left] = arr[right];
 
-		arr[right] = *t;
+		arr[right] = t;
 
 		left++;
 
@@ -95,7 +94,7 @@ int main(){
 
 		}
 
-		Reverse(*arr2, len);
+		Reverse(arr2, len);
 
 		for (int i = 0; i< len; i++)
 
