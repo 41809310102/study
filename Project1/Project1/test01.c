@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 
+/*#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 int reverse(int x){
 	int a = 0;
@@ -19,4 +19,4 @@ int main()
 	int c=reverse(a);
 	printf("%d\n",c);
 	return 0;
-}
+}*/
