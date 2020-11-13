@@ -17,13 +17,21 @@ int main()
 	{
 		scanf("%d", &arr2[i]);
 	}
-	//交换
+	//交换两个数组的值
 	for (i = 0; i<10; i++)
 	{
 		int tmp = arr1[i];
 		arr1[i] = arr2[i];
 		arr2[i] = tmp;
 	}
-
+	
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", arr1[i]);
+	}
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", arr2[i]);
+	}
 	return 0;
 }
