@@ -15,9 +15,29 @@ void Fun(char *str){
 	}
 }
 
+void Fun1(char *str){
+	for (int i = 0; i<=strlen(str)-1; i++)
+	{
+		char *p;
+		char *q;
+		if (str[i] = ' ')
+			p = str;
+		    q = str + i;
+			while (p<q)
+			{
+				char tem = *p;
+				*p = *q;
+				*q = tem;
+				++p;
+				--q;
+			}
+	}
+
+}
+
 
 int main(){
-	char str[] = "I LOVE YOU ,dear";
+	char str[] = "i like beijing";
 	Fun(str);
 	printf("%s\n", str);
 
