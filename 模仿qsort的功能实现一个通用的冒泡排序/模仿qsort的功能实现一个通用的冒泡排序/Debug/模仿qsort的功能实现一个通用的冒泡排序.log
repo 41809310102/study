@@ -1,0 +1,12 @@
+﻿生成启动时间为 2020/11/19 23:00:05。
+     1>项目“E:\study\模仿qsort的功能实现一个通用的冒泡排序\模仿qsort的功能实现一个通用的冒泡排序\模仿qsort的功能实现一个通用的冒泡排序.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test01.cpp
+         test01.cpp
+     1>e:\study\模仿qsort的功能实现一个通用的冒泡排序\模仿qsort的功能实现一个通用的冒泡排序\test01.cpp(38): error C2664: “void bubble(void *,int,int,int (__cdecl *)(void *,void *))”: 无法将参数 4 从“int (__cdecl *)(const void *,const void *)”转换为“int (__cdecl *)(void *,void *)”
+                 在匹配目标类型的范围内没有具有该名称的函数
+     1>已完成生成项目“E:\study\模仿qsort的功能实现一个通用的冒泡排序\模仿qsort的功能实现一个通用的冒泡排序\模仿qsort的功能实现一个通用的冒泡排序.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.18
