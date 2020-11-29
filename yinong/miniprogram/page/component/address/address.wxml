@@ -1,0 +1,16 @@
+<view class="main">
+  <view class="form-box">
+    <form bindsubmit="formSubmit">
+      <input value="{{address.name}}" name="name" placeholder="姓名" />
+      <input value="{{address.phone}}" name="phone" type="number" placeholder="电话号码" />
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            当前选择：{{region[0]}}  {{region[1]}}  {{region[2]}}
+          </view>
+        </picker>
+      <input value="{{address.detail}}" name="detail" placeholder="请填写街道或门牌号" />
+      <button form-type="submit">保存</button>
+    </form>
+  </view>
+
+</view>

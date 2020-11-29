@@ -1,0 +1,243 @@
+@import '../../common/common.wxss';
+
+page, .main {
+  height: 100%;
+}
+
+.meun-city-txt {
+  display: block;
+  border-bottom: 1rpx solid #e9e9e9;
+  width: 30%;
+  padding: 25rpx 0;
+  font-size: 14px;
+}
+
+.meun-city-txt-price {
+  display: flex;
+  justify-content: center;
+}
+
+.meun-txt {
+  height: auto;
+  color: #696969;
+}
+
+over-auto {
+  height: 100rpx;
+  overflow: auto;
+}
+
+.search {
+  padding: 20rpx;
+}
+
+.search-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+  color: #aaa;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 20rpx;
+}
+
+.search-text icon {
+  margin-right: 10rpx;
+}
+
+.categroy-left {
+  float: left;
+  width: 150rpx;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.categroy-left .cate-list {
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-left: 3px solid #fff;
+}
+
+.categroy-left .cate-list.on {
+  color: #ab956d;
+  border-color: #ab956d;
+}
+
+.swiper-tab {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+}
+
+.swiper-item {
+  display: flex;
+  margin-left: 40rpx;
+  color: black;
+  font-size: 30rpx;
+}
+
+.active {
+  color: red;
+}
+
+.category {
+  justify-items: center;
+  align-items: center;
+  margin: 10rpx 20rpx;
+  height: 250rpx;
+  border-radius: 15rpx;
+  background-color: white;
+  display: flex;
+}
+
+.category-child {
+  display: flex;
+  height: 250rpx;
+  width: 250rpx;
+  justify-items: center;
+  align-items: center;
+}
+
+.category-child image {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.ago_price {
+  text-decoration: line-through;
+  margin-top: 20rpx;
+  opacity: 0.7;
+  height: 30rpx;
+  font-size: 28rpx;
+}
+
+.category-next-child {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  overflow: hidden;/*隐藏溢出的文本*/
+  width: 400rpx;/*必须加上固定的宽度*/
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all; /* 自动换行 */
+}
+
+.category-next {
+  margin-left: 40rpx;
+}
+
+.newest-text-child {
+  opacity: 0.5;
+  display: flex;
+  width: 140rpx;
+  /* margin-top: 8rpx; */
+  margin-left: 10rpx;
+  font-size: 23rpx;
+  color: black;
+}
+
+.newest-text {
+  display: flex;
+  font-size: 30rpx;
+  color: #e6343a;
+  margin-top: 30rpx;
+  align-items: center;
+  width: 400rpx;
+  justify-items: center;
+}
+.cruuent_price{
+  width: 150rpx;
+  font-size: 30rpx;
+}
+.newest-text image {
+  margin-left: 60rpx;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.shaixuan-next {
+  margin: 0rpx 20rpx;
+  height: 70rpx;
+  align-items: center; /* 文字居中 ：子容器在父容器居中 margin: auto;或者在父容器中使用align-items: center;
+  justify-content:center; display: flex;*/
+  justify-content: center;
+  font-size: 30rpx;
+  display: flex;
+  opacity: 0.7;
+  background-color: white;
+  border-top: 1px solid #ededed;
+}
+
+/*
+.categroy-right{
+    float: right;
+    width: 600rpx;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.cate-box{
+    height: 100%;
+    padding:40rpx;
+    box-sizing: border-box;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 190rpx;
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:30rpx 0 55rpx;
+    text-align: center;
+    color: #AB956D;
+    font-size: 28rpx;
+}
+.cate-title::before{
+    position: absolute;
+    left: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #AB956D;
+}
+.cate-title::after{
+    position: absolute;
+    right: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #AB956D;
+}
+
+.product-list{
+    display: inline-block;
+    width: 160rpx;
+    height: 160rpx;
+    text-align: center;
+    margin:0 20rpx 20rpx 0;
+    font-size: 24rpx;
+}
+.product-list image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 20rpx;
+}
+.product-list:nth-child(3n){
+    margin-right: 0;
+} */

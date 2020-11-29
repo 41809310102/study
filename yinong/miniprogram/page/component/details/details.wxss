@@ -1,0 +1,556 @@
+@import '../../common/common.wxss';
+
+.goods-box {
+  position: relative;
+  color: #454552;
+  border-bottom: 30rpx solid #ededed;
+}
+
+.goods-thumb {
+  width: 100%;
+  /* margin: 35rpx 0 125rpx; */
+}
+
+.price {
+  display: flex;
+  padding-left: 30rpx;
+}
+
+.current_price {
+  color: red;
+  font-size: 35rpx;
+}
+
+.ago_price {
+  opacity: 0.7;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  text-decoration: line-through;
+}
+
+.goods_ms {
+  display: flex;
+  padding-left: 30rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: black;
+}
+
+.to-carts-icon {
+  position: absolute;
+  right: 70rpx;
+  top: 70rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  opacity: 0.6;
+  -webkit-animation: to_cart 0.3s ease-out;
+  animation: to_cart 0.3s ease-out;
+}
+
+@-webkit-keyframes to_cart {
+  0% {
+    right: 100rpx;
+    top: 530rpx;
+    -webkit-transform: scale(4);
+  }/*60%{
+        top: 20rpx;
+    }*/
+}
+
+@keyframes to_cart {
+  0% {
+    right: 100rpx;
+    top: 530rpx;
+    transform: scale(4);
+  }/*60%{
+        top: 20rpx;
+    }*/
+}
+
+.carts-icon {
+  position: absolute;
+  top: 30rpx;
+  left: 80rpx;
+  width: 75rpx;
+  height: 75rpx;
+}
+
+.carts-icon image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.carts-icon.on {
+  -webkit-animation: to_cart_scale 0.3s ease;
+  animation: to_cart_scale 0.3s ease;
+}
+
+@-webkit-keyframes to_cart_scale {
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+}
+
+@keyframes to_cart_scale {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.carts-icon-num {
+  position: absolute;
+  left: -15rpx;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 50%;
+  background: rgb(255, 38, 0);
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.goods-operation text {
+  display: inline-block;
+  height: 100rpx;
+}
+
+.goods-operation-num {
+  width: 140rpx;
+}
+
+.goods-operation-add {
+  width: 60rpx;
+  margin-right: 30rpx;
+}
+
+.goods-to-cart {
+  width: 180rpx;
+  padding-right: 75rpx;
+}
+
+.goods-cart-img {
+  position: absolute;
+  right: 50rpx;
+  top: 28rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.goods {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+}
+
+.goods-stock {
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+
+.goods-stock text {
+  margin-left: 40rpx;
+  width: 100rpx;
+}
+
+.goods-sales {
+  opacity: 0.7;
+  font-size: 28rpx;
+  margin-left: 350rpx;
+}
+
+.goods-title {
+  display: flex;
+  height: 100rpx;
+  font-size: 40rpx;
+  align-items: center;
+}
+
+.goods-title_next1 {
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  opacity: 0.7;
+}
+
+.goods-title_next2 {
+  margin-left: 40rpx;
+  font-size: 28rpx;
+}
+
+.goods-service {
+  font-size: 28rpx;
+  margin-left: 40rpx;
+}
+
+.goods-normstop {
+  display: flex;
+  font-size: 40rpx;
+  height: 100rpx;
+  align-items: center;
+}
+
+.goods-normseleted {
+  font-size: 28rpx;
+  margin-left: 40rpx;
+  width: 500rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goods-norms {
+  width: 16rpx;
+  height: 16rpx;
+  margin-left: 90rpx;
+  border: 1rpx solid #aaa;
+  border-width: 5rpx 0 0 5rpx; /**/
+  transform: rotate(135deg); /*transform: rotate(45deg);共一个参数“角度”，单位deg为度的意思，正数为顺时针旋转，负数为逆时针旋转，上述代码作用是顺时针旋转45度。*/
+}
+
+.tlak {
+  height: 600rpx;
+  width: 750rpx;
+  line-height: 600rpx;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.goods-tab {
+  border-bottom: 1rpx solid #c7c7cb;
+}
+
+.goods-tab-nav1 {
+  display: inline-block;
+  width: 100rpx;
+  height: 90rpx;
+  margin-left: 35%;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #ededed;
+  box-sizing: border-box;
+  text-align: center;
+ 
+}
+
+.goods-tab-nav1.on1 {
+  color: rgb(255, 94, 0);
+}
+
+.goods-tab-nav {
+  display: inline-block;
+  width: 33.3%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #ededed;
+  box-sizing: border-box;
+  text-align: center;
+  color: #c7c7cb;
+}
+
+.goods-tab-nav2 {
+  display: inline-block;
+  width: 25%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #ededed;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.goods-tab-nav2.on2 {
+  color: rgb(255, 94, 0);
+  border-bottom: 2rpx solid rgb(255, 94, 0);
+}
+
+.goods-tab-nav.on {
+  color: rgb(255, 94, 0);
+  border-bottom: 5rpx solid rgb(255, 94, 0);
+}
+
+.goods-content {
+  padding: 40rpx;
+}
+
+.bg_layer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9997;
+}
+
+.input_main {
+  animation: myfirst 0.4s;
+  -webkit-animation: myfirst 0.4s;
+  position: fixed;
+  z-index: 9998; /*组件覆盖，通过设置z-index属性来控制组件显示层级，数值越高就离用户越近，必须和position搭配使用*/
+  bottom: 0;
+  width: 100%;
+  height: 800rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background-color: #f2f2f2;
+}
+
+@keyframes myfirst {
+  from {
+    bottom: -800rpx;
+  }
+
+  to {
+    bottom: 0rpx;
+  }
+}
+
+.norms_top {
+  display: flex;
+  height: 250rpx;
+  justify-items: center;
+  align-items: center;
+}
+
+.url {
+  margin-left: 40rpx;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 10rpx;
+}
+
+.norms-right {
+  margin-left: 50rpx;
+  height: 250rpx;
+  width: 280rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.norms-right_price {
+  color: red;
+  font-size: 34rpx;
+  height: 80rpx;
+}
+
+.norms-right_kucun {
+  font-size: 28rpx;
+  opacity: 0.7;
+  height: 80rpx;
+}
+
+.norms-right_norm {
+  font-size: 28rpx;
+  height: 80rpx;
+}
+
+.cha image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 400rpx;
+}
+
+.cha {
+  width: 500rpx;
+}
+
+.norms_type {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+}
+
+.norms {
+  margin-left: 50rpx;
+  width: 600rpx;
+  background-color: #fbfbff;
+  font-size: 25rpx;
+  height: 60rpx;
+  display: flex;
+  margin-top: 10rpx;
+  align-items: center;
+  border-radius: 15rpx;
+}
+
+.norms.on {
+  border: 2rpx solid rgba(255, 38, 0, 0.808);
+  color: rgba(255, 38, 0, 0.808);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.sale {
+  display: flex;
+  height: 130rpx;
+  align-items: center;
+}
+
+.saleNum {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.numCount {
+  display: flex;
+  align-items: center;
+}
+
+.numreduce {
+  text-align: center;
+  line-height: 40rpx;
+  margin-left: 400rpx;
+  width: 50rpx;
+  height: 40rpx;
+  opacity: 0.6;
+  border: 1rpx solid #f2f2f2;
+  border-top-left-radius: 5rpx;
+  border-bottom-left-radius: 5rpx;
+}
+
+.num {
+  line-height: 40rpx;
+  text-align: center;
+  margin-left: 5rpx;
+  width: 50rpx;
+  height: 40rpx;
+  opacity: 0.6;
+  border: 1rpx solid #f2f2f2;
+}
+
+.numadd {
+  text-align: center;
+  line-height: 40rpx;
+  margin-left: 5rpx;
+  width: 50rpx;
+  opacity: 0.6;
+  height: 40rpx;
+  border: 1rpx solid #f2f2f2;
+}
+
+.addCarts {
+  position: absolute;
+  bottom: 15rpx;
+  border-radius: 40rpx;
+  height: 60rpx;
+  width: 700rpx;
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  line-height: 60rpx; /*line-height和text-align使居中文字。justify-items: center;
+  align-items: center;是控件居中*/
+  text-align: center;
+  background: linear-gradient(to right, rgb(255, 136, 0), rgb(255, 38, 0));
+}
+
+.goods_canshu {
+  text-align: center;
+  height: 120rpx;
+  line-height: 150rpx;
+  font-size: 32rpx;
+  font-weight: 680;
+}
+
+.canshu_top {
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  border-bottom: 1rpx solid #d7d7db;
+}
+
+.canshu_brand {
+  font-size: 30rpx;
+  margin-left: 15rpx;
+  width: 200rpx;
+}
+
+.brand_text {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  opacity: 0.8;
+  width: 460rpx;
+}
+
+.top {
+  width: 720rpx;
+  margin-left: 15rpx;
+}
+
+.introduce {
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.service_one {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 160rpx;
+  margin-left: 40rpx;
+}
+
+.service_one view {
+  font-size: 28rpx;
+}
+
+.service_one text {
+  font-size: 26rpx;
+  opacity: 0.6;
+  margin-top: 20rpx;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 10rpx;
+  display: flex;
+  height: 100rpx;
+  width: 750rpx;
+  background-color: f2f2f2;
+  justify-items: center;
+}
+
+.carts {
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 200rpx;
+  text-align: center;
+}
+
+.carts_sale {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100rpx;
+  width: 400rpx;
+}
+
+.addCart {
+  width: 200rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background-color: rgb(255, 153, 0);
+  border-top-left-radius: 35rpx;
+  border-bottom-left-radius: 35rpx;
+}
+
+.buy_now {
+  width: 200rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 35rpx;
+  border-bottom-right-radius: 35rpx;
+  background-color: rgb(255, 30, 0);
+}

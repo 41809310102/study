@@ -1,0 +1,153 @@
+@import '../../common/common.wxss';
+
+
+.top_box {
+  width: 100%;
+  background: #fbbd08;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.top_list {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.search_box {
+  width: 620rpx;
+  height: 66rpx;
+  border-radius: 33rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.search_ico {
+  padding-left: 30rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.search_text {
+  padding-left: 10rpx;
+  font-size: 28rpx;
+  letter-spacing: 2rpx;
+  color: rgb(167, 167, 167);
+}
+swiper{
+  margin-top: 8rpx;
+  height: 380rpx;
+  width: 100%;
+  align-self: center;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+swiper image{
+  width: 100%;
+}
+
+.banner{ width:100%; height: 295rpx; }
+.banner swiper{ height: 100%; width:100%;}
+.banner image{ width: 100%; height: 295rpx;}
+
+
+.major{ white-space: nowrap; padding:10rpx ;background-color:#808080;  margin-top: 8rpx; width: 100%;border-radius: 16rpx;}
+.major .box{ text-align: center; width:148rpx; align-self: center; display: inline-block; border-radius: 16rpx;}
+.major .pic{width:100rpx; height: 100rpx;}
+.major .txt{ font-size:26rpx; margin-top:2rpx;} 
+
+
+
+
+.select-title, .newest-title {
+  width: 100%;
+  padding: 30rpx 0;
+  height: 40rpx;
+  color: #0f0f0f;
+  text-align: center;
+}
+
+.select-top-small {
+  width: 100%;
+}
+.select-top-small image{
+  width:750rpx;
+}
+.select-bottom, .select-top {
+  width: 100%;
+  display: flex;
+  margin-top: 10rpx;
+  height: 475rpx;
+}
+
+.select-bottom navigator {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.newest-box {
+  padding: 0 35rpx;
+  margin-top: 20rpx;
+  column-count: 2;
+  height: 100%;
+}
+
+.newest-list {
+  display: inline-block;
+  width: 345rpx;
+  height: 100%;
+  margin: 0 0 20rpx -5rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  text-align: center; /*图片和文字居中 */
+  background: white;
+}
+
+.newest-box .newest-list:nth-child(2n) {
+  margin-right: 0;
+}
+
+.newest-box .newest-list image {
+  width: 345rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  margin: 0;
+}
+
+.newest-text-child {
+  opacity: 0.5;
+  display: flex;
+  margin-top: 8rpx;
+  margin-left: 20rpx;
+  font-size: 20rpx;
+  color: black;
+}
+
+.newest-text {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.cruuent_price {
+  width: 150rpx;
+  font-size: 30rpx;
+}
+
+.newest-box .newest-list .newest-text {
+  display: flex;
+  font-size: 30rpx;
+  color: #e6343a;
+  padding-top: 30rpx;
+}
+
+.newest-text1 {
+  overflow: hidden;
+  font-size: 32rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

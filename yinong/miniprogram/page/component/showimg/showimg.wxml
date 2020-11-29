@@ -1,0 +1,7 @@
+<swiper indicator-dots="true" autoplay="" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{showimg}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.img}}" class="slide-image" bindtap='into'  width="100%"/>
+      </swiper-item>
+    </block>
+  </swiper>

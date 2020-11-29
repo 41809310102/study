@@ -1,0 +1,147 @@
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+<view class='main'>
+  <view class="swiper-tab">
+    <view class="swiper-item {{number==1?'active':''}}" data-index="1" bindtap="bindtapEvent">待发货({{fahuo.length}})</view>
+    <view class="swiper-item {{number==2?'active':''}}" data-index="2" bindtap="bindtapEvent">已发货({{yifahuo.length}})</view>
+    <view class="swiper-item {{number==3?'active':''}}" data-index="3" bindtap="bindtapEvent">退款(0)</view>
+    <view class="swiper-item {{number==4?'active':''}}" data-index="4" bindtap="bindtapEvent">待评价(0)</view>
+  </view>
+  <scroll-view scroll-y="true" style='height:{{scrollHeight-120}}rpx;margin-top:20rpx;'>
+    <block wx:if="{{number==1}}">
+      <block wx:if="{{fahuo.length==0}}">
+        <view class='tuikuan'>
+          <image src='/image/wu.png'></image>
+          <view>暂时没有需要发货的商品哟！</view>
+        </view>
+      </block>
+      <block wx:else>
+        <block wx:for="{{fahuo}}" wx:item="item" wx:index="index" wx:key="key">
+          <view class='bottom'>
+            <view class='maijiaopenid'>买家openid: {{item._openid}}</view>
+            <view class='top1'>
+              <image src='{{item.url}}'></image>
+              <view class='top1_right'>
+                <view class='top1_right_top'>
+                  <view class='name1'>{{item.name}}</view>
+                  <view class='price_count'>
+                    <view>¥{{filter.tofix(item.ago_price*1)}}</view>
+                    <text>x{{item.total}}</text>
+                  </view>
+                </view>
+                <view class='norms'>{{item.seleted_norms}}</view>
+              </view>
+            </view>
+            <view class='yunfei'>
+              <view>运费：</view>
+              <text>¥{{filter.tofix(item.yunfei*1)}}</text>
+            </view>
+            <view class='yunfei'>
+              <view>价格：</view>
+              <text>¥{{filter.tofix(item.ago_price*1)}}</text>
+            </view>
+            <view class='yunfei'>
+              <view>折扣：</view>
+              <text>{{filter.tofix(item.sale*1)}}</text>
+            </view>
+            <view class='yunfei'>
+              <view>实付(含运费)：</view>
+              <text style='color:red'>¥{{filter.tofix(item.ago_price*item.sale)}}</text>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='/image/weizhi.png'></image>
+            <view class='address_child'>
+              <view class='name_number'>
+                <view class='name'>{{item.address.name}}</view>
+                <view class='number'>{{item.address.phone}}</view>
+              </view>
+              <view class='details'>{{item.region[0]}}{{item.region[1]}}{{item.region[2]}}{{item.address.detail}}</view>
+            </view>
+          </view>
+          <block wx:if="{{_id==item._id}}">
+            <input class='input_danhao' placeholder="请输入快递单号" type="number" bindinput="bindinput_danhao"></input>
+            <input class='input_danhao' placeholder="请输入快递公司" type="text" bindconfirm="bind_must" bindinput="bindinput_gongsi"></input>
+          </block>
+          <view class='he_address'>
+            <view class='he_address_1' bindtap='hezhi'>核址</view>
+            <view class='he_address_1 on' bindtap='saomafahuo'>扫码发货</view>
+            <view class='he_address_1' data-_id="{{item._id}}" bindtap='bindtap_fahuo'>发货</view>
+          </view>
+        </block>
+      </block>
+    </block>
+
+    <block wx:if="{{number==2}}">
+      <block wx:if="{{yifahuo.length==0}}">
+        <view class='tuikuan'>
+          <image src='/image/wu.png'></image>
+          <view>暂时没有需要发货的商品哟！</view>
+        </view>
+      </block>
+      <block wx:else>
+        <block wx:for="{{yifahuo}}" wx:item="item" wx:index="index" wx:key="key">
+          <view class='bottom1'>
+            <view class='maijiaopenid'>买家: {{item.address.name}}
+              <text>已发货</text>
+            </view>
+            <view class='top1'>
+              <image src='{{item.url}}'></image>
+
+              <view class='top1_right'>
+                <view class='top1_right_top'>
+                  <view class='name1'>{{item.name}}</view>
+                  <view class='price_count'>
+                    <view>¥{{filter.tofix(item.ago_price*1)}}</view>
+                    <text>x{{item.total}}</text>
+                  </view>
+                </view>
+                <view class='norms'>{{item.seleted_norms}}</view>
+              </view>
+            </view>
+            <view class='yunfei'>
+              <view>运费：</view>
+              <text>¥{{filter.tofix(item.yunfei*1)}}</text>
+            </view>
+            <view class='yunfei'>
+              <view>价格：</view>
+              <text>¥{{filter.tofix(item.ago_price*1)}}</text>
+            </view>
+            <view class='yunfei'>
+              <view>折扣：</view>
+              <text>{{filter.tofix(item.sale*1)}}</text>
+            </view>
+            <view class='yunfei'>
+              <view>实付(含运费)：</view>
+              <text style='color:red'>¥{{filter.tofix(item.ago_price*item.sale)}}</text>
+            </view>
+          </view>
+          <view class='address'>
+            <image src='/image/weizhi.png'></image>
+            <view class='address_child'>
+              <view class='name_number'>
+                <view class='name'>{{item.address.name}}</view>
+                <view class='number'>{{item.address.phone}}</view>
+              </view>
+              <view class='details'>{{item.region[0]}}{{item.region[1]}}{{item.region[2]}}{{item.address.detail}}</view>
+            </view>
+          </view>
+          <view class='maijiaopenid on'>{{item.kuaid_gongsi}}快递 : {{item.kuaid_no}}</view>
+        </block>
+      </block>
+    </block>
+
+    <block wx:if="{{number==3}}">
+      <view class='tuikuan'>
+        <image src='/image/wu.png'></image>
+        <view>无退款哟！</view>
+      </view>
+    </block>
+
+    <block wx:if="{{number==4}}">
+      <view class='tuikuan'>
+        <image src='/image/wu.png'></image>
+        <view>暂无需要评价的商品</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

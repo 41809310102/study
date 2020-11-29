@@ -1,0 +1,272 @@
+<wxs module="filter" src="toFixed.wxs"></wxs>
+<scroll-view class="main" scroll-y="true" style='height:{{windosHeight-100}}rpx;'>
+  <view class="goods-tab">
+    <view class="goods-tab-nav1 {{index === 0 ?'on1':''}}" bindtap="bindshop" data-index="0">商品</view>
+    <view class="goods-tab-nav1 {{index === 1 ?'on1':''}}" style='margin-left:0rpx' bindtap="bindshop" data-index="1">评价</view>
+  </view>
+  <block wx:if="{{index==0}}">
+    <view class="goods-box">
+      <swiper style='height:{{height}}px;' indicator-dots="true" duration="700">
+        <swiper-item>
+          <image src="{{current_goods.url}}" mode="widthFix" style='width: 100%;' bindload="setContainerHeight"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="{{current_goods.url}}" mode="widthFix" style='width: 100%;'></image>
+        </swiper-item>
+      </swiper>
+      <!-- <image src="{{current_goods.url}}" mode="widthFix" class="goods-thumb"></image> -->
+      <view class='price'>
+        <text class='current_price'>¥ {{filter.tofix(current_goods.ago_price*sale)}}</text>
+        <text class='ago_price'>原价:{{filter.tofix(current_goods.ago_price*1)}}</text>
+      </view>
+      <view class='goods_ms'>{{current_goods.name}}</view>
+    </view>
+    <view class='details'>
+      <view class='goods'>
+        <view class="goods-stock">库存
+          <text>{{current_goods.kucun}}件</text>
+        </view>
+        <view class='goods-sales'>销量{{current_goods.sales_volume}}笔</view>
+      </view>
+
+      <view class="goods-title">
+        <view class='goods-title_next1'>折扣</view>
+        <view class='goods-title_next2'>{{current_goods.sale}}折</view>
+      </view>
+      <view class="goods-normstop">
+        <view class='goods-title_next1'>服务</view>
+        <view class="goods-normseleted">{{current_goods.service}}</view>
+      </view>
+      <view class="goods-normstop">
+        <view class='goods-title_next1'>规格</view>
+        <view class="goods-normseleted">已选:{{seleted_norms}}</view>
+        <view class="goods-norms" catchtap='norms_seleted'></view>
+      </view>
+      <view class="goods-normstop">
+        <view class='goods-title_next1'>参数</view>
+        <view class="goods-normseleted">品牌 {{canshu[0].brand}}</view>
+        <view class="goods-norms" catchtap='bintap_canshu'></view>
+      </view>
+    </view>
+    <view class="goods-tab-box">
+      <view class="goods-tab-nav {{curIndex === 0 ?'on':''}}" bindtap="bindTap" data-index="0">宝贝介绍</view>
+      <view class="goods-tab-nav {{curIndex === 1 ?'on':''}}" bindtap="bindTap" data-index="1">宝贝参数</view>
+      <view class="goods-tab-nav {{curIndex === 2 ?'on':''}}" bindtap="bindTap" data-index="2">售后保障</view>
+      <view class="goods-content">
+        <view wx:if="{{curIndex === 0}}" class='introduce'>{{current_goods.details}}</view>
+        <view wx:if="{{curIndex === 1}}">
+          <scroll-view scroll-y="true" style='height:550rpx;background-color:#f2f2f2'>
+            <view class='top'>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>品牌</view>
+                <view class='brand_text'>{{canshu[0].brand}}</view>
+              </view>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>产品名称</view>
+                <view class='brand_text'>{{canshu[0].name}}</view>
+              </view>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>产地</view>
+                <view class='brand_text'>{{canshu[0].Candi}}</view>
+              </view>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>批准文号</view>
+                <view class='brand_text'>{{canshu[0].Grant_No}}</view>
+              </view>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>保质期</view>
+                <view class='brand_text'>{{canshu[0].Baozqi}}</view>
+              </view>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>上市时间</view>
+                <view class='brand_text'>{{canshu[0].be_listed}}</view>
+              </view>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>适合肤质</view>
+                <view class='brand_text'>{{canshu[0].fit}}</view>
+              </view>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>功效</view>
+                <view class='brand_text'>{{canshu[0].effect}}</view>
+              </view>
+              <view class='canshu_top'>
+                <view class='canshu_brand'>产品类别</view>
+                <view class='brand_text'>{{canshu[0].type}}</view>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+
+        <view wx:if="{{curIndex === 2}}">
+          <scroll-view scroll-y="true" style='height:550rpx;background-color:#f2f2f2'>
+            <view class='goods_canshu'>售后保障</view>
+            <view class='service_one'>
+              <view>过敏包退</view>
+              <text>{{goods_service[0].service_one}}</text>
+            </view>
+            <view class='service_one'>
+              <view>破损包退</view>
+              <text>{{goods_service[0].service_two}}</text>
+            </view>
+            <view class='goods_canshu'>基础保障</view>
+            <view class='service_one'>
+              <view>正品保障</view>
+              <text>{{goods_service[0].service_three}}</text>
+            </view>
+            <view class='service_one'>
+              <view>线上专柜</view>
+              <text>{{goods_service[0].service_four}}</text>
+            </view>
+            <view class='service_one'>
+              <view>七天无理由退换</view>
+              <text>{{goods_service[0].service_five}}</text>
+            </view>
+            <view class='service_one'>
+              <view>极速退款</view>
+              <text>{{goods_service[0].service_six}}</text>
+            </view>
+            <view class='service_one'>
+              <view>赠运费险</view>
+              <text>{{goods_service[0].service_seven}}</text>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="goods-tab-box">
+      <view class="goods-tab-nav2 {{talkIndex === 0 ?'on2':''}}" bindtap="talkIndex" data-index="0">全部(0)</view>
+      <view class="goods-tab-nav2 {{talkIndex === 1 ?'on2':''}}" bindtap="talkIndex" data-index="1">好评(0)</view>
+      <view class="goods-tab-nav2 {{talkIndex === 2 ?'on2':''}}" bindtap="talkIndex" data-index="2">中评(0)</view>
+      <view class="goods-tab-nav2 {{talkIndex === 3 ?'on2':''}}" bindtap="talkIndex" data-index="3">差评(0)</view>
+    </view>
+    <view class='tlak'>暂无评论 </view>
+  </block>
+</scroll-view>
+<!-- 加入购物车显示 -->
+<view wx:if="{{showseleted_norms}}">
+  <view class='bg_layer'></view>
+  <view class='input_main'>
+    <view class='norms_top'>
+      <image class='url' src='{{current_goods.url}}'></image>
+      <view class='norms-right'>
+        <view class='cha'>
+          <image src='/image/cha.png' catchtap='cha'></image>
+        </view>
+        <view class='norms-right_price'>¥{{filter.tofix(current_goods.ago_price*current_goods.sale)}}</view>
+        <view class='norms-right_kucun'>库存{{current_goods.kucun}}件</view>
+        <view class='norms-right_norm'>选择 规格分类</view>
+      </view>
+    </view>
+    <scroll-view scroll-y="true" style='height:460rpx;background-color:#f2f2f2'>
+      <view class='norms_type'>规格分类</view>
+      <block wx:for="{{goods_norms[0].norms}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+        <view class="norms {{seleted_norms===item?'on':''}}" catchtap='seleted_norms' data-seleted_norms="{{item}}">{{item}}</view>
+      </block>
+      <view class='sale'>
+        <view class='saleNum'>购买数量</view>
+        <view class='numCount'>
+          <view class='numreduce' bindtap='reduceCount'>-</view>
+          <view class='num'>{{num}}</view>
+          <view class='numadd' bindtap='addCount'>+</view>
+        </view>
+      </view>
+    </scroll-view>
+    <button class='addCarts' bindtap='addCarts'>加入购物车</button>
+  </view>
+</view>
+
+<!-- 立即购买 -->
+<view wx:if="{{show_buy_now}}">
+  <view class='bg_layer'></view>
+  <view class='input_main'>
+    <view class='norms_top'>
+      <image class='url' src='{{current_goods.url}}'></image>
+      <view class='norms-right'>
+        <view class='cha'>
+          <image src='/image/cha.png' catchtap='cha'></image>
+        </view>
+        <view class='norms-right_price'>¥{{filter.tofix(current_goods.ago_price*current_goods.sale)}}</view>
+        <view class='norms-right_kucun'>库存{{current_goods.kucun}}件</view>
+        <view class='norms-right_norm'>选择 规格分类</view>
+      </view>
+    </view>
+    <scroll-view scroll-y="true" style='height:460rpx;background-color:#f2f2f2'>
+      <view class='norms_type'>规格分类</view>
+      <block wx:for="{{goods_norms[0].norms}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+        <view class="norms {{seleted_norms===item?'on':''}}" catchtap='seleted_norms' data-seleted_norms="{{item}}">{{item}}</view>
+      </block>
+      <view class='sale'>
+        <view class='saleNum'>购买数量</view>
+        <view class='numCount'>
+          <view class='numreduce' bindtap='reduceCount'>-</view>
+          <view class='num'>{{num}}</view>
+          <view class='numadd' bindtap='addCount'>+</view>
+        </view>
+      </view>
+    </scroll-view>
+    <button class='addCarts' bindtap='save_buy'>完成</button>
+  </view>
+</view>
+
+<view wx:if="{{showcanshu}}">
+  <view class='bg_layer'></view>
+  <view class='input_main'>
+    <view class='goods_canshu'>产品参数</view>
+    <scroll-view scroll-y="true" style='height:570rpx;background-color:#f2f2f2'>
+      <view class='top'>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>品牌</view>
+          <view class='brand_text'>{{canshu[0].brand}}</view>
+        </view>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>产品名称</view>
+          <view class='brand_text'>{{canshu[0].name}}</view>
+        </view>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>产地</view>
+          <view class='brand_text'>{{canshu[0].Candi}}</view>
+        </view>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>批准文号</view>
+          <view class='brand_text'>{{canshu[0].Grant_No}}</view>
+        </view>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>保质期</view>
+          <view class='brand_text'>{{canshu[0].Baozqi}}</view>
+        </view>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>上市时间</view>
+          <view class='brand_text'>{{canshu[0].be_listed}}</view>
+        </view>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>适合肤质</view>
+          <view class='brand_text'>{{canshu[0].fit}}</view>
+        </view>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>功效</view>
+          <view class='brand_text'>{{canshu[0].effect}}</view>
+        </view>
+        <view class='canshu_top'>
+          <view class='canshu_brand'>产品类别</view>
+          <view class='brand_text'>{{canshu[0].type}}</view>
+        </view>
+      </view>
+    </scroll-view>
+    <button class='addCarts' catchtap='save'>完成</button>
+  </view>
+</view>
+
+<view class='bottom' hidden='{{bottonHidden}}'>
+  <navigator class='carts' open-type="switchTab" url="../cart/cart">
+    <view class="carts-icon {{scaleCart?'on':''}}">
+      <image src="/image/gouwuche1.png"></image>
+      <text class="carts-icon-num" wx:if="{{hasCarts}}">{{totalNum}}</text>
+    </view>
+  </navigator>
+  <view class='carts_sale'>
+    <view class='addCart' bindtap='bottom_addToCart'>加入购物车</view>
+    <view class='buy_now' bindtap='buy_now'>立即购买</view>
+  </view>
+</view>

@@ -1,0 +1,105 @@
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+<view class="main">
+  <view class="search">
+    <input class="search-text" placeholder="输入商品标题" bindinput="bindinput_value" bindconfirm="must">
+    </input>
+  </view>
+  <view class='category' wx:for="{{allorders}}" wx:item="item" wx:index="index" wx:key="inedx">
+    <view class='category-child'>
+      <image src='{{item.url}}'> </image>
+    </view>
+    <view class='category-next'>
+      <view class='category-next-child'>{{item.name}}</view>
+      <view class='ago_price'>折扣:{{item.sale}}</view>
+      <view class="newest-text ">
+        <text class='cruuent_price'>¥ {{filter.tofix(item.ago_price)}}</text>
+        <text class='newest-text-child'>库存 {{item.kucun}}</text>
+        <!-- <image src='/image/gouwuche.png' mode='widthFix' style='width:50rpx;'></image> -->
+      </view>
+    </view>
+    <view class='right'>
+      <image src='/image/xiugai.png' bindtap='xiugai' data-item="{{item}}"></image>
+      <block wx:if="{{item.xiajia==true}}">
+        <view>已下架</view>
+      </block>
+      <block wx:else>
+        <view>已上架</view>
+      </block>
+    </view>
+    <block wx:if="{{showxiugai}}">
+      <view class='bg_layer'></view>
+      <view class='input_main'>
+        <form bindsubmit='fabu'>
+          <scroll-view scroll-y="true" style='height:660rpx;background-color:#f2f2f2'>
+            <view class='title'>
+            <text>商品标题</text>
+              <textarea placeholder="商品标题(50字以内,必填)" maxlength="150" value='{{name}}' name="name"></textarea>
+              <text>商品描述</text>
+              <textarea placeholder="商品描述(必填)" maxlength="150" value='{{details}}' name="details"></textarea>
+              <view class='type'>
+                <text>商品类目</text>
+                <view>
+                  <picker bindchange="bindchange" range='{{type_selected}}' value='index'>
+                    <view>选中: {{type}}</view>
+                  </picker>
+                </view>
+              </view>
+            </view>
+            <view class='title'>
+              <view class='bianma'>
+                <text>价格</text>
+                <view>
+                  <input placeholder="￥(必填)" value='{{ago_price}}' name="ago_price" type="number"></input>
+                </view>
+              </view>
+              <view class='bianma'>
+                <text>折扣</text>
+                <view>
+                  <input placeholder="不大于1" value='{{sale}}' name="sale" type="number"></input>
+                </view>
+              </view>
+              <view class='bianma'>
+                <text>库存</text>
+                <view>
+                  <input placeholder="库存(必填)" value='{{kucun}}' name="kucun" type="number"></input>
+                </view>
+              </view>
+              <view class='bianma'>
+                <text>运费</text>
+                <view>
+                  <input placeholder="运费" value='{{yunfei}}' name="yunfei" type="number"></input>
+                </view>
+              </view>
+            </view>
+            <view class='title'>
+              <view class='type'>
+                <text>商品规格数量</text>
+                <view>
+                  <picker bindchange="bindtap_norms" range='{{norm_number}}' value='index'>
+                    <view>数量: {{norm_numbervluae}}</view>
+                  </picker>
+                </view>
+              </view>
+              <block wx:if="{{norm_numbervluae==norms.length}}">
+                <block wx:for="{{norms}}" wx:item="item" wx:index="index" wx:key="key">
+                  <input class='input' value='{{item}}' placeholder="输入规格{{index+1}}" name="norms{{index+1}}" type="text"></input>
+                </block>
+              </block>
+              <block wx:else>
+                <block wx:for="{{norm_numbervluae}}" wx:item="item" wx:index="index" wx:key="key">
+                  <input class='input' placeholder="输入规格{{index+1}}" name="norms{{index+1}}" type="text"></input>
+                </block>
+              </block>
+            </view>
+
+          </scroll-view>
+          <view class='button'>
+            <button class='button1'  bindtap='reset'>返回</button>
+            <button class='button2' form-type='submit'>确认修改</button>
+          </view>
+        </form>
+      </view>
+    </block>
+  </view>
+
+</view>

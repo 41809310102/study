@@ -1,0 +1,30 @@
+<view class="top_contain">
+      <view class="des_contain">
+            <view class="name">益农</view>
+            <view class="sign">互联网新型农业，助力农民致富</view>
+      </view>
+      <view class="avator_box">
+            <image class="avator" src="../../../image/logo2.png"></image>
+      </view>
+</view>
+<view class="contain">
+      <view class="title">程序简介</view>
+      <view class="description">
+            <text space="emsp" decode="{{ true }}">{{des}}</text>
+      </view>
+      <view class="title">加盟合作方式</view>
+      <view class="description">
+            <view class="tip" bindtap="copy" data-copy="https://github.com/xuhuai66" data-name="链接">
+                  <view>官网</view>:
+                  <text>https://github.com/xuhuai66</text>
+            </view>
+            <view class="tip" bindtap="copy" data-copy="xuhuai66" data-name="微信">
+                  <view>微信</view>:
+                  <text>hjj18891636438</text>
+            </view>
+            <view class="tip" bindtap="copy" data-copy="1604026596" data-name="QQ">
+                  <view>电话</view>:
+                  <text>18891636438</text>
+            </view>
+      </view>
+</view>

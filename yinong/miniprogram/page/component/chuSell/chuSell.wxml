@@ -1,0 +1,176 @@
+<!--miniprogram/page/component/chuSell/chuSell.wxml-->
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+<view class="main">
+  <view class="search">
+    <input class="search-text" placeholder="输入商品标题" bindinput="bindinput_value" bindconfirm="must">
+
+    </input>
+  </view>
+  <view class="swiper-tab">
+    <view class="swiper-item {{number==1?'active':''}}" data-index="1" bindtap="bindtapEvent">出售 {{chushoulength}}</view>
+    <view class="swiper-item {{number==2?'active':''}}" data-index="2" bindtap="bindtapEvent">上新 5</view>
+    <view class="swiper-item {{number==3?'active':''}}" data-index="3" bindtap="bindtapEvent">售完 {{shouwanlength}}</view>
+    <view class="swiper-item {{number==4?'active':''}}" data-index="4" bindtap="bindtapEvent">下架 {{xiajialength}}</view>
+  </view>
+  <!-- <view class='shaixuan' wx:for="{{category}}" wx:item="item" wx:index="index" wx:key="inedx" hidden='{{showshaixuan}}'>
+    <view class='shaixuan-next' bindtap='selected' data-name='{{item.name}}'>
+      <text>{{item.name}}</text>
+    </view>
+  </view> -->
+  <scroll-view style='height:{{scrollHeigth-380}}rpx; ' scroll-y="true">
+    <block wx:if="{{number==1}}">
+      <view class='category' wx:for="{{chushou}}" wx:item="item" wx:index="index" wx:key="inedx">
+        <view class='quan'>
+          <icon wx:if="{{item.selected}}" type="success" color="red" data-index="{{index}}" bindtap="selectList" />
+          <icon wx:else type="circle" data-index="{{index}}" bindtap="selectList" />
+        </view>
+        <view class='category-child'>
+          <image src='{{item.url}}'> </image>
+        </view>
+        <view class='category-next'>
+          <view class='category-next-child'>{{item.name}}</view>
+          <view wx:if="{{item.sale<1}}" class='ago_price'>原价¥ {{filter.tofix(item.ago_price)}}</view>
+          <view wx:else class='ago_price'></view>
+          <view class="newest-text ">
+            <text class='cruuent_price'>¥ {{filter.tofix(item.ago_price*item.sale)}}</text>
+            <text class='newest-text-child'>库存{{item.kucun}}  总销量{{item.sales_volume}}</text>
+            <!-- <image src='/image/gouwuche.png' mode='widthFix' style='width:50rpx;'></image> -->
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:if="{{number==2}}">
+      <view class='category' wx:for="{{chushou}}" wx:item="item" wx:index="index" wx:key="inedx">
+        <view class='quan'>
+          <icon wx:if="{{item.selected}}" type="success" color="red" data-index="{{index}}" bindtap="selectList" />
+          <icon wx:else type="circle" data-index="{{index}}" bindtap="selectList" />
+        </view>
+        <view class='category-child'>
+          <image src='{{item.url}}'> </image>
+        </view>
+        <view class='category-next'>
+          <view class='category-next-child'>{{item.name}}</view>
+          <view class='ago_price-pr'>
+            <view wx:if="{{item.sale<1}}" class='ago_price'>原价¥ {{filter.tofix(item.ago_price)}}</view>
+            <view wx:else class='ago_price'></view>
+            <view class='time'>{{item.time}}</view>
+          </view>
+          <view class="newest-text ">
+            <text class='cruuent_price'>¥ {{filter.tofix(item.ago_price*item.sale)}}</text>
+            <text class='newest-text-child on'>库存{{item.kucun}}</text>
+            <text class='newest-text-child on1'>上新商品</text>
+            <!-- <image src='/image/gouwuche.png' mode='widthFix' style='width:50rpx;'></image> -->
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:if="{{number==3}}">
+      <block wx:if="{{shouwan.length==0}}">
+        <view class='tuikuan'>
+          <image src='/image/wu.png'></image>
+          <view>无售完商品</view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='category' wx:for="{{shouwan}}" wx:item="item" wx:index="index" wx:key="inedx">
+          <view class='quan'>
+            <icon wx:if="{{item.selected}}" type="success" color="red" data-index="{{index}}" bindtap="shouwan_selectList" />
+            <icon wx:else type="circle" data-index="{{index}}" bindtap="shouwan_selectList" />
+          </view>
+          <view class='category-child'>
+            <image src='{{item.url}}'> </image>
+          </view>
+          <view class='category-next'>
+            <view class='category-next-child'>{{item.name}}</view>
+            <view wx:if="{{item.sale<1}}" class='ago_price'>原价¥ {{filter.tofix(item.ago_price)}}</view>
+            <view wx:else class='ago_price'></view>
+            <view class="newest-text ">
+              <text class='cruuent_price'>¥ {{filter.tofix(item.ago_price*item.sale)}}</text>
+              <text class='newest-text-child'>库存{{item.kucun}}  总销量{{item.sales_volume}}</text>
+              <!-- <image src='/image/gouwuche.png' mode='widthFix' style='width:50rpx;'></image> -->
+            </view>
+          </view>
+        </view>
+      </block>
+    </block>
+
+    <block wx:elif="{{number==4}}">
+      <block wx:if="{{xiajia.length==0}}">
+        <view class='tuikuan'>
+          <image src='/image/wu.png'></image>
+          <view>无下架商品</view>
+        </view>
+      </block>
+      <block>
+        <view class='category' wx:for="{{xiajia}}" wx:item="item" wx:index="index" wx:key="inedx">
+          <view class='quan'>
+            <icon wx:if="{{item.selected}}" type="success" color="red" data-index="{{index}}" bindtap="xiajia_selectList" />
+            <icon wx:else type="circle" data-index="{{index}}" bindtap="xiajia_selectList" />
+          </view>
+          <view class='category-child'>
+            <image src='{{item.url}}'> </image>
+          </view>
+          <view class='category-next'>
+            <view class='category-next-child'>{{item.name}}</view>
+            <view wx:if="{{item.sale<1}}" class='ago_price'>原价¥ {{filter.tofix(item.ago_price)}}</view>
+            <view wx:else class='ago_price'></view>
+            <view class="newest-text ">
+              <text class='cruuent_price'>¥ {{filter.tofix(item.ago_price*item.sale)}}</text>
+              <text class='newest-text-child'>库存{{item.kucun}}  总销量{{item.sales_volume}}</text>
+              <!-- <image src='/image/gouwuche.png' mode='widthFix' style='width:50rpx;'></image> -->
+            </view>
+          </view>
+        </view>
+      </block>
+    </block>
+  </scroll-view>
+
+  <block wx:if="{{number==1}}">
+    <view class='bottom'>
+      <view class='bottom_child'>
+        <icon wx:if="{{selectAllStatus}}" type="success_circle" color="red" class="total-select" bindtap="selectAll" />
+        <icon wx:else type="circle" color="block" class="total-select" bindtap="selectAll" />
+        <text>全选</text>
+      </view>
+      <view class='bottom_child1' bindtap='xiajia'>下架</view>
+      <view class='bottom_child1' bindtap='deletegoods'>删除</view>
+    </view>
+  </block>
+  <block wx:if="{{number==2}}">
+    <view class='bottom'>
+      <view class='bottom_child1 zhuye'>添加新品</view>
+      <view class='bottom_child number2'>
+        <icon wx:if="{{selectAllStatus}}" type="success_circle" color="red" class="total-select" bindtap="selectAll" />
+        <icon wx:else type="circle" color="block" class="total-select" bindtap="selectAll" />
+        <text>全选</text>
+      </view>
+      <view class='bottom_child1 number2' bindtap='xiajia'>下架</view>
+      <view class='bottom_child1 number2' bindtap='deletegoods'>删除</view>
+    </view>
+  </block>
+  <block wx:if="{{number==3}}">
+    <view class='bottom'>
+      <view class='bottom_child'>
+        <icon wx:if="{{selectAllStatus}}" type="success_circle" color="red" class="total-select" bindtap="shouwan_selectAll" />
+        <icon wx:else type="circle" color="block" class="total-select" bindtap="shouwan_selectAll" />
+        <text>全选</text>
+      </view>
+      <view class='bottom_child1' bindtap='xiugai_shangjia'>修改库存上架</view>
+      <view class='bottom_child1' bindtap='shouwan_delete'>删除</view>
+    </view>
+  </block>
+  <block wx:if="{{number==4}}">
+    <view class='bottom'>
+      <view class='bottom_child'>
+        <icon wx:if="{{selectAllStatus}}" type="success_circle" color="red" class="total-select" bindtap="xiajia_selectAll" />
+        <icon wx:else type="circle" color="block" class="total-select" bindtap="xiajia_selectAll" />
+        <text>全选</text>
+      </view>
+      <view class='bottom_child1' bindtap='shangjia'>上架</view>
+      <view class='bottom_child1' bindtap='xiajia_delete'>删除</view>
+    </view>
+  </block>
+
+</view>

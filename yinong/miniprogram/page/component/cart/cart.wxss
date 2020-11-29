@@ -1,0 +1,398 @@
+@import '../../common/common.wxss';
+
+.page {
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.main {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.top_mg{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: #fbbd08;
+  height: 100rpx;
+}
+.top_mg view{
+    font-size: 33rpx;
+    color: white;
+    font-weight: 700rpx;
+    margin-left:20rpx; 
+}
+.top_mg text{
+  font-size: 30;
+  color: white;
+  position: fixed;
+  right:30rpx;
+}
+.cart-box {
+  width: 700rpx;
+  border-radius: 20rpx;
+  margin-left: 25rpx;
+  background-color: white;
+  margin-top: 30rpx;
+}
+
+.cart-list {
+  position: relative;
+  padding: 40rpx 20rpx 20rpx 285rpx;
+  height: 200rpx;
+}
+
+.cart-list .cart-pro-select {
+  position: absolute;
+  left: 20rpx;
+  top: 90rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.cart-list .cart-thumb {
+  position: absolute;
+  top: 20rpx;
+  left: 85rpx;
+  width: 185rpx;
+  border-radius: 10rpx;
+  height: 185rpx;
+}
+
+.cart-list1 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 150rpx;
+}
+
+.cart-list2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.cha image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 60rpx;
+  margin-left: 400rpx;
+}
+
+.cha {
+  width: 500rpx;
+}
+
+.cart-list2_next {
+  width: 400rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 80rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cart-list2_next1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  background-color: #fcf9f9;
+}
+
+.cart-list2_next1 text {
+  font-size: 30rpx;
+  width: 330rpx;
+  opacity: 0.6;
+}
+
+.null_view {
+  width: 10rpx;
+  margin-left: 30rpx;
+  height: 10rpx;
+  border-bottom:  1rpx solid rgb(204, 201, 201);
+  border-left: 1rpx solid rgb(204, 201, 201);
+  transform: rotate(-45deg);
+}
+
+.sale {
+  display: flex;
+  height: 70rpx;
+  align-items: center;
+}
+.ago_price{
+  text-decoration: line-through;
+  width: 150rpx;
+  opacity: 0.7;
+  margin-left: 160rpx;
+  font-size: 28rpx;
+}
+.saleNum {
+  font-size: 30rpx;
+  color: red;
+  margin-left: 350rpx;
+}
+.saleNum1 {
+  font-size: 30rpx;
+  color: red;
+  margin-left: 20rpx;
+}
+.numCount {
+  display: flex;
+  align-items: center;
+}
+
+.numreduce {
+  text-align: center;
+  line-height: 40rpx;
+  margin-left: 80rpx;
+  width: 50rpx;
+  height: 40rpx;
+  opacity: 0.6;
+  border: 1rpx solid #f2f2f2;
+  border-top-left-radius: 5rpx;
+  border-bottom-left-radius: 5rpx;
+}
+
+.num {
+  line-height: 40rpx;
+  text-align: center;
+  margin-left: 5rpx;
+  width: 50rpx;
+  height: 40rpx;
+  opacity: 0.6;
+  border: 1rpx solid #f2f2f2;
+}
+
+.numadd {
+  text-align: center;
+  line-height: 40rpx;
+  margin-left: 5rpx;
+  width: 50rpx;
+  opacity: 0.6;
+  height: 40rpx;
+  border: 1rpx solid #f2f2f2;
+}
+
+/* .cart-list .cart-pro-name{
+    display: inline-block;
+    width: 300rpx;
+    height: 105rpx;
+    line-height: 50rpx;
+    overflow: hidden;
+}
+.cart-list .cart-pro-price{
+    display: inline-block;
+    float: right;
+    height: 105rpx;
+    line-height: 50rpx;
+}
+.cart-list .cart-count-box{
+    position: absolute;
+    left: 285;
+    bottom: 20rpx;
+    width: 250rpx;
+    height: 80rpx;
+}
+.cart-list .cart-count-box text{
+    display: inline-block;
+    line-height: 80rpx;
+    text-align: center;
+}
+.cart-count-down,.cart-count-add{
+    font-size: 44rpx;
+    width: 50rpx;
+    height: 100%;
+} */
+
+.cart-count-num {
+  width: 150rpx;
+}
+
+.cart-del {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 44rpx;
+}
+
+.cart-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background: white;
+ 
+}
+.cart-footer text{
+  margin-left: 20rpx;
+  opacity: 0.6;
+}
+.total-select {
+  margin-left:20rpx; 
+  width: 45rpx;
+  height: 45rpx;
+}
+.balance{
+  margin-left:30rpx;
+  width: 150rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  font-size: 31rpx;
+  position: fixed;
+  right: 20rpx;
+  background: linear-gradient(to right, rgb(255, 136, 0), rgb(255, 38, 0));
+}
+.delete{
+  width: 150rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  font-size: 28rpx;
+  position: fixed;
+  right: 20rpx;
+  
+  border: 1rpx solid rgb(255, 38, 0);
+  color: rgb(255, 38, 0);
+}
+.cart-toatl-price {
+  position: fixed;
+  right: 180rpx;
+  color: red;
+  font-size: 28rpx;
+  width: 160rpx;
+}
+.carts_null{
+padding-top:260rpx; 
+}
+.carts_null image{
+  width: 150rpx;
+  height: 150rpx;
+ margin-left:290rpx; 
+}
+.cart-no-data {
+  color: #999;
+  text-align: center;
+}
+.bg_layer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: 9997;
+}
+
+.input_main {
+  animation: myfirst 0.4s;
+  -webkit-animation: myfirst 0.4s;
+  position: fixed;
+  margin: 0rpx;
+  z-index: 9998; /*组件覆盖，通过设置z-index属性来控制组件显示层级，数值越高就离用户越近，必须和position搭配使用*/
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 800rpx;
+  border-top-left-radius:20rpx;
+  border-top-right-radius: 20rpx; 
+  background-color: #f2f2f2;
+}
+@keyframes myfirst
+{
+from {bottom: -800rpx;}
+to {bottom: 0rpx;}
+}
+
+.norms_top {
+  display: flex;
+  height: 250rpx;
+  justify-items: center;
+  align-items: center;
+}
+
+.url {
+  margin-left: 40rpx;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 10rpx;
+}
+
+.norms-right {
+  margin-left: 50rpx;
+  height: 250rpx;
+  width: 280rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.norms-right_price {
+  color: red;
+  font-size: 34rpx;
+  height: 80rpx;
+}
+
+.norms-right_kucun {
+  font-size: 28rpx;
+  opacity: 0.7;
+  height: 80rpx;
+}
+.norms-right_norm {
+  font-size: 28rpx;
+  height: 80rpx;
+}
+.cha image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 400rpx;
+}
+.cha {
+  width: 500rpx;
+}
+
+.norms_type {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+}
+.norms {
+  margin-left: 50rpx;
+  width: 600rpx;
+  background-color: #fbfbff;
+  font-size: 25rpx;
+  height: 60rpx;
+  display: flex;
+  margin-top: 10rpx;
+  align-items: center;
+  border-radius: 15rpx;
+}
+
+.norms.on {
+  border: 2rpx solid rgba(255, 38, 0, 0.808);
+  color: rgba(255, 38, 0, 0.808);
+}
+.addCarts {
+  position: absolute;
+  bottom:15rpx;
+  border-radius: 40rpx;
+  height: 60rpx;
+  width: 700rpx;
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;/*line-height和text-align使居中文字。justify-items: center;
+  align-items: center;是控件居中*/
+  text-align: center;
+  background: linear-gradient(to right, rgb(255, 136, 0), rgb(255, 38, 0));
+}

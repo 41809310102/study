@@ -1,0 +1,156 @@
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+
+      <!-- <view wx:if="{{hasAddress}}" class="address-list">
+        <view>{{address.name}}</view>
+        <view>{{address.phone}}</view>
+        <view>{{region}} {{address.detail}}</view>
+      </view> -->
+ 
+    <view class="orders-box">
+      <view class="orders">我的订单</view>
+      <view class="goods-tab-box">
+        <view class="goods-tab-nav {{curIndex === 0 ?'on':''}}" bindtap="bindTap" data-index="0">未交易完成</view>
+        <view class="goods-tab-nav {{curIndex === 1 ?'on':''}}" bindtap="bindTap" data-index="1">已完成</view>
+        <view class="goods-tab-nav {{curIndex === 2 ?'on':''}}" bindtap="bindTap" data-index="2">全部订单</view>
+        <view class="goods-content">
+          <view wx:if="{{curIndex == 0}}">
+            <view class="orders-list" wx:for="{{uncomplete_orders}}" wx:key="index">
+              <view class="orders-number">订单编号：{{item.order_bh}}
+                <text wx:if="{{item.fahuo==false}}">未发货</text>
+                <text wx:else="{{item.fahuo==false}}">已发货</text>
+              </view>
+              <view class="orders-detail" bindtap='details' data-item="{{item}}" data-url='{{item.url}}'>
+                <image src="{{item.url}}"></image>
+                <view class="order.datail_next">{{item.name}}
+                  <text>×{{item.total}}</text>
+                </view>
+                <view class='ago'>
+                  <view class='ago_price' wx:if="{{item.sale<1}}">￥原价:{{item.ago_price}}</view>
+                  <view class="">￥{{filter.tofix(item.ago_price*item.sale)}}</view>
+                </view>
+
+                <!-- <block wx:if="{{item.current_money==''}}">
+                  <view class="">￥{{item.ago_price}}</view>
+                </block>
+                <block wx:else>
+                  <view class="">原价:￥{{item.ago_price}}</view>
+                  <view class="">促销价:￥{{item.ago_price}}</view>
+                </block> -->
+              </view>
+              <view class='order-xiaoji'>
+                共{{item.total}}件商品 实付:
+                <text>￥{{filter.tofix(item.ago_price*item.total*item.sale)}}</text>
+                <!-- <block wx:if="{{item.current_money!=''}}">
+                  <text>￥{{item.current_money*item.count}}</text>
+                </block>
+                <block wx:else>
+                  <text>￥{{item.ago_money*item.count}}</text>
+                </block> -->
+              </view>
+              <view class="orders-footer">
+                <block wx:if="{{item.fahuo==false}}">
+                  <button size='mini' class='orders-btn_tifahuo' style='font-size:26rpx;' data-id="{{item._id}}" bindtap='fahuo'>提醒发货</button>
+                </block>
+                <block wx:else>
+                  <button size='mini' class='orders-btn_fahuo' style='font-size:26rpx;' data-id="{{item._id}}">已发货</button>
+                  <button size='mini' class='orders-btn2' style='font-size:28rpx;' data-item="{{item}}" bindtap='logistical'>查看物流</button>
+                  <button size="mini" class="orders-btn2" style='font-size:28rpx;' data-id='{{item._id}}' bindtap="payOrders">确认收货</button>
+                </block>
+
+              </view>
+            </view>
+          </view>
+
+          <view wx:if="{{curIndex == 1}}">
+            <view class="orders-list" wx:for="{{complete_orders}}" wx:key="index">
+              <view class="orders-number">订单编号：{{item.order_bh}}
+                <text class="orders-condition">交易完成</text>
+              </view>
+              <view class="orders-detail" bindtap='details' data-item="{{item}}" data-url='{{item.url}}'>
+                <image src="{{item.url}}"></image>
+                <view class="order.datail_next">{{item.name}}
+                  <text>×{{item.total}}</text>
+                </view>
+                <view class='ago'>
+                  <view class='ago_price' wx:if="{{item.sale<1}}">￥原价:{{item.ago_price}}</view>
+                  <view class="">￥{{filter.tofix(item.ago_price*item.sale)}}</view>
+                </view>
+                <!-- <block wx:if="{{item.current_money==''}}">
+                  <view class="">￥{{item.ago_price}}</view>
+                </block>
+                <block wx:else>
+                  <view class="">原价:￥{{item.ago_money}}</view>
+                  <view class="">促销价:￥{{item.current_money}}</view>
+                </block> 
+                <text class="orders-status">{{item.status}}</text>-->
+              </view>
+              <view class='order-xiaoji'>
+                共{{item.total}}件商品 合计:
+                <!-- <block wx:if="{{item.current_money!=''}}">
+                  <text>￥{{item.current_money*item.count}}</text>
+                </block>
+                <block wx:else>
+                  <text>￥{{item.ago_money*item.count}}</text>
+                </block> -->
+                <text>￥{{filter.tofix(item.ago_price*item.total*item.sale)}}</text>
+              </view>
+              <view class="orders-footer1">
+                <button size='mini' class='orders-btn2' style='font-size:26rpx;' data-id="{{item._id}}" bindtap='delete_orders'>删除订单</button>
+                <button size='mini' class='orders-btn2' style='font-size:26rpx;' data-item="{{item}}" bindtap='logistical'>查看物流</button>
+                <button size="mini" class="orders-btn2" style='font-size:26rpx;' bindtap="continue_buy">继续购买</button>
+              </view>
+            </view>
+          </view>
+          <view wx:if="{{curIndex == 2}}">
+            <view class="orders-list" wx:for="{{my_orders}}" wx:for-item="item" wx:key="index">
+              <view class="orders-number">订单编号：{{item.order_bh}}
+                <text wx:if="{{item.complete}}" class="orders-condition">交易完成</text>
+              </view>
+              <view class="orders-detail" bindtap='details' data-item="{{item}}" data-url='{{item.url}}'>
+                <image src="{{item.url}}"></image>
+                <view class="order.datail_next">{{item.name}}
+                  <text>×{{item.total}}</text>
+                </view>
+                <view class='ago'>
+                  <view class='ago_price' wx:if="{{item.sale<1}}">￥原价:{{item.ago_price}}</view>
+                  <view class="">￥{{filter.tofix(item.ago_price*item.sale)}}</view>
+                </view>
+                <!-- <block wx:if="{{item.current_money==''}}">
+                  <view class="">￥{{item.ago_price}}</view>
+                </block>
+                <block wx:else>
+                  <view class="">原价:￥{{item.ago_price}}</view>
+                  <view class="">促销价:￥{{item.ago_price}}</view>
+                </block> -->
+              </view>
+              <view class='order-xiaoji'>
+                共{{item.total}}件商品 实付:
+                <text>￥{{filter.tofix(item.ago_price*item.total*item.sale)}}</text>
+                <!-- <block wx:if="{{item.current_money!=''}}">
+                  <text>￥{{item.current_money*item.count}}</text>
+                </block>
+                <block wx:else>
+                  <text>￥{{item.ago_money*item.count}}</text>
+                </block> -->
+              </view>
+              <view wx:if="{{!item.complete}}" class="orders-footer">
+                <block wx:if="{{item.fahuo==false}}">
+                  <button size='mini' class='orders-btn_tifahuo' style='font-size:26rpx;' data-id="{{item._id}}" bindtap='fahuo'>提醒发货</button>
+                </block>
+                <block wx:else>
+                  <button size='mini' class='orders-btn_fahuo' style='font-size:26rpx;' data-id="{{item._id}}">已发货</button>
+                  <button size='mini' class='orders-btn2' style='font-size:28rpx;' data-item="{{item}}" bindtap='logistical'>查看物流</button>
+                  <button size="mini" class="orders-btn2" style='font-size:28rpx;' data-id='{{item._id}}' bindtap="payOrders">确认收货</button>
+                </block>
+              </view>
+              <view wx:else class="orders-footer1">
+                <button size='mini' class='orders-btn2' style='font-size:26rpx;' data-id="{{item._id}}" bindtap='delete_orders'>删除订单</button>
+                <button size='mini' class='orders-btn2' style='font-size:26rpx;' data-item="{{item}}" bindtap='logistical'>查看物流</button>
+                <button size="mini" class="orders-btn2" style='font-size:26rpx;' bindtap="continue_buy">继续购买</button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+ 

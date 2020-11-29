@@ -1,0 +1,134 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "appid": "wx73716cf2b81e0808",
+  "projectname": "shop",
+  "libVersion": "2.6.5",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "page/component/denglu/denlu",
+          "pathName": "page/component/denglu/denlu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "page/component/index/index",
+          "pathName": "page/component/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "page/component/denglu/denlu",
+          "pathName": "page/component/denglu/denlu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "page/component/order_manger/order_manger",
+          "pathName": "page/component/order_manger/order_manger",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "page/component/login/login",
+          "pathName": "page/component/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "page/component/login/login",
+          "pathName": "page/component/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "page/component/showimg/showimg",
+          "pathName": "page/component/showimg/showimg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "page/component/user/user",
+          "pathName": "page/component/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "page/component/user/user",
+          "pathName": "page/component/user/user",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

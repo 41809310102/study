@@ -1,0 +1,61 @@
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+
+<view class="top_box">
+      <view class="search_box" bindtap="search">
+            <image class="search_ico" src="../../../image/search.png"></image>
+            <view class="search_text">搜索</view>
+      </view>
+      <image bindtap="changeCard" class="top_list" src="{{iscard?'../../../image/list.png':'../../../image/card.png'}}"></image>
+</view>
+   
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{banner1}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.img}}" class="swiper image"  width="100%"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <scroll-view class="major" scroll-x>   
+      <navigator  class="box" url="../release_goods/release_goods">
+        <image class="pic" src="../../../image/kecheng1.png"/>
+        <view class="txt">农业预约</view>
+      </navigator>
+      <navigator class="box" url="../buy/buy">
+        <image class="pic" src="../../../image/kecheng2.png"/>
+        <view class="txt">在线购买</view>
+      </navigator>
+      <navigator class="box"url="">
+        <image class="pic" src="../../../image/kecheng3.png"/>
+        <view class="txt">在线销售</view>
+      </navigator>
+      <navigator class="box" url="">
+        <image class="pic" src="../../../image/kecheng4.png"/>
+        <view class="txt">农业攻略</view>
+      </navigator>
+      <navigator class="box" url="">
+        <image class="pic" src="../../../image/kecheng5.png"/>
+        <view class="txt">人工服务</view>
+      </navigator>   
+</scroll-view>
+
+
+  <view class="newest">
+    <view class="newest-title">
+      <text>最近新品</text>
+    </view>
+    <view class="newest-box">
+      <block wx:for="{{new_product}}" wx:item="item" wx:key="index">
+        <view class="newest-list" bindtap='cart' data-url="{{item}}">
+            <image src="{{item.url}}" mode='widthFix'></image>
+            <view class="newest-text1">
+              <text>{{item.name}}</text>
+            </view>
+            <view class="newest-text ">
+              <text  class='cruuent_price'>¥ {{filter.tofix(item.ago_price)}}</text>
+              <text class='newest-text-child'>{{item.sales_volume}}人付款</text>
+            </view>
+        </view>
+      </block>
+    </view>
+  </view>

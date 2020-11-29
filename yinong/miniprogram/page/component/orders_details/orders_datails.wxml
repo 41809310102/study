@@ -1,0 +1,66 @@
+<!--miniprogram/page/component/orders_details/orders_datails.wxml-->
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+<view class='top'>
+  <text>交易详情</text>
+  <image src='/image/libao.png'></image>
+</view>
+<view class='address'>
+  <image src='/image/weizhi.png'></image>
+  <view class='address_child'>
+    <view class='name_number'>
+      <view class='name'>{{order_details.address.name}}</view>
+      <view class='number'>{{order_details.address.phone}}</view>
+    </view>
+    <view class='details'>{{order_details.region[0]}}{{order_details.region[1]}}{{order_details.region[2]}}{{order_details.address.detail}}</view>
+  </view>
+</view>
+<view class='bottom'>
+  <view class='top1'>
+    <image src='{{order_details.url}}'></image>
+    <view class='top1_right'>
+      <view class='top1_right_top'>
+        <view class='name1'>{{order_details.name}}</view>
+        <view class='price_count'>
+          <view>¥{{filter.tofix(order_details.ago_price*1)}}</view>
+          <text>x{{order_details.total}}</text>
+        </view>
+      </view>
+      <view class='norms'>{{order_details.seleted_norms}}</view>
+    </view>
+  </view>
+  <view class='yunfei'>
+    <view>运费：</view>
+    <text>¥{{filter.tofix(order_details.yunfei*1)}}</text>
+  </view>
+  <view class='yunfei'>
+    <view>价格：</view>
+    <text>¥{{filter.tofix(order_details.ago_price*1)}}</text>
+  </view>
+  <view class='yunfei'>
+    <view>折扣：</view>
+    <text>{{filter.tofix(order_details.sale*1)}}</text>
+  </view>
+  <view class='yunfei'>
+    <view>实付(含运费)：</view>
+    <text style='color:red'>¥{{filter.tofix(order_details.ago_price*order_details.sale)}}</text>
+  </view>
+</view>
+<view class='orders_ms'>
+  <view style="margin-left:30rpx;font-size:32rpx;height:40rpx;margin-top:20rpx;">订单详情</view>
+  <view class='orders_child'>
+    <view>订单编号:</view>
+    <text>{{order_details.order_bh}}</text>
+  </view>
+  <view class='orders_child'>
+    <view>交易号:</view>
+    <text>{{order_details.pay_bh}}</text>
+  </view>
+ <view class='orders_child'>
+    <view>创建时间:</view>
+    <text>{{order_details.start_time}}</text>
+  </view>
+  <view class='orders_child'>
+    <view>成交时间:</view>
+    <text>{{order_details.end_time}}</text>
+  </view>
+</view>

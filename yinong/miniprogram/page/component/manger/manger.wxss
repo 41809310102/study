@@ -1,0 +1,102 @@
+page{
+  height: 100%;
+}
+.main{
+  height: 100%;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  flex-direction:column; 
+}
+.top{
+  background: #FF6633;
+  height: 230rpx;
+  width: 100%;
+  display: flex;
+  flex-direction:row; 
+  z-index: 800;
+}
+.top view{
+  margin-top:30rpx;
+  height: 120rpx;
+  display: flex;
+  width: 187rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.top view text{
+  font-weight: 600;
+  color: white;
+  margin-top:10rpx; 
+  font-size: 30rpx;
+  height: 60rpx;
+}
+.daifukuan{
+  color: white;
+  margin-top: 20rpx;
+  height: 60rpx;
+  font-size:30rpx; 
+}
+.goods_status{
+  width: 90%;
+  position: relative;
+  height: 300rpx;
+  background: white;
+  border-radius: 20rpx;
+  bottom: 40rpx;
+  justify-content:space-around;
+  align-items: center;
+  display: flex;
+  z-index: 900;
+}
+.goods_status-child{
+  display: flex;
+  flex-direction:column; 
+  align-items: center;
+}
+.goods_status-child image{
+  width: 50rpx;
+  height: 50rpx;
+  
+}
+.goods_status-child text{
+  opacity: 0.7;
+  font-size: 26rpx;
+  
+}
+.goods_status-child view{
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.goods_manger{
+  width: 90%;
+  height: 400rpx;
+  background: white;
+  border-radius: 20rpx;
+  align-items: center;
+  display: flex;
+}
+.goods_manger{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.goods_manger-status{
+  height: 150rpx;
+  width: 100%;
+  border-radius: 20rpx;
+  bottom: 40rpx;
+  justify-content:space-around;
+  align-items: center;
+  display: flex;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.goods_status-child.on{
+  flex-direction:row; 
+  
+}
+.goods_status-child.on text{
+  margin-left: 10rpx;
+  
+}

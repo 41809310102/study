@@ -1,0 +1,56 @@
+
+
+<view class="container">
+
+<image src="../../../image/logo.jpg"></image>
+
+</view>
+
+<view class="login_box">
+
+<view class="section">
+
+  <input placeholder="请输入用户名" placeholder-class="color" bindblur='username' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/username.png"></image>
+
+</view>
+
+<view class="section">
+
+  <input type='number' maxlength='11' placeholder="请输入手机号" placeholder-class="color" bindblur='mobile' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/mobile.png"></image>
+
+</view>
+
+<view class="section">
+
+  <input password="true" placeholder="请输入密码" placeholder-class="color" bindblur='pass1' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/pass.png"></image>
+
+</view>
+
+<view class="section">
+
+  <input password="true" placeholder="确认密码" placeholder-class="color" bindblur='pass2' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/pass.png"></image>
+
+</view>
+<button class="login" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">注册</button>
+<button class="register" type="warn" open-type="getUserInfo" bindgetuserinfo="okzhuche">已有账号/登录</button>
+
+       <!--底部确认-->
+       <view class="shen_title">
+            <image class="about" src="../../../image/about.png" />使用申明
+      </view>
+      <view class="des">1. 在未经您同意及确认之前，本程序不会将您的注册信息用于任何其它商业目的。</view>
+      <view class="des">2. 本程序将对您的信息进行严格的保护</view>
+      <view class="des">3. 请您放心使用！</view>
+</view>
+
+
+
+

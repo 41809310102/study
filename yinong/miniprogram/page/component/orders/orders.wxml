@@ -1,0 +1,66 @@
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+<view class="main">
+  <navigator url="../address/address">
+    <view wx:if="{{hasAddress}}" class="orders-address">
+      <text class="orders-address-name">收货人: {{address.name}}</text>
+      <text class="orders-address-phone">电话: {{address.phone}}</text>
+      <view class="orders-address-detail">{{region[0]}} {{region[1]}} {{region[2]}} {{address.detail}}</view>
+    </view>
+    <view wx:else class="orders-no-address">添加收货地址</view>
+  </navigator>
+
+  <scroll-view class="orders-box" scroll-y="true" style='height:{{srocll_height-250}}rpx;'>
+    <view wx:for="{{orders}}" wx:key="index" class="orders-list">
+      <image class="orders-thumb" src="{{item.url}}"></image>
+      <view class='orders-list-child'>
+        <view class="orders-pro-name">{{item.name}}
+          <view class="orders-count-num">×{{item.total}}</view>
+        </view>
+        <view class="orders-pro-price">￥{{filter.tofix(item.ago_price*item.sale)}}</view>
+      </view>
+      <view class='server'>服务：
+        <text>支持7天无理由退货</text>
+      </view>
+      <view class='server'>配送方式：
+        <text>普通配送</text>
+      </view>
+      <view class='server'>订单备注：
+        <input value="{{remarks}}" placeholder="选填，请和商家协商一致" bindinput="remarks"/>
+      </view>
+      <view class='count_money'>
+      <view class='count_money_child'>
+           <view class='count_money1'>共{{item.total}}件</view>
+           <view class='count_money2'>小计：</view>
+           <view class='count_money3'>￥{{filter.tofix(item.total*item.ago_price*item.sale)}}</view>
+           </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="orders-footer">
+    <view class="orders-footer-total">付款合计：￥{{filter.tofix(totalPrice)}}</view>
+    <button class="orders-footer-btn" bindtap="toPay" size='mini'>提交订单</button>
+  </view>
+</view>
+
+ 
+<view wx:if='{{showPayPwdInput}}'>
+  <view class='bg_layer'></view>
+  <view class='input_main'>
+    <view class='input_title'>
+      <view class='input_back' catchtap='hidePayLayer1'>
+        <text></text>
+      </view>
+      <text>输入支付密码</text>
+    </view>
+    <view class='input_tip'>
+      <text>使用支付需要验证身份，验证通过后才可进行支付。</text>
+    </view>
+    <view class='input_row' catchtap='getFocus'>
+      <view class='pwd_item' wx:for='{{6}}' wx:key='item' wx:for-index='i'>
+        <text wx:if='{{pwdVal.length>i}}'></text>
+      </view>
+    </view>
+    <view class='forget_pwd' catchtap='updata_password'>忘记密码</view>
+    <input class='input_control' password type='number' focus='{{payFocus}}' value='{{pwdVal}}' bindinput='inputPwd' maxlength='6' />
+  </view>
+</view>

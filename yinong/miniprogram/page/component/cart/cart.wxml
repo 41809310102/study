@@ -1,0 +1,100 @@
+<wxs module="filter" src="../details/toFixed.wxs">
+</wxs>
+<scroll-view class="main" scroll-y="true" style='height:{{windosHeight-100}}rpx;'>
+  <view class='top_mg'>
+    <view>购物车</view>
+    <text bindtap='cart_mg'>{{manage?'完成':'管理'}}</text>
+  </view>
+  <view wx:if="{{!carts_null}}">
+    <view class="cart-box" wx:for="{{carts}}" wx:for-index="index" wx:key="{{index}}">
+      <view class="cart-list">
+        <icon wx:if="{{item.selected}}" type="success" color="red" data-index="{{index}}" class="cart-pro-select" bindtap="selectList" />
+        <icon wx:else type="circle" class="cart-pro-select" data-index="{{index}}" bindtap="selectList" />
+        <view class='cart-list1' data-url="{{item}}" catchtap='details'>
+          <image class="cart-thumb" src="{{item.url}}"></image>
+          <view class='cart-list2'>
+            <!-- <view class='cha'>
+              <image src='/image/cha.png' catchtap='cha'></image>
+            </view> -->
+            <view class='cart-list2_next'>{{item.name}}</view>
+            <view class='cart-list2_next1' catchtap='xiugai_ms' data-index="{{index}}" data-value="{{item}}">
+              <text>{{item.seleted_norms}}</text>
+              <view class='null_view'></view>
+            </view>
+          </view>
+        </view>
+        <!-- <text class="cart-pro-name">{{item.title}}</text>
+        <text class="cart-pro-price">￥{{item.price}}</text>
+        <view class="cart-count-box">
+          <text class="cart-count-down" bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</text>
+          <text class="cart-count-num">{{item.num}}</text>
+          <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
+        </view> 
+        <text class="cart-del" bindtap="deleteList" data-index="{{index}}">×</text>-->
+      </view>
+      <view class='sale'>
+        <block wx:if="{{item.sale<1}}">
+          <view class='ago_price'>原价{{item.ago_price}}</view>
+          <view class='saleNum1'>¥{{filter.tofix(item.ago_price*item.sale)}}</view>
+        </block>
+        <block wx:else>
+          <view class='saleNum'>¥{{filter.tofix(item.ago_price*item.sale)}}</view>
+        </block>
+        <view class='numCount'>
+          <view class='numreduce' bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</view>
+          <view class='num'>{{item.total}}</view>
+          <view class='numadd' bindtap="addCount" data-index="{{index}}">+</view>
+        </view>
+      </view>
+      <view wx:if="{{showseleted_norms}}">
+        <view class='bg_layer'></view>
+        <view class='input_main'>
+          <view class='norms_top'>
+            <image class='url' src='{{seleted_norms.url}}'></image>
+            <view class='norms-right'>
+              <view class='cha'>
+                <image src='/image/cha.png' catchtap='cha'></image>
+              </view>
+              <view class='norms-right_price'>¥{{seleted_norms.ago_price}}</view>
+              <view class='norms-right_kucun'>库存3354件</view>
+              <view class='norms-right_norm'>选择 规格分类</view>
+            </view>
+          </view>
+          <scroll-view scroll-y="true" style='height:460rpx;background-color:#f2f2f2'>
+            <view class='norms_type'>规格分类</view>
+            <block wx:for="{{seleted_norms.goods_norms}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+              <view class="norms {{xiugaiseleted_norms===item?'on':''}}" catchtap='seleted_norms' data-seleted_norms="{{item}}">{{item}}</view>
+            </block>
+          </scroll-view>
+          <button class='addCarts' bindtap='addCarts'>完成</button>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view wx:else>
+    <view class='carts_null'>
+      <image src='/image/gouwuche3.png'></image>
+      <view class="cart-no-data">购物车是空的哦~</view>
+    </view>
+  </view>
+</scroll-view>
+
+<block wx:if="{{!manage}}">
+  <view class="cart-footer">
+    <icon wx:if="{{selectAllStatus}}" type="success_circle" color="red" class="total-select" bindtap="selectAll" />
+    <icon wx:else type="circle" color="block" class="total-select" bindtap="selectAll" />
+    <text>全选</text>
+    <view class="cart-toatl-price">￥{{totalPrice}}</view>
+    <button class='balance' bindtap='accounts' size="mini">结算</button>
+  </view>
+</block>
+
+<block wx:else>
+  <view class="cart-footer">
+    <icon wx:if="{{selectAllStatus}}" type="success_circle" color="red" class="total-select" bindtap="selectAll" />
+    <icon wx:else type="circle" color="block" class="total-select" bindtap="selectAll" />
+    <text>全选</text>
+    <button class='delete' bindtap='deleteList' size="mini">删除</button>
+  </view>
+</block>

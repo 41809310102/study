@@ -1,0 +1,169 @@
+/* miniprogram/page/component/orders_details/orders_datails.wxss */
+
+.top {
+  height: 200rpx;
+  background-color: #f63;
+  display: flex;
+  align-items: center;
+}
+
+.top text {
+  color: white;
+  margin-left: 40rpx;
+  font-size: 32rpx;
+}
+
+.top image {
+  width: 140rpx;
+  height: 100rpx;
+  position: relative;
+  left: 340rpx;
+}
+
+.address {
+  height: 180rpx;
+  display: flex;
+  border-bottom: 20rpx solid #ededed;
+  align-items: center;
+}
+
+.address image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+}
+
+.address_child {
+  margin-left: 50rpx;
+  display: flex;
+  flex-direction: column;
+  height: 150rpx;
+  align-items: center;
+}
+
+.name_number {
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 600rpx;
+}
+
+.name {
+  font-size: 30rpx;
+}
+
+.number {
+  font-size: 28rpx;
+  opacity: 0.7;
+}
+
+.details {
+  font-size: 30rpx;
+  width: 600rpx;
+}
+
+.top1 {
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+}
+
+.top1 image {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 13rpx;
+  margin-left: 30rpx;
+}
+
+.top1_right {
+  height: 200rpx;
+  display: flex;
+  margin-left: 40rpx;
+  flex-direction: column;
+}
+
+.top1_right_top {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.name1 {
+  height: 100rpx;
+  width: 380rpx;
+  font-size: 30rpx;
+}
+
+.price_count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price_count view {
+  font-size: 30rpx;
+}
+
+.price_count text {
+  font-size: 28rpx;
+  opacity: 0.7;
+}
+
+.norms {
+  height: 70rpx;
+  width: 400rpx;
+  font-size: 28rpx;
+  opacity: 0.7;
+  line-height: 70rpx;
+  margin-top: 15rpx;
+  text-align: center;
+  background-color: #ededed;
+}
+
+.yunfei {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  height: 30rpx;
+}
+
+.yunfei view {
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  width: 300rpx;
+  opacity: 0.7;
+}
+
+.yunfei text {
+  margin-left: 300rpx;
+  font-size: 28rpx;
+}
+
+.bottom {
+  height: 400rpx;
+  border-bottom: 20rpx solid #ededed;
+}
+.orders_ms{
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+}
+.orders_child{
+  margin-top: 20rpx;
+  display: flex;
+  height: 40rpx;
+
+}
+.orders_child view{
+  width: 200rpx;
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  opacity: 0.7;
+
+}
+.orders_child text{
+  margin-left:100rpx;
+   font-size: 28rpx;
+  opacity: 0.7;
+}

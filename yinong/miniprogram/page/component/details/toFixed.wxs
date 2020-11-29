@@ -1,0 +1,7 @@
+
+function tofix(value){
+    return value.toFixed(2)
+}
+module.exports = {
+  tofix:tofix //把toFix函数返回的值赋给模板tofix，在wxml可调用
+}

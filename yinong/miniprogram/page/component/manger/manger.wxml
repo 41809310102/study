@@ -1,0 +1,56 @@
+<!--miniprogram/page/component/manger/manger.wxml-->
+<view class='main'>
+  <view class='top'>
+      <view bindtap='daifahuo'>
+        <text>{{fahuo.length}}</text>
+        <view class='daifukuan'>待发货</view>
+      </view>
+      <view bindtap='yifahuo'>
+        <text>{{yifahuo.length}}</text>
+        <view class='daifukuan'>已发货</view>
+      </view>
+      <view bindtap='tuikuan'>
+        <text>0</text>
+        <view class='daifukuan'>退款</view>
+      </view>
+      <view bindtap='pingjia'>
+        <text>0</text>
+        <view class='daifukuan'>待评价</view>
+      </view>
+  </view>
+  <view class='goods_status'>
+    <view class="goods_status-child" bindtap='chushou'>
+      <image src='/image/chushou.png'></image>
+      <text>出售中</text>
+      <view>{{chushou_count}}</view>
+    </view>
+    <view class="goods_status-child"  bindtap="xiajia">
+      <image src='/image/xiajia.png'></image>
+      <text>下架</text>
+      <view>{{xiajia_count}}</view>
+    </view>
+  </view>
+  <view class='goods_manger'>
+    <view class='goods_manger-status'>
+      <view class="goods_status-child on"  bindtap='fabu'>
+        <image src='/image/fabu.png'></image>
+        <text>发布商品</text>
+        
+      </view>
+      <view class="goods_status-child on" bindtap='goods_manger'>
+        <image src='/image/shopmanger.png'></image>
+        <text>商品管理</text>
+      </view>
+    </view>
+    <view class='goods_manger-status'>
+      <view class="goods_status-child on" bindtap='orders'>
+        <image src='/image/dingdan.png'></image>
+        <text>订单管理</text>
+      </view>
+      <view class="goods_status-child on" bindtap='xiugai_goods'>
+        <image src='/image/xiugaishangpin.png'></image>
+        <text>修改商品</text>
+      </view>
+  </view>
+  </view>
+</view>

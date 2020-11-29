@@ -1,0 +1,80 @@
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+<view class="main">
+  <view class="search">
+    <navigator url="../search/search">
+      <view class="search-text">
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+        搜 索
+      </view>
+    </navigator>
+  </view>
+  <view class="swiper-tab">
+    <view class="swiper-item {{number==1?'active':''}}" data-index="1" bindtap="bindtapEvent">综合</view>
+    <view class="swiper-item {{number==2?'active':''}}" data-index="2" bindtap="bindtapEvent">价格</view>
+    <view class="swiper-item {{number==3?'active':''}}" data-index="3" bindtap="bindtapEvent">筛选</view>
+    <!-- <view class="meun-txt over-auto" hidden='{{ meunShow[1].isShows ? false : true }}'>
+      <text wx:for="{{ category }}" wx:key="id" class='meun-city-txt meun-city-txt-price'>{{ item.name }}</text>
+    </view> -->
+  </view>
+  <view class='shaixuan' wx:for="{{category}}" wx:item="item" wx:index="index" wx:key="inedx" hidden='{{showshaixuan}}'>
+    <view class='shaixuan-next' bindtap='selected' data-name='{{item.name}}'>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <scroll-view style='height:{{scrollHeigth-180}}rpx; ' scroll-y="true" bindscroll="eventHandle">
+    <block wx:if="{{number==1}}">
+      <view class='category' wx:for="{{all}}" wx:item="item" wx:index="index" wx:key="inedx" data-item="{{item}}" bindtap='details'>
+        <view class='category-child'>
+          <image src='{{item.url}}'> </image>
+        </view>
+        <view class='category-next'>
+          <view class='category-next-child'>{{item.name}}</view>
+          <view wx:if="{{item.sale<1}}" class='ago_price'>原价¥ {{filter.tofix(item.ago_price)}}</view>
+          <view wx:else class='ago_price'></view>
+          <view class="newest-text ">
+            <text class='cruuent_price'>¥ {{filter.tofix(item.ago_price*item.sale)}}</text>
+            <text class='newest-text-child'>{{item.sales_volume}}已付款</text>
+            <image src='/image/gouwuche.png' mode='widthFix' style='width:50rpx;'></image>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:elif="{{number==2}}">
+      <view class='category' wx:for="{{price_goods}}" wx:item="item" wx:index="index" wx:key="inedx" data-item="{{item}}" bindtap='details'>
+        <view class='category-child'>
+          <image src='{{item.url}}'> </image>
+        </view>
+        <view class='category-next'>
+          <view class='category-next-child'>{{item.name}}</view>
+          <view wx:if="{{item.sale<1}}" class='ago_price'>原价¥ {{item.ago_price}}</view>
+          <view wx:else class='ago_price'></view>
+          <view class="newest-text ">
+            <text>¥ {{filter.tofix(item.ago_price*item.sale)}}</text>
+            <text class='newest-text-child'>{{item.sales_volume}}已付款</text>
+            <image src='/image/gouwuche.png' mode='widthFix' style='width:53rpx;'></image>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:elif="{{number==3}}">
+      <view class='category' wx:for="{{shaixuan_goods}}" wx:item="item" wx:index="index" wx:key="inedx" data-item="{{item}}" bindtap='details'>
+        <view class='category-child'>
+          <image src='{{item.url}}'> </image>
+        </view>
+        <view class='category-next'>
+          <view class='category-next-child'>{{item.name}}</view>
+          <view wx:if="{{item.sale<1}}" class='ago_price'>原价¥ {{item.ago_price}}</view>
+          <view wx:else class='ago_price'></view>
+          <view class="newest-text ">
+            <text>¥ {{filter.tofix(item.ago_price*item.sale)}}</text>
+            <text class='newest-text-child'>{{item.sales_volume}}已付款</text>
+            <image src='/image/gouwuche.png' mode='widthFix' style='width:53rpx;'></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+</view>

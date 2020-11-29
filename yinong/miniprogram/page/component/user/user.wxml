@@ -1,0 +1,84 @@
+<wxs module="filter" src="../details/toFixed.wxs"></wxs>
+<view class="main">
+  <view>
+    <view class="header">
+      <view class="thumb">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data class="nickname" type="userNickName"></open-data>
+      <text   wx:if="{{openid=='oLRrd4pd95QwfnLCZdF0MzScoctI'}}"  bindtap='manger' class="about">管理员</text>
+    </view>
+
+
+    
+    <view class="bottom_box">
+      <view class="bottom_card" bindtap="adddresmang" data-go="/pages/parse/parse" data-status="1">
+            <view class="bottom_1">
+                  <image src="../../../image/parse.png"></image>
+                  <view>地址管理</view>
+            </view>
+            <image src="../../../image/go.png"></image>
+      </view>
+      <view class="bottom_card" bindtap="dingdan">
+            <view class="bottom_1">
+                  <image src="../../../image/parse.png"></image>
+                  <view>我的订单</view>
+            </view>
+            <image src="../../../image/go.png"></image>
+      </view>
+      <view class="bottom_card" bindtap="keifu" >
+            <view class="bottom_1">
+                  <image src="../../../image/kefu.png"></image>
+                  <view>联系客服</view>
+            </view>
+            <image src="../../../image/go.png"></image>
+      </view>
+      <view class="bottom_card" bindtap="wenti">
+            <view class="bottom_1">
+                  <image src="../../../image/feedback.png"></image>
+                  <view>问题反馈</view>
+            </view>
+            <image src="../../../image/go.png"></image>
+            <button open-type="feedback"></button>
+      </view>
+      
+     
+      <view class="bottom_card" bindtap="about" data-go="/pages/about/about">
+            <view class="bottom_1">
+                  <image src="../../../image/guanyu.png"></image>
+                  <view>关于益农</view>
+            </view>
+            <image src="../../../image/go.png"></image>
+      </view>
+</view>
+
+<!--分享弹出层-->
+<van-popup show="{{ showShare }}" bind:close="closePop">
+      <view class="share_contain">
+            <view class="share_border"></view>
+            <view class="share_title">分享到</view>
+            <view class="share_box">
+                  <view class="share_one">
+                        <image src="../../../image/weixin.png"></image>
+                        <view>微信好友</view>
+                        <button class="share_button" open-type="share"></button>
+                  </view>
+                  <view class="share_bor"></view>
+                  <view class="share_one">
+                        <image src="../../../image/pyq.png"></image>
+                        <view>朋友圈</view>
+                        <button class="share_button" bindtap="preview" data-link="{{poster}}"></button>
+                  </view>
+            </view>
+      </view>
+</van-popup>
+
+
+      <!-- <view wx:if="{{hasAddress}}" class="address-list">
+        <view>{{address.name}}</view>
+        <view>{{address.phone}}</view>
+        <view>{{region}} {{address.detail}}</view>
+      </view> -->
+    
+  </view>
+  </view>
