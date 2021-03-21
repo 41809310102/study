@@ -1,0 +1,33 @@
+<html>
+<head>
+    <style>
+        .text{
+            color: rgb(44, 46, 168);
+        }
+        body{
+            background-image: url(./2.jpg);
+        }
+    </style>
+  
+ <script>
+  function myck(url){
+      document.getElementById("ifr").setAttribute("src",url);
+  }
+
+ </Script>
+
+</head>
+
+<body>
+    <div style="height: 50px; " >
+        <input type="button" value="百度" onclick="myck('https://www.baidu.com')">
+        <input type="button" value="搜狗" onclick="myck('https://www.sogou.com')">
+        <input type="button" value="360" onclick="myck('https://www.so.com')">
+    </div>
+    <iframe id="ifr" style="width: 100%;height: 800px;" src="https://www.baidu.com"></iframe>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8">
+ <titile>计算器</titile>
+ <style>
+     body{
+         background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.g-saMdZvnQbjjLbMhZrLUAHaGX?pid=ImgDet&rs=1);
+     }
+ </style>
+ <script>
+     function myck(type){
+         var  Num = document.getElementById("num1");
+         var  Num1 = document.getElementById("num2");
+         if(type==1){  
+            if(Num.value==''||Num1.value==''){
+             alert('请输入完整！');
+             return false;  
+         }
+           var total = parseInt(Num1.value) + parseInt(Num.value);
+           document.getElementById("resultDiv").innerHTML = "<h2>最终执行结果：<strong style='color: red;'>"+total+"</strong></h2>"
+            }
+       if(type==2){
+           if(confirm('确定清除')){
+               Num.value='';
+               Num1.value='';
+           }
+       }
+     }
+ </script>
+</head>
+   <body>
+    <div  style="text-align: center; margin-top: 100px;">
+        <h1>计算器</h1>
+        <div id="div1" style="margin-left: -30px;">
+            数字1：<input id="num1" name="num1" type="number"><p></p>
+            数字1：<input id="num2" name="num2" type="number">     
+        </div>
+ <div>
+    <input id="input_sub" name="input_sub" type="button" value=" 计算" onclick="myck(1)">
+            
+    <input  type="button" value=" 清 空 " onclick="myck(2)">
+    <div id="resultDiv" style="margin-top: 50px;">
+
+    </div>
+ </div>
+
+ </body>
+</html>

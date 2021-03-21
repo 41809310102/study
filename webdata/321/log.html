@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="utf-8">
+ <titile>first网页</titile>
+</head>
+ <style type="text/css">
+    body {
+        background-image: url(./1.jpg);
+        width: 500px;
+         height: 300px;
+    }
+ 
+</style>
+<script>
+ function myck(type){
+     var inputUsername = document.getElementById("usename");
+     var inputPow1 = document.getElementById("pow1");
+     var inputPow2 = document.getElementById("pow2");
+     if(type==1){
+         if(inputUsername.value==''){
+             alert('用户名为空，请重新输入');
+             return false;
+         }
+
+         if(inputPow1.value==''){
+             alert('请输入密码');
+             return false;
+         }
+         if(inputPow2.value==''){
+            alert('请输入验证密码');
+             return false;
+         }
+         if(inputPow2.value!=inputPow1.value){
+             alert('两次密码不正确！')
+             return false;
+         }
+         if(inputPow2.value ==inputPow1.value){
+             alert('登录成功')        
+         }
+     }
+     else if(type==2){
+        if(confirm('确认清除')){
+            inputUsername.value='';
+            inputPow1.value='';
+            inputPow2.value='';
+        }
+     }else{
+         alert('操作失败')
+     }
+ }
+</script>
+ <body>
+    <div style="text-align:center; margin-top: 100px;">
+        <h1>注册</h1>
+          <div style="margin-left: -20px;">
+            &nbsp;&nbsp;用户名：<input type="text" id="usename" name="usename"> <p></p>
+            密&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;码：<input  type="text" id="pwd1" name="pwd1"><p></p>
+            确认密码：<input type="text" id="pwd2" name="pwd2"><p></p>
+        </div>
+        <div>
+            <div>
+                <p></p>
+                <input id="input_sub" name="input_sub" type="button" value=" 提 交 " onclick="myck(1)">
+                <input  type="button" value=" 清 空 " onclick="myck(2)">
+            </div>
+        </div>
+    </div>
+
+
+          
+ </body>
+</html>
