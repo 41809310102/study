@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        body{
+            background-image: url("https://qqpublic.qpic.cn/qq_public/0/0-1268534215-BDFF1671418BDE4D2C53F1BB94785924/0?tp=webp");
+            height: 600px;
+        }
+        .text{
+            color: #f0f8ff;
+        }
+    </style>
+    <script>
+        function myck(type) {
+             const username = document.getElementById("n1");
+             const pwd = document.getElementById("n2");
+             if(type==1){
+                 if(username.value==''||pwd.value==''){
+                     alert("用户名或密码没有填写");
+                     return false;
+                 }
+             }
+
+             if(type==2){
+                 if(confirm("确认清除？")){
+                     username.value='';
+                     pwd.value='';
+                 }
+             }
+        }
+    </script>>
+</head>
+<body>
+<form method="post" action="login">
+    <div class="text" style="text-align: center;margin-top: 225px;margin-left: 375px">
+        <h2>管理员登录</h2>
+        用户名：<input id="n1" name="number1" type="text"><p></p>
+        密&nbsp&nbsp&nbsp码：<input id="n2" name="number2" type="text"><p></p>
+        <div style="margin-top: 20px;margin-left: 50px">
+        <input value=" 提 交 " type="submit" onclick="myck(1)">
+        <input value=" 清 除 " type="button" onclick="myck(2)">
+        </div>>
+    </div>
+</form>
+</body>
+</html>
