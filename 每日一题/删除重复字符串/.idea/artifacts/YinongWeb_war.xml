@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="YinongWeb:war">
+    <output-path>$PROJECT_DIR$/../../YinongWeb/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>YinongWeb</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="YinongWeb-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="YinongWeb:war exploded" />
+    </root>
+  </artifact>
+</component>
