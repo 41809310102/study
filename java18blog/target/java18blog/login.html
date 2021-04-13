@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>益农登录</title>
+    <style>
+        body
+        {
+            margin:0;
+            padding: 0;
+            font-family: sans-serif;
+            background: url('http://img.yipic.cn/thumb/ffb6afaf/8f26ff96/0d3d973b/eb10a1d8/big_ffb6afaf8f26ff960d3d973beb10a1d8.png?x-oss-process=image/format,webp/sharpen,100');
+            background-size: cover;
+        }
+        .box
+        {
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width:400px;
+            padding: 40px;
+            background: rgba(0,0,0,.2);
+            box-sizing : border-box;
+            box-shadow: 0 15px 25px rgba(0,0,0,.5);
+            border-radius: 10px;
+        }
+        .box h2
+        {
+            margin:0 0 30px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+        .box .inputBox
+        {
+            position: relative;
+        }
+        .box .inputBox input
+        {
+            width:100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+        .box .inputBox label
+        {
+            position: absolute;
+            top:0;
+            left: 0;
+            padding: 10px 0;
+            letter-spacing: 1px;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .box .inputBox input:focus ~ label,
+        .box .inputBox input:valid ~ label
+        {
+            top:-18px;
+            left:0;
+            color:#03a9f4;
+            font-size: 12px;
+        }
+        .box input[type="submit"]
+        {
+            background: transparent;
+
+            border: none;
+            outline:none;
+            color: #fff;
+            background: #03a9f4;
+            padding: 10px 20px;
+            cursor:pointer;
+            border-radius: 5px;
+        }
+        .botten{
+           color: #03a9f4;
+            width: 80px;
+            height: 35px;
+        }
+    </style>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+        function sub(type) {
+            const username = jQuery("#username");
+            const password = jQuery("#password");
+            if (type == 2) {
+                username.val('');
+                password.val('');
+                return false;
+            }
+            // 1.非空效验
+            if (username.val().trim() === "") {
+                alert("请先输入用户名！");
+                username.focus();
+                return false;
+            }
+            if (password.val().trim() === "") {
+                alert("请先输入密码！");
+                password.focus();
+                return false;
+            }
+            // 2.请求后端，实现登录验证
+            jQuery.getJSON("login", {
+                "username": username.val(),
+                "password": password.val()
+            }, function (data) {
+                if (data != null && data.succ === 1) {
+                    // 登录成功
+                    location.href = "index.html";
+                } else {
+                    // 登录失败
+                    alert("登录失败" + data.msg);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+
+
+<div class="box">
+    <h2>益农登录</h2>
+
+        <div class="inputBox">
+            <input id="username" name="username" type="text">
+            <label>用户名</label>
+        </div>
+        <div class="inputBox">
+            <input id="password" name="password" type="password">
+            <label>密  码</label>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+        <input  class="botten" type="button" onclick="sub(1)" value=" 登 录 " >
+        <input class="botten" type="button" onclick="sub(2)" value=" 清 除">
+        </div>
+
+    <div style="margin-top: 20px; text-align: center">
+        <p> 没有账号？点击注册<a href="reg.html">注册</a></p>
+    </div>
+</div>
+</body>
+</html>
