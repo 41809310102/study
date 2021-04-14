@@ -106,7 +106,7 @@ public class ArticleInfoDao {
     public List<ArticleInfoVO> getList() throws SQLException {
         List<ArticleInfoVO> list = new ArrayList<>();
         Connection connection = DBUtils.getConnection();
-        String sql = "select a.*,u.username from articleinfo a left join userinfo u on a.uid=u.id";
+        String sql = "select a.*,u.username from articleinfo a left join userinfo u ";
         PreparedStatement statement = connection.prepareStatement(sql);
         // 执行数据库查询
         ResultSet resultSet = statement.executeQuery();

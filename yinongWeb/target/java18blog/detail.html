@@ -29,7 +29,6 @@
                 jQuery("#username").html(data.art.username);
                 jQuery("#createtime").html(datefm(data.art.createtime));
                 jQuery("#rcount").html(data.art.rcount);
-                alert("请求到数据了")
             })
             // 2.当前文章的阅读量 +1
             jQuery.getJSON("addcount", {"id": id}, function (data) {
