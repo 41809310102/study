@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java18blog" />
+        <module name="moban" />
+        <module name="first" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="first" target="1.8" />
       <module name="java18blog" target="1.8" />
+      <module name="moban" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

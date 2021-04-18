@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="first:war">
+    <output-path>$PROJECT_DIR$/../webdata/first/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>first</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="java18blog.war">
+      <element id="artifact" artifact-name="first:war exploded" />
+    </root>
+  </artifact>
+</component>

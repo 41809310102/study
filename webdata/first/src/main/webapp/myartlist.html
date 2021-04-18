@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的文章列表</title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+
+        // 文章删除
+        function mydel(id) {
+            if (confirm("确认删除？")) {
+                // 调用删除方法，执行文章删除功能
+                jQuery.getJSON("mydel", {"id": id}, function (data) {
+                    if (data != null && data.succ == 1) {
+                        // 文章删除成功
+                        alert("恭喜：操作成功！");
+                        // 页面刷新
+                        location.href = location.href;
+                    } else {
+                        alert("抱歉操作失败：" + data.msg);
+                    }
+                });
+            }
+        }
+
+        jQuery(function () {
+            // 当页面加载完成之后在执行此方法
+
+            // 1.去后台查询我的文章列表
+            jQuery.getJSON("myartlist", {}, function (data) {
+                // 2.将 table 信息进行替换（替换成后台数据）
+                if (data != null && data.succ == 1) {
+                    // 查询成功，动态拼接 table
+                    var html = "";
+                    for (var i = 0; i < data.list.length; i++) {
+                        var article = data.list[i];
+                        html += " <tr>\n" +
+                            "            <td>\n" +
+                            article.id + "                \n" +
+                            "            </td>\n" +
+                            "            <td>\n" +
+                            article.title + "                \n" +
+                            "            </td>\n" +
+                            "            <td>\n" +
+                            article.createtime + "                \n" +
+                            "            </td>\n" +
+                            "            <td>\n" +
+                            article.rcount + "                \n" +
+                            "            </td>\n" +
+                            "            <td>\n" +
+                            "                <a href='upart.html?id=" + article.id +
+                            "'>修改</a> <a href='javascript:mydel(" + article.id + ");'>删除</a>\n" +
+                            "            </td>\n" +
+                            "        </tr>";
+                    }
+                    jQuery("#tab1").append(html);
+                } else {
+                    alert("操作失败：" + data.msg);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div style="margin-top: 50px;text-align: center;">
+    <h1>我的文章列表</h1>
+    <a href="addart.html">添加文章</a>
+    <a href="list.html">查看文章列表</a>
+    <hr>
+    <table id="tab1" style="width: 80%;margin-left: 100px;" border="1">
+        <tr>
+            <td>
+                编号
+            </td>
+            <td>
+                标题
+            </td>
+            <td>
+                发布时间
+            </td>
+            <td>
+                阅读数
+            </td>
+            <td>
+                操作
+            </td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
