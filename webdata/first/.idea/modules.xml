@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../JavaWEB商城项目/ShopCMJ/ShopCMJ.iml" filepath="$PROJECT_DIR$/../../JavaWEB商城项目/ShopCMJ/ShopCMJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java18blog.iml" filepath="$PROJECT_DIR$/java18blog.iml" />
+    </modules>
+  </component>
+</project>
