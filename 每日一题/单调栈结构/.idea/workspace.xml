@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7729146f-e499-4d43-bf66-e323cbfb74ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../斐波拉切数列/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../机器人运动范围/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../求位有几个0/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数组中值出现一次的数/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../数组中值出现一次的数/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618635319742</updated>
       <workItem from="1618635325699" duration="93000" />
-      <workItem from="1619083052194" duration="3756000" />
+      <workItem from="1619083052194" duration="4764000" />
     </task>
     <servers />
   </component>
@@ -88,5 +86,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="178" y="22" key="new project wizard" timestamp="1619107636362">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1619107636362" />
   </component>
 </project>
