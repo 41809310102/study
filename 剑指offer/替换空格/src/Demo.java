@@ -7,7 +7,7 @@ import java.util.Arrays;
 4.碰到一个空格后，把P1向前移动一格，在P2之前插入20% ， P2向前移动三个单位。
 */
 public class Demo {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
        Demo sb = new Demo();
        sb.Find();
 
@@ -41,7 +41,7 @@ public class Demo {
                 nums[p2--]='%';
             }
         }
-        System.out.println("替换前："+new String(res));
+        System.out.println("替换前"+new String(res));
         System.out.println("替换后："+new String(nums));
     }
 
