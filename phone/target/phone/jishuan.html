@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>罗琪专用计算程序</title>
+    <style>
+        body{
+            background-image: url("img/xiaoqu.jpg");
+        }
+
+    </style>
+
+    <style>
+
+        .box{
+            display: flex;
+            background-color:#2E9AFE;
+            width: 80%;
+            height: 500px;
+            margin-left: 10%;
+            border-radius: 20px;
+            margin-top: 150px;
+        }
+        .box .box1{
+            background-color: rgba(238, 239, 241, 0.555);
+            width: 90%;
+            height: 80%;
+            border-radius: 20px;
+            margin-top: 50px;
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<script>
+    function mydear(type) {
+        var spare1 = document.getElementById("spare1");
+        var spare2 = document.getElementById("spare2");
+        var floor = document.getElementById("floor");
+        var avg = document.getElementById("avg");
+        var floor2 = document.getElementById("floor2");
+        var avg2 = document.getElementById("avg2");
+        var floor3 = document.getElementById("floor3");
+        var avg3 = document.getElementById("avg3");
+
+        var qitanum = document.getElementById("qitanum");
+        var qitaavg = document.getElementById("qitaavg");
+        var num1 = document.getElementById("num1");
+        var num2 = document.getElementById("num2");
+        var num3= document.getElementById("num3");
+        if(type==1){
+            var spare = 0;
+            var bulid = 0;
+            var sum = 0;
+            var fygai=0;
+            var luhua = 0;
+            var rongji = 0;
+            var qita = 0;
+            spare = parseFloat(spare1.value)*parseFloat(spare2.value);
+            bulid = parseFloat(floor.value)*parseFloat(avg.value)+parseFloat(floor2.value)*parseFloat(avg2.value)+parseFloat(floor3.value)*parseFloat(avg3.value);
+            sum = parseInt(num1.value)+parseInt(num2.value)+parseInt(num3.value);
+            fygai = (bulid/spare)*100;
+            qita = parseFloat(qitanum.value)*parseFloat(qitaavg.value);
+            luhua = ((spare-qita-bulid)/spare)*100;
+            rongji = (spare/bulid)
+            alert("宝宝您好：本次计算结果如下"+
+                 "   总用地面积："+spare+"㎡"+
+                "    建筑面积："+bulid+"㎡"+
+                 "   总户数："+sum+"户"+
+                 "   建筑覆盖率："+fygai+"%" +
+                 "   绿化覆盖率："+luhua+"%" +
+                 "   容积率："+rongji)
+        }
+        if(type==2){
+            if(confirm("确定清空吗,宝宝？")){
+                spare1.value="";
+                spare2.value="";
+                floor.value="";
+                avg.value="";
+                num1.value="";
+                num2.value="";
+                num3.value="";
+                return  false;
+            }
+        }
+        if(type==3){
+            alert("首先，需要输入小区的长宽来算面积，然后计算建筑面积，个数是指这个小区有几个建筑物，平均面积是宝宝你自己估计平均一个" +
+                "建筑物有大小面积，然后建筑户数你就填就可以了，如果类型不够了，可以找我给你开通，"+"然后填完按提交就可以得到分析后的结果了，" +
+                "如果填错了或者想重新计算按清空就可以了！爱你哟！")
+        }
+        if(type==4){
+            if(confirm("这里你主要是填一些其他东西，比如说池塘，河流，喷泉，娱乐场的附加面积")){
+                return false;
+            }
+        }
+
+    }
+
+</script>
+<body>
+<div class="box">
+    <div class="box1">
+    <div style="text-align: center;margin-top: 20px  ;color: white ">
+        <h1>小区数据分析</h1><p></p>
+        <h2>主要经济指标</h2><p></p>
+        总面积计算：长度：<input type="number" id="spare1" name="spare1" value="请输入宽" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        宽度：<input type="number" id="spare2" name="spare2" value="请输入高"><p></p>
+
+        建筑类型一：个数：<input type="number" id="floor" name="floor" >
+        平均面积（㎡）：<input type="number" id="avg" name="avg"><p></p>
+        建筑类型二：个数：<input type="number" id="floor2" name="floor2" >
+        平均面积（㎡）：<input type="number" id="avg2" name="avg2"><p></p>
+        建筑类型三：个数：<input type="number" id="floor3" name="floor3" >
+        平均面积（㎡）：<input type="number" id="avg3" name="avg3"><p></p>
+
+        <input type="button" value="其他设施" onclick="mydear(4)">：个数：<input type="number" id="qitanum" name="qita" >
+        平均面积（㎡）：<input type="number" id="qitaavg" name="avg3"><p></p>
+
+        建筑户数:建筑1：<input type="number" id="num1" name="num1" >
+        建筑2：<input type="number" id="num2" name="num2" >
+        建筑3：<input type="number" id="num3" name="num3" ><p></p>
+
+        <div style="margin-top: 30px">
+            <input type="button" value="提交" onclick="mydear(1)">
+            <input type="button" value="清空" onclick="mydear(2)">
+            <input type="button" value="使用说明" onclick="mydear(3)">
+        </div>
+       </div>
+    </div>
+</div>
+
+</body>
+</html>

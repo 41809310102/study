@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/duoxiancheng.iml" filepath="$PROJECT_DIR$/duoxiancheng.iml" />
       <module fileurl="file://$PROJECT_DIR$/../phone/phone.iml" filepath="$PROJECT_DIR$/../phone/phone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../每日一题/计算比例/计算比例.iml" filepath="$PROJECT_DIR$/../每日一题/计算比例/计算比例.iml" />
     </modules>
   </component>
 </project>
