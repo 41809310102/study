@@ -1,0 +1,24 @@
+.name{
+  text-align: center;
+  font-weight: 900;
+  color: rgb(143, 146, 146);
+  margin-left:  285rpx;
+  margin-bottom:50rpx;
+}
+.pic{
+  /* overflow: hidden; */
+  align-items: center;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+  margin-top:130px;
+  margin-left:  135px;
+  margin-right:  155px;
+  margin-bottom: 10px;
+}
+.btn{
+ margin-top:180px ;
+  border: 2px solid rgb(145, 145, 140);
+}

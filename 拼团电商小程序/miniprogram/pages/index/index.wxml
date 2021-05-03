@@ -1,0 +1,75 @@
+<!-- <view class='nav' style='height:{{navH}}px'>
+首页
+</view> -->
+
+<!--搜索框 -->
+<view class="head">
+  <input placeholder="30分钟极速达" bindinput="value"></input>
+  <image src="../images/search.png" bindtap="search"></image>
+</view>
+<!-- 搜索结果 -->
+<view class="search" hidden="{{!searching}}">
+  <view class="search_product" wx:for="{{search_product}}" wx:key="index" data-id="{{item._id}}" bindtap="goToProduct">
+    <view class="left">
+      <image src="{{item.img_src}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+    <text class="right">￥{{item.price}}</text>
+  </view>
+</view>
+<!-- 轮播图 -->
+<swiper indicator-active-color="green" indicator-dots="true" autoplay="true" interval="2000" indicator-color="white" style="height:{{height}}px;">
+  <swiper-item>
+    <navigator url="../pintuanall/pintuanall">   
+       <image src="https://th.bing.com/th/id/R14987bfc9c6851ca3d9bcc67ac6cbb59?rik=Pb0150Q50rVejg&riu=http%3a%2f%2fimg.daimg.com%2fuploads%2fallimg%2f200412%2f1-2004121P103.jpg&ehk=UwHZsEP0qHS6v0DJcOLXDogGgV1RsMRFmu0awH8PrYk%3d&risl=&pid=ImgRaw" mode="widthFix" bindload="setContainerHeight" class="auto-img">
+      </image>
+    </navigator>
+  </swiper-item>
+  <navigator url="../pintuanall/pintuanall"> 
+  <swiper-item>
+    <image src="https://th.bing.com/th/id/Rf7e7a5f73080860ffd344bce295b055b?rik=bLIkT32wRuwbrg&riu=http%3a%2f%2fpic27.nipic.com%2f20130307%2f11543639_161232570153_2.jpg&ehk=TfygNrmrCAt3K87E0U87n%2fl%2fKldD04Pjnw9gdRC1H9M%3d&risl=&pid=ImgRaw" mode="widthFix" bindload="setContainerHeight" class="auto-img"></image>
+  </swiper-item>
+</navigator>
+  <swiper-item>
+    <image src="https://th.bing.com/th/id/R11816ec2c53781498050a7de013c1e1d?rik=cgnFKwXyujIPHg&riu=http%3a%2f%2fimg.aiimg.com%2fuploads%2fallimg%2f150324%2f1-150324230104.jpg&ehk=nALWo4sGIX2XQeiVZ6BbBxDO5%2b6RoWlId%2fqYlkdUxBE%3d&risl=&pid=ImgRaw" mode="widthFix" bindload="setContainerHeight" class="auto-img"></image>
+  </swiper-item>
+</swiper>
+<!-- 导航入口 -->
+<view class="container">
+  <view class="body" wx:for="{{array}}" wx:key="index" data-name="{{item.name}}" bindtap="selectName">
+    <image src="{{item.img}}"></image>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+<!-- 今日拼团 -->
+<view class="pintuan">
+  今日拼团 
+</view>
+<view class="show" bindtap="pintuanall">
+  查看全部>  
+</view>
+<view class="pintuan_1">
+  <view class="box">
+    <view class="product" wx:for="{{array_pintuan}}" wx:key="index">
+    <image src="{{item.img_src}}" bindtap="goToProduct" data-id="{{item._id}}"></image>
+    <text class="name">{{item.name}}</text>
+    <text class="price">￥{{item.price}}</text>
+    <text class="add" bindtap="Topintuan" data-id="{{item._id}}">去拼团</text>
+  </view>
+  </view>
+
+</view>
+<!-- 掌柜推荐 -->
+<view class="tuijian" bindtap="BossRecommend">
+  优选推荐  >
+</view>
+<view class="tuijian_1">
+  <view class="product" wx:for="{{array_tuijian}}" wx:key="index">
+    <image src="{{item.img_src}}" bindtap="goToProduct" data-id="{{item._id}}"></image>
+    <text class="name">{{item.name}}</text>
+    <text class="price">￥{{item.price}}</text>
+    <text class="add" bindtap="addToShop" data-id="{{item._id}}">加入购物车</text>
+  </view>
+
+</view>

@@ -1,0 +1,31 @@
+<view class="newest">
+    <view class="newest-title">
+      <text style="color:red ;">拼团商品</text>
+    </view>
+    <view class="newest-box">
+      <block wx:for="{{new_product}}" wx:item="item" wx:key="index">
+        <view class="newest-list" data-url="{{item}}" >
+            <image src="{{item.img_src}}" ></image>
+            <view class="jishi">
+              <text >限时: {{clock}}</text>            
+            </view>
+            <view class="newest-text1">
+              <text>{{item.name}}</text>
+              <text class='newest-text-child'>需要{{item.kucun}}人拼团</text>
+              <text class='newest-text-child'>{{0-item.people}}人已拼团</text>
+            </view>
+            <view class="newest-text">
+              <view  class='ago_price'>原价¥ {{item.ago_price}}</view>
+            </view>
+            <text  style="color:red"> 拼团价¥ {{item.price}}</text>
+            <view class="pintuan" wx:if="{{item.kucun>0}}">
+             <text bindtap="pintuan" data-id="{{item._id}}" >我要拼团</text>
+            </view>
+          <view class="buy" > 
+           <text wx:if="{{item.kucun!=0}}" bindtap="waittobuy">等待购买</text>
+            <text wx:else="{{item.kucun==0}}" bindtap="Tobuy" data-id="{{item._id}}" >可购买</text>
+          </view>
+        </view>      
+      </block>
+    </view>
+  </view>

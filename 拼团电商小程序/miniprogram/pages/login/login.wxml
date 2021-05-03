@@ -1,0 +1,7 @@
+<view class="box">
+  <button class="btn"bindtap="getUserInfo" wx:if="{{showAuth}}">授权登录</button>
+  <block wx-else>
+     <image class="pic"src="{{userInfo.avatarUrl}}"bindtap="uppage"></image>
+   <text class="name">{{userInfo.nickName}}</text>
+  </block>
+</view>

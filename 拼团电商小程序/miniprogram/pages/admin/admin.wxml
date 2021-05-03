@@ -1,0 +1,40 @@
+
+
+<image src="https://th.bing.com/th/id/Raf52debeac0a024ea4f1b9ac3dd58c50?rik=7V0YtMgeNTYBMQ&riu=http%3a%2f%2fimg95.699pic.com%2fphoto%2f50062%2f3377.jpg_wh860.jpg&ehk=8Gs2DSnM1UZfJcdNFxVichliixyOU9MR1DSz%2fTvuy%2bQ%3d&risl=&pid=ImgRaw" style=" width: 100%;"></image>
+<view class="content">
+  <view class="body" bindtap="addProduct">
+  <image src="../images/add.png"></image>
+  <text>增加商品</text>
+  </view>
+  <view class="body" bindtap="manageProduct">
+    <image src="../images/product_manage.png"></image>
+    <text>管理商品</text>
+  </view>
+</view>
+
+
+<view class="content">
+  <view class="body" bindtap="pintuan">
+  <image src="../images/tuangou.png"></image>
+  <text>拼团活动</text>
+  </view>
+  <view class="body" bindtap="managePintuan">
+    <image src="../images/xiougai.png"></image>
+    <text>拼团管理</text>
+  </view>
+</view>
+
+<view class="content">
+  <view class="body" bindtap="fahuo">
+  <image src="../images/dingdan.png"></image>
+  <text>发货</text>
+  </view>
+  <view class="body" bindtap="addroot">
+    <image src="../images/manger.png"></image>
+    <text>添加管理员</text>
+  </view>
+</view>
+
+
+
+

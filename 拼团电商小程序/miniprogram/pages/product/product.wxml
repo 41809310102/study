@@ -1,0 +1,62 @@
+<!-- 商品图片 -->
+<image src="{{array.img_src}}" class="banner"></image>
+<view class="text">
+  <!-- 商品价格 -->
+  <text style="margin:10rpx 0 20rpx 0;font-weight:bold;color:#f00;font-size:40rpx">￥{{array.price}}</text>
+  <!-- 商品描述 -->
+  <text style="margin: 0 0 20rpx 0;font-size:32rpx;color:gray">{{array.detail}}</text>
+  <!-- 商品库存和销量 -->
+  <!-- <view class="text_bottom">
+    <text style="font-size:26rpx">库存:{{array.kucun}}</text>
+    <text style="margin-right:30rpx">销量:999</text>
+  </view> -->
+</view>
+
+<view class="body">
+  <view class="body_top">
+    <view class="body_top_left" bindtap="select" data-id="left" style="font-weight:bold">
+      <text>评论区</text>
+      <view class="line" ></view>
+    </view>
+    <!-- <view class="body_top_right" bindtap="select" data-id="right" style="font-weight:{{right_bold}}">
+      <text class="body_top_right">相似商品</text>
+      <view class="line" hidden="{{right}}"></view>
+    </view> -->
+  </view>
+  <view class="body_middle">
+  <view class="img_text">
+    <image src="./img/pinglun.png"></image>
+    <text>共{{array.pinglun.length}}条评论</text>
+  </view>
+  <view class="pinglun_middle">
+    <view class="neirong" wx:for="{{array.pinglun}}" wx:key="index">
+      <image src="{{item.userImg}}"></image>
+      <view class="texts">
+        <view class="name_time">
+          <text style="color:orange;font-size:30rpx" >{{item.userName}}</text>
+          <text style="color:gray;font-size:25rpx;margin-left:10rpx">{{item.time}}</text>
+        </view>
+        <text class="neirong_value">{{item.neirong}}</text>      
+      </view>
+    </view>
+  </view>
+  <view class="pinglun_bottom">
+    <view class="img_text">
+      <image src="./img/xie.png"></image>
+      <text>发布评论</text>
+    </view>
+    <!-- </view> -->
+    <textarea bindinput="pinglun_value" value="{{pinglun_value}}">
+    </textarea>
+    <button open-type="getUserInfo" bindgetuserinfo="getuserinfo">评论</button>
+  </view>
+
+  </view> 
+</view>
+<view class="bottom">
+  <view class="bottom_left" bindtap="shoucang">
+    <image src="{{shoucang[0]}}"></image>
+    <text>收藏</text>
+  </view>
+  <view class="bottom_right" bindtap="addToShopping">加入购物车</view>
+</view>

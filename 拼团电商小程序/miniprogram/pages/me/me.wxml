@@ -1,0 +1,35 @@
+<view class="head">
+  <view class="user">
+    <open-data type="userAvatarUrl" mode="aspectFit" class="img"></open-data>
+    <open-data type="userNickName" lang="zh_CN" class="name"></open-data>
+  </view>
+  <view class="classify">
+    <!-- <view class="body">
+      <image src="./img/img_1.png"></image>
+      <text>待支付</text>
+    </view> -->
+    <view class="body" bindtap="toOrder" data-name="待收货">
+      <image src="./img/img_2.png"></image>
+      <text>待收货</text>
+    </view>
+    <view class="body" bindtap="toOrder" data-name="已完成">
+      <image src="./img/img_3.png"></image>
+      <text>已完成</text>
+    </view>
+    <view class="body" bindtap="toOrder" data-name="全部订单">
+      <image src="./img/img_4.png"></image>
+      <text>全部订单</text>
+    </view>
+    <view class="body" bindtap="goToCollection">
+    <image src="./img/product_manage.png"></image>
+    <text>我的收藏</text>
+  </view>
+  
+  <view class="body" bindtap="root">
+    <image src="./img/houtaiguanli.png"></image>
+    <text >后台管理</text>
+  </view>
+  </view>
+</view>
+<image src="https://th.bing.com/th/id/R79872b473fa7b165a852087882eaed87?rik=ntmnRbZ3fzDTTg&riu=http%3a%2f%2fimg.juimg.com%2ftuku%2fyulantu%2f130524%2f240390-130524230I587.jpg&ehk=3jcpiIORuodAUE5LGT6aQLz7H20fe%2frvlmqor6%2bp4C8%3d&risl=&pid=ImgRaw" mode="widthFix" class="poster"></image>
+

@@ -1,0 +1,197 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/classify/classify",
+          "pathName": "pages/classify/classify",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shopping/shopping",
+          "pathName": "pages/shopping/shopping",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/product_list/product_list",
+          "pathName": "pages/product_list/product_list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/recommend/recommend",
+          "pathName": "pages/recommend/recommend",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/product/product",
+          "pathName": "pages/product/product",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/address/address",
+          "pathName": "pages/address/address",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/address_detail/address_detail",
+          "pathName": "pages/address_detail/address_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/myCollection/myCollection",
+          "pathName": "pages/myCollection/myCollection",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/myOrder/myOrder",
+          "pathName": "pages/myOrder/myOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shop_order/shop_order",
+          "pathName": "pages/shop_order/shop_order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addProduct/addProduct",
+          "pathName": "pages/addProduct/addProduct",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/manageProduct/manageProduct",
+          "pathName": "pages/manageProduct/manageProduct",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/admin",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addroot/addroot",
+          "pathName": "pages/addroot/addroot",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pintuan/pintuan",
+          "pathName": "pages/pintuan/pintuan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pintuanall/pintuanall",
+          "pathName": "pages/pintuanall/pintuanall",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/admin",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pintuanall/pintuanall",
+          "pathName": "pages/pintuanall/pintuanall",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pintuanall/pintuanall",
+          "pathName": "pages/pintuanall/pintuanall",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myOrder/myOrder",
+          "pathName": "pages/myOrder/myOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pinproduct/pinproduct",
+          "pathName": "pages/pinproduct/pinproduct",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pinproduct/pinproduct",
+          "pathName": "pages/pinproduct/pinproduct",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

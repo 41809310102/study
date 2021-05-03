@@ -1,0 +1,47 @@
+
+
+<view class="container">
+
+<image src="https://th.bing.com/th/id/R9bf1025fc8088569b83cc7b06c33f803?rik=rrQ7X4lbkK15%2fg&riu=http%3a%2f%2fpicapi.zhituad.com%2fphoto%2f16%2f44%2f88FBD.jpg&ehk=LgkPJm0AR5qBrnsY01WAnk049Y3n9KqKm%2fyn2OO2g%2fQ%3d&risl=&pid=ImgRaw"></image>
+
+</view>
+
+<view class="login_box">
+
+<view class="section">
+
+  <input placeholder="请输入管理员名字" placeholder-class="color" bindblur='username' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/username.png"></image>
+
+</view>
+
+<view class="section">
+
+  <input type='number' maxlength='11' placeholder="请输入管理员手机号" placeholder-class="color" bindblur='mobile' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/mobile.png"></image>
+
+</view>
+
+<view class="section">
+
+  <input password="true" placeholder="请输入密码" placeholder-class="color" bindblur='pass1' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/pass.png"></image>
+
+</view>
+
+<view class="section">
+
+  <input password="true" placeholder="确认密码" placeholder-class="color" bindblur='pass2' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/pass.png"></image>
+
+</view>
+<button class="login" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">添加管理员</button>   
+</view>
+
+
+
+

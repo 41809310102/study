@@ -1,0 +1,103 @@
+page {
+  background-color: #f3f3f3;
+}
+.banner {
+  width: 100%;
+  height: 500rpx;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40rpx;
+  background-color: #fff;
+}
+.text > .text_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.body {
+  margin-top: 20rpx;
+  background-color: #fff;
+  margin-bottom: 50rpx;
+}
+.body_top {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100rpx;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.body_top > view > text {
+  font-size: 35rpx;
+}
+.body_top > .body_top_left, .body_top_right {
+  margin-top: 15rpx;
+}
+.line {
+  height: 15rpx;
+  width: 80rpx;
+  background-color: green;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+}
+.body_middle {
+  /* display: flex;
+  flex-direction: row; */
+  width: 100%;
+  margin-bottom: 120rpx;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
+.bottom_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 30%;
+}
+.bottom_left > image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.bottom_right {
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  width: 70%;
+  line-height: 100rpx;
+}
+
+.box{
+  display: flex;
+  background: rgba(243, 96, 52, 0.959);
+  width: 300px;
+  height: 300px;
+  margin-left: 10%;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.box2{
+  background: rgba(238, 239, 241, 0.555);
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.say{
+  margin-top:50px;
+}

@@ -1,0 +1,98 @@
+
+.newest-box {
+  padding: 0 35rpx;
+  margin-top: 20rpx;
+  column-count: 2;
+  height: 100%;
+}
+
+.newest-list {
+  display: inline-block;
+  width: 345rpx;
+  height: 100%;
+  margin: 0 0 20rpx -5rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  text-align: center; /*图片和文字居中 */
+  background: rgba(245, 127, 59, 0.829);
+}
+
+.newest-box .newest-list:nth-child(2n) {
+  margin-right: 0;
+}
+
+.newest-box .newest-list image {
+  width: 300rpx;
+  height: 200rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  margin: 0;
+}
+
+.newest-text-child {
+  opacity: 0.5;
+  display: flex;
+  margin-top: 8rpx;
+  margin-left: 20rpx;
+  font-size: 20rpx;
+  color: rgb(10, 10, 10);
+}
+.ago_price {
+  text-decoration: line-through;
+  margin-top: 0px;
+  opacity: 0.7;
+  height: 30rpx;
+  font-size: 28rpx;
+}
+.newest-text {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.cruuent_price {
+  width: 150rpx;
+  font-size: 30rpx;
+}
+
+.newest-box .newest-list .newest-text {
+  display: flex;
+  font-size: 30rpx;
+  color: #e6343a;
+  padding-top: 30rpx;
+}
+
+.newest-text1 {
+  overflow: hidden;
+  font-size: 32rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pintuan{
+  color: rgb(240, 240, 240);
+  background: rgb(233, 196, 30);
+  width: 100px;
+  border-radius: 15px;
+  margin-left: 20%;
+
+}
+.newest-box .newest-list .jishi{
+  background: red;
+  border-radius: 10px;
+  width: 150px;
+  margin-left: 10px;
+}
+.buy{
+  color: rgb(240, 240, 240);
+  background: rgb(250, 3, 3);
+  width: 100px;
+  border-radius: 15px;
+  margin-left: 20%;
+  margin-top: 2px;
+}
+
+.major{ white-space: nowrap; padding:10px ;background-color:#ebf0f34d;  margin-top: 10rpx; width: 100%;border-radius: 16rpx;}
+.major .box{ text-align: center; width:180rpx; align-self: center; display: inline-block; border-radius: 16rpx;}
+.major .pic{width:100rpx; height: 100rpx;}
+.major .pic1{width:120rpx; height: 110rpx;}
+.major .txt{ font-size:26rpx; margin-top:2rpx;} 

@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/shopping/shopping",
+    "pages/pintuanall/pintuanall",
+    "pages/me/me",
+    "pages/test/test",
+    "pages/product_list/product_list",
+    "pages/recommend/recommend",
+    "pages/order/order",
+    "pages/product/product",
+    "pages/pinproduct/pinproduct",
+    "pages/address/address",
+    "pages/address_detail/address_detail",
+    "pages/myCollection/myCollection",
+    "pages/shop_order/shop_order",
+    "pages/myOrder/myOrder",
+    "pages/admin/admin",
+    "pages/addProduct/addProduct",
+    "pages/addpintuan/addpintuan",
+    "pages/addroot/addroot",
+    "pages/manageProduct/manageProduct",
+    "pages/managePintuan/managePintuan"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF6600",
+    "navigationBarTitleText": "优选拼团",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/images/home.png",
+      "selectedIconPath": "pages/images/home_fill.png"
+    },{
+      "pagePath": "pages/classify/classify",
+      "text": "分类",
+      "iconPath": "pages/images/classify.png",
+      "selectedIconPath": "pages/images/classify_fill.png"
+    },{
+      "pagePath": "pages/shopping/shopping",
+      "text": "购物车",
+      "iconPath": "pages/images/shopping.png",
+      "selectedIconPath": "pages/images/shopping_fill.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "个人中心",
+      "iconPath": "pages/images/me.png",
+      "selectedIconPath": "pages/images/me_fill.png"
+    }],
+    "backgroundColor": "#FF6600",
+    "color": "white",
+    "selectedColor": "white"
+  
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

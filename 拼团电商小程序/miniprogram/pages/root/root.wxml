@@ -1,0 +1,40 @@
+
+
+<view class="container">
+
+<image src="https://tse3-mm.cn.bing.net/th/id/OIP.OixLhGrfWsWNTSdsaAeimwHaO0?w=174&h=349&c=7&o=5&dpr=1.25&pid=1.7"></image>
+
+</view>
+
+<view class="login_box">
+
+<view class="section">
+
+  <input placeholder="请输入用户名 / 手机号" value='{{mobile}}' placeholder-class="color" bindblur='mobile' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/username.png"></image>
+
+</view>
+
+<view class="section">
+
+  <input password='true' placeholder="请输入密码" value='{{pass}}' placeholder-class="color" bindblur='pass' />
+
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/pass.png"></image>
+
+</view>
+
+<checkbox-group bindchange="checkboxChange">
+
+  <label class="checkbox" wx:for="{{items}}" wx:key='this'>
+
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+
+  </label>
+
+</checkbox-group>
+
+<button class="login" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" >登录</button>
+
+
+</view>
