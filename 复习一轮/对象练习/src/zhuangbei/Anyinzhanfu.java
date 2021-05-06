@@ -4,6 +4,7 @@ package zhuangbei;
 *
 * */
 public class Anyinzhanfu {
+    public  String name = "暗影战斧";
     public int phyattack = 85; //加物理攻击85
     public int blood = 500;   //生命值加500
     public int cool = 15;    //冷却缩减15

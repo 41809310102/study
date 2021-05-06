@@ -1,6 +1,7 @@
 package zhuangbei;
 //反甲
 public class Fajia {
+    public  String name = "反甲";
     public  int phyattack = 40;
     public  int phyfanyu = 420;
     public  double fashang = 0.2;

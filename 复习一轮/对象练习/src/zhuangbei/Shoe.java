@@ -5,12 +5,21 @@ package zhuangbei;
  */
 
 public class Shoe {
+    public  String name = "抵抗之靴";
     public  int phyattack=200;
     public  int mckattack=0;
     public  int move = 200;//英雄移动速度+200；
 
     public Shoe() {
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getPhyattack() {
