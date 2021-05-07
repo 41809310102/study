@@ -25,6 +25,10 @@ public class Hero {
         this.money= money;
     }
 
+    public Hero() {
+
+    }
+
     public String  getName() {
         return name;
     }
