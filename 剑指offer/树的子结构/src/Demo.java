@@ -1,82 +1,70 @@
-//定义二叉树
-class NodeTree{
+
+
+
+//先定义一个二叉树
+class  Tree{
     public  int val;
-    public  NodeTree leftchild;
-    public  NodeTree rightchild;
+    public  Tree left;
+    public  Tree right;
 
-    public NodeTree(int val) {
+    public Tree(int val) {
         this.val = val;
-    }
-
-    public NodeTree() {
-
-    }
-
-    public  NodeTree Create(){
-        NodeTree a = new NodeTree(8);
-        NodeTree b = new NodeTree(8);
-        NodeTree c = new NodeTree(7);
-        NodeTree d = new NodeTree(9);
-        NodeTree e = new NodeTree(2);
-        NodeTree f = new NodeTree(4);
-        NodeTree g = new NodeTree(7);
-        a.leftchild = b;
-        a.rightchild = c;
-        b.leftchild = d;
-        b.rightchild=e;
-        e.leftchild = f;
-        e.rightchild =g;
-        return  a;
-    }
-
-    public  NodeTree Createchild(){
-        NodeTree a = new NodeTree(8);
-        NodeTree b = new NodeTree(9);
-        NodeTree c = new NodeTree(2);
-
-        a.leftchild = b;
-        a.rightchild = c;
-        return  a;
     }
 }
 
 
+
+
 public class Demo {
     public static void main(String[] args) {
- NodeTree node = new NodeTree();
- Demo sb = new Demo();
-        System.out.println(sb.Doestree(node.Create(), node.Createchild()));
+        Tree a= new Tree(8);
+        Tree b= new Tree(8);
+        Tree c= new Tree(7);
+        Tree d= new Tree(9);
+        Tree e= new Tree(2);
+        Tree f= new Tree(4);
+        Tree g= new Tree(7);
+        a.left = b;
+        a.right=c;
+        b.left = d;
+        b.right = e;
+        e.left = f;
+        e.right =g;
 
+        Tree a1 = new Tree(2);
+        Tree a2 = new Tree(9);
+        Tree a3 = new Tree(1);
+        a1.left = a2;
+        a1.right =a3;
+        System.out.println(HasTree1(a, a1));
     }
-//先确定根结点的值是否相等
-    public  boolean  Rootequal( NodeTree root , NodeTree root1){
-        Boolean result = false;
-        if(root!=null&& root!=null){
-            if(root.val == root1.val){
-                result = Doestree(root,root1);
+
+    public  static   boolean HasTree1(Tree tree1,Tree tree2){
+        boolean flag = false;
+        if(tree1!=null&&tree2!=null){
+            if(tree1.val == tree2.val){
+                flag = HasTree2(tree1,tree2);
             }
-            if(!result){
-                result = Doestree(root.leftchild,root1);
+            if(!flag){
+                flag = HasTree1(tree1.left,tree2);
             }
-            if(!result){
-                result = Doestree(root.rightchild,root1);
+            if(!flag){
+                flag = HasTree1(tree1.right,tree2);
             }
         }
-        return  result;
+        return flag;
     }
-
-    public  boolean  Doestree(NodeTree root,NodeTree root1){
-
-        if(root1==null){
+//判断树1中以R为根节点的子树是不是和树具有相同的结点。
+    private static boolean HasTree2(Tree tree1, Tree tree2) {
+        if(tree2==null){
             return  true;
         }
-        if(root==null){
-            return  false;
-        }
-        if(root.val!=root1.val){
+        if(tree1==null){
             return false;
         }
-        return Doestree(root.leftchild,root1.leftchild)&& Doestree(root.rightchild,root1.rightchild);
+        if(!(tree1.val == tree2.val)){
+            return false;
+        }
+        return HasTree2(tree1.left,tree2.left)&&HasTree2(tree1.right ,tree2.right);
     }
-
 }
