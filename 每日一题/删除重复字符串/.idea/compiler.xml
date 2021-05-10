@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="YinongWeb1" />
         <module name="YinongWeb" />
+        <module name="java18blog" />
+        <module name="YinongWeb1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="java18blog" target="1.8" />
       <module name="YinongWeb" target="1.8" />
       <module name="YinongWeb1" target="1.8" />
     </bytecodeTargetLevel>

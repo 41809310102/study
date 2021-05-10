@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/反转字符串.iml" filepath="$PROJECT_DIR$/反转字符串.iml" />
+      <module fileurl="file://$PROJECT_DIR$/公共字符串计算.iml" filepath="$PROJECT_DIR$/公共字符串计算.iml" />
     </modules>
   </component>
 </project>
