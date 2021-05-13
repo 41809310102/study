@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="java_image_server:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>java_image_server</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="java_image_server.war">
+      <element id="artifact" artifact-name="java_image_server:war exploded" />
+    </root>
+  </artifact>
+</component>
