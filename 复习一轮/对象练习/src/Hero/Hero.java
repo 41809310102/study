@@ -12,8 +12,23 @@ public class Hero {
     public int move; //移动速度
     public int money; //经济
 
+    public int getMove() {
+        return move;
+    }
 
-    public Hero(String name, String type, int blood, int phyattack, int magicattavk, int phyfangyu,int attavknum,int move,int money) {
+    public void setMove(int move) {
+        this.move = move;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public Hero(String name, String type, int blood, int phyattack, int magicattavk, int phyfangyu, int attavknum, int move, int money) {
         this.name = name;
         this.type = type;
         this.blood = blood;

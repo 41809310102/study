@@ -1,7 +1,7 @@
 package yeguai;
 
 public class Xiaobing {
-    public  int num = 150;
+    public  int num = 200;
 
     public int getNum() {
         return num;

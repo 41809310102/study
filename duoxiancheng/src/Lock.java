@@ -6,13 +6,10 @@ public class Lock {
     private  static  final  int max = 10000;
     public static void main(String[] args) throws InterruptedException {
       ReentrantLock lock = new ReentrantLock();
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for(int i =0 ;i<max;i++){
-                    synchronized (lock){
-                        numder++;
-                    }
+        Thread thread = new Thread(() -> {
+            for(int i =0 ;i<max;i++){
+                synchronized (lock){
+                    numder++;
                 }
             }
         });
