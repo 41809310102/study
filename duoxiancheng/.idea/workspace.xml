@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="phone:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1b697ff-4b95-4df5-8307-15eedb6f8949" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../每日一题/微信红包/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/计算字符串的距离/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/duoxiancheng/Lock$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/duoxiancheng/Lock$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/duoxiancheng/Lock$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/duoxiancheng/Lock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/duoxiancheng/Lock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Deom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Deom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Hero/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Hero/Hero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/src/Deom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/Deom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/src/Hero/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/Hero/Hero.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\28571\.m2\repository" />
+        <option name="userSettingsFile" value="C:\Users\28571\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1reyDcuvdq6Y17H6TwHIGadlkpP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../每日一题/微信红包" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\study\phone\src\main\webapp\img" />
+      <recent name="E:\study\phone\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ThreadSleep0rwait">
+    <configuration name="DeadLockjiejue1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DeadLockjiejue1" />
+      <module name="duoxiancheng" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Deadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Deadlock" />
+      <module name="duoxiancheng" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Interruppt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interruppt" />
+      <module name="duoxiancheng" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Intrrput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Intrrput" />
+      <module name="duoxiancheng" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadSleep0rwait" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadSleep0rwait" />
+      <module name="duoxiancheng" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.64" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.64" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/phoneshop/show.html" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="phone:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/phoneshop" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_64_duoxiancheng" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="7767" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="phone:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.64" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="phone:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/phoneshop" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_duoxiancheng" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="7767" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="phone:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ThreadSleep0rwait" />
+        <item itemvalue="Application.DeadLockjiejue1" />
+        <item itemvalue="Application.Interruppt" />
+        <item itemvalue="Application.Deadlock" />
+        <item itemvalue="Application.Intrrput" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1b697ff-4b95-4df5-8307-15eedb6f8949" name="Default Changelist" comment="" />
+      <created>1619350731157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619350731157</updated>
+      <workItem from="1619350739074" duration="4936000" />
+      <workItem from="1619454223947" duration="2641000" />
+      <workItem from="1619521734125" duration="1784000" />
+      <workItem from="1619609154024" duration="1259000" />
+      <workItem from="1619694675957" duration="5294000" />
+      <workItem from="1619886735225" duration="2238000" />
+      <workItem from="1620525536102" duration="8117000" />
+      <workItem from="1620572472890" duration="2494000" />
+      <workItem from="1620637481226" duration="159000" />
+      <workItem from="1620925025769" duration="942000" />
+      <workItem from="1620986845412" duration="67000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="651" y="274" key="#Notifications" timestamp="1619457213360">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="651" y="274" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1619457213360" />
+    <state x="249" y="0" key="#Project_Structure" timestamp="1619887738637">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1619887738637" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619459325183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1619459325183" />
+    <state x="517" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619458760155">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="517" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1619458760155" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620986912864">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620986912864" />
+    <state width="1493" height="218" key="GridCell.Tab.0.bottom" timestamp="1620925308865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620925308865" />
+    <state width="1493" height="218" key="GridCell.Tab.0.center" timestamp="1620925308865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620925308865" />
+    <state width="1493" height="218" key="GridCell.Tab.0.left" timestamp="1620925308865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620925308865" />
+    <state width="1493" height="218" key="GridCell.Tab.0.right" timestamp="1620925308865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620925308865" />
+    <state width="1368" height="23" key="GridCell.Tab.1.bottom" timestamp="1619523283983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1368" height="23" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619523283983" />
+    <state width="1368" height="23" key="GridCell.Tab.1.center" timestamp="1619523283983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1368" height="23" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1619523283983" />
+    <state width="1368" height="23" key="GridCell.Tab.1.left" timestamp="1619523283983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1368" height="23" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1619523283983" />
+    <state width="1368" height="23" key="GridCell.Tab.1.right" timestamp="1619523283983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1368" height="23" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1619523283983" />
+    <state width="1368" height="23" key="GridCell.Tab.2.bottom" timestamp="1619523283983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1368" height="23" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619523283983" />
+    <state width="1368" height="23" key="GridCell.Tab.2.center" timestamp="1619523283983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1368" height="23" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1619523283983" />
+    <state width="1368" height="23" key="GridCell.Tab.2.left" timestamp="1619523283983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1368" height="23" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1619523283983" />
+    <state width="1368" height="23" key="GridCell.Tab.2.right" timestamp="1619523283983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1368" height="23" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1619523283983" />
+    <state x="178" y="22" key="new project wizard" timestamp="1620637639935">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1620637639935" />
+  </component>
+</project>

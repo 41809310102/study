@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71aba70c-9604-4ca2-93c2-511831a3f7b7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pyoanxVWPpDNYVF1zdG3T5tYhh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Demo" />
+      <module name="位运算" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71aba70c-9604-4ca2-93c2-511831a3f7b7" name="Default Changelist" comment="" />
+      <created>1616164756727</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616164756727</updated>
+      <workItem from="1616164760325" duration="1013000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1616165148080">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1616165148080" />
+    <state width="1493" height="57" key="GridCell.Tab.0.bottom" timestamp="1616165777692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="57" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616165777692" />
+    <state width="1493" height="57" key="GridCell.Tab.0.center" timestamp="1616165777692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="57" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616165777692" />
+    <state width="1493" height="57" key="GridCell.Tab.0.left" timestamp="1616165777692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="57" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616165777692" />
+    <state width="1493" height="57" key="GridCell.Tab.0.right" timestamp="1616165777692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="57" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616165777692" />
+    <state x="178" y="22" key="new project wizard" timestamp="1616165295972">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1616165295972" />
+  </component>
+</project>

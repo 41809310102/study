@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c224752c-0d8b-44c7-bd08-da0a07707f59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../杨辉/杨辉.v12.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../杨辉/杨辉.v12.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/Debug/水仙花.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/Debug/水仙花.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/Debug/水仙花.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/Debug/水仙花.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/Debug/水仙花.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/Debug/水仙花.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花.sdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花.v12.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花.v12.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/test.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/test.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/vc120.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/vc120.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/vc120.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/vc120.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.log" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/cl.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/cl.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/Debug/水仙花.tlog/unsuccessfulbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/水仙花.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/水仙花.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../水仙花/水仙花/水仙花.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../水仙花/水仙花/水仙花.vcxproj.filters" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1lTIbMxYJLAyaQtdVax5adZc4Nf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c224752c-0d8b-44c7-bd08-da0a07707f59" name="Default Changelist" comment="" />
+      <created>1607614724511</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607614724511</updated>
+      <workItem from="1607614726064" duration="50000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1607614740135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1607614740135" />
+    <state x="511" y="275" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1607614767841">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="275" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1607614767841" />
+  </component>
+</project>

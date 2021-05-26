@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7a61b52-aae8-42a0-8d96-e7db51620b7e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1sIlGQ03so4D18Wk6waN2UaruMy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/代做项目/web聊天室（项目资源）" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="查找两个字符串中连续的字符" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7a61b52-aae8-42a0-8d96-e7db51620b7e" name="Default Changelist" comment="" />
+      <created>1620567887822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620567887822</updated>
+      <workItem from="1620567890179" duration="4055000" />
+      <workItem from="1620653960925" duration="589000" />
+      <workItem from="1620724867004" duration="264000" />
+      <workItem from="1620725165204" duration="3170000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620735796261">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620735796261" />
+    <state width="1493" height="29" key="GridCell.Tab.0.bottom" timestamp="1620577037135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="29" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620577037135" />
+    <state width="1493" height="29" key="GridCell.Tab.0.center" timestamp="1620577037135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="29" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620577037135" />
+    <state width="1493" height="29" key="GridCell.Tab.0.left" timestamp="1620577037135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="29" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620577037135" />
+    <state width="1493" height="29" key="GridCell.Tab.0.right" timestamp="1620577037135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="29" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620577037135" />
+    <state x="499" y="172" key="extract.method.dialog" timestamp="1620569398315">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="172" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1620569398315" />
+    <state x="178" y="22" key="new project wizard" timestamp="1620735848647">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1620735848647" />
+  </component>
+</project>
