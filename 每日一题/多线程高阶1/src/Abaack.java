@@ -13,8 +13,8 @@ private  static AtomicStampedReference money = new AtomicStampedReference(100,1)
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                boolean result =  money.compareAndSet(1000,0,1,2);
-                System.out.println("第一次转账1000："+result);
+                boolean result =  money.compareAndSet(100,0,1,2);
+                System.out.println("第一次转账100："+result);
             }
         });
         t1.start();
@@ -23,8 +23,8 @@ private  static AtomicStampedReference money = new AtomicStampedReference(100,1)
         Thread t3 = new Thread(new Runnable() {
             @Override
             public void run() {
-                boolean result =  money.compareAndSet(0,1000,2,3);
-                System.out.println("其他人给你转账了1000："+result);
+                boolean result =  money.compareAndSet(0,100,2,3);
+                System.out.println("其他人给你转账了100："+result);
             }
         });
         t3.start();
@@ -33,8 +33,8 @@ private  static AtomicStampedReference money = new AtomicStampedReference(100,1)
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                boolean result =  money.compareAndSet(1000,0,1,2);
-                System.out.println("第二次点击转账1000："+result);
+                boolean result =  money.compareAndSet(100,0,1,2);
+                System.out.println("第二次点击转账100："+result);
             }
         });
         t2.start();
