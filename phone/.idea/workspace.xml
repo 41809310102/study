@@ -3,6 +3,7 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="phone:war" />
+      <artifact name="phone:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
@@ -25,9 +26,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d15f1af-e919-4faf-9ec5-00266c82593d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jishuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jishuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/复杂链表地复制/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/复杂链表地复制/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/复杂链表地复制/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/复杂链表地复制/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/复杂链表地复制/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/复杂链表地复制/复杂链表地复制.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/.idea/复习一轮.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/Menu/Menumingwen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/mingwen/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/mingwen/Green.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/mingwen/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/mingwen/Suming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/mingwen/Tiaohe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/mingwen/Xukong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../复习一轮/链表进阶/链表进阶.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/text/src/TestPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/text/text.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/发邮件/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/发邮件/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/发邮件/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/发邮件/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/发邮件/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/发邮件/发邮件.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../每日一题/最长上升子序列/最长上升子序列.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/video/show.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/phone.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/phone.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/phone/jishuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/phone/jishuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/phone/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/phone/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/CreatHero/Yase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Deom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Deom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Hero/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Hero/Hero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Menu/Menulogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/out/production/对象练习/Menu/Menulogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/src/CreatHero/Yase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/CreatHero/Yase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/src/Deom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/Deom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/src/Hero/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/Hero/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复习一轮/对象练习/src/Menu/Menulogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../复习一轮/对象练习/src/Menu/Menulogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +101,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../webliaotian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -78,12 +122,17 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.64" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.64" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/phone_war/jishuan.html" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/phone_war/show.html" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="phone:war">
           <settings>
             <option name="CONTEXT_PATH" value="/phone_war" />
+          </settings>
+        </artifact>
+        <artifact name="phone:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/phone_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -147,6 +196,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="phone:war" />
+          <artifact name="phone:war exploded" />
         </option>
       </method>
     </configuration>
@@ -167,6 +217,9 @@
       <workItem from="1620833409363" duration="1068000" />
       <workItem from="1620902697894" duration="208000" />
       <workItem from="1620905655222" duration="467000" />
+      <workItem from="1622647687146" duration="781000" />
+      <workItem from="1622648571368" duration="800000" />
+      <workItem from="1622712719762" duration="793000" />
     </task>
     <servers />
   </component>
@@ -186,82 +239,90 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620905710823">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622647960593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1620905710823" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1620906107981">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1622647960593" />
+    <state x="513" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622647762969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620906107981" />
-    <state width="1024" height="211" key="GridCell.Tab.0.bottom" timestamp="1620906124213">
+    <state x="513" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1622647762969" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1622712910459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.0.center" timestamp="1620906124213">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622712910459" />
+    <state width="1024" height="125" key="GridCell.Tab.0.bottom" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.0.left" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.0.center" timestamp="1622648492045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.0.right" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622648492045" />
+    <state width="1024" height="125" key="GridCell.Tab.0.left" timestamp="1622648492045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.1.bottom" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622648492045" />
+    <state width="1024" height="125" key="GridCell.Tab.0.right" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.1.center" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.1.bottom" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.1.left" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.1.center" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.1.right" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.1.left" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.2.bottom" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.1.right" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.2.center" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.2.bottom" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.2.left" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.2.center" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.2.right" timestamp="1620906124213">
+    <state width="1024" height="125" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.2.left" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1620906124213" />
-    <state width="1024" height="211" key="GridCell.Tab.3.bottom" timestamp="1619935675003">
+    <state width="1024" height="125" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.2.right" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619935675003" />
-    <state width="1024" height="211" key="GridCell.Tab.3.center" timestamp="1619935675003">
+    <state width="1024" height="125" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.3.bottom" timestamp="1622648492047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1619935675003" />
-    <state width="1024" height="211" key="GridCell.Tab.3.left" timestamp="1619935675003">
+    <state width="1024" height="125" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622648492047" />
+    <state width="1024" height="125" key="GridCell.Tab.3.center" timestamp="1622648492047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1619935675003" />
-    <state width="1024" height="211" key="GridCell.Tab.3.right" timestamp="1619935675003">
+    <state width="1024" height="125" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1622648492047" />
+    <state width="1024" height="125" key="GridCell.Tab.3.left" timestamp="1622648492046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="211" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1619935675003" />
-    <state x="178" y="45" key="new project wizard" timestamp="1620122497161">
+    <state width="1024" height="125" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1622648492046" />
+    <state width="1024" height="125" key="GridCell.Tab.3.right" timestamp="1622648492047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="45" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1620122497161" />
+    <state width="1024" height="125" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1622648492047" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1622648028377">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1622648028377" />
+    <state x="178" y="45" key="new project wizard" timestamp="1622712930155">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="45" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1622712930155" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1619892428735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

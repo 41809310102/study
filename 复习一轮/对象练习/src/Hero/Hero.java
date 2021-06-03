@@ -11,6 +11,33 @@ public class Hero {
     public int attavknum; //普通伤害的值
     public int move; //移动速度
     public int money; //经济
+    private float cool;//技能冷却；
+    private float attackspeed; //攻击速度
+    private float makeblood; //每秒回血量
+
+    public float getCool() {
+        return cool;
+    }
+
+    public void setCool(float cool) {
+        this.cool = cool;
+    }
+
+    public float getAttackspeed() {
+        return attackspeed;
+    }
+
+    public void setAttackspeed(float attackspeed) {
+        this.attackspeed = attackspeed;
+    }
+
+    public float getMakeblood() {
+        return makeblood;
+    }
+
+    public void setMakeblood(float makeblood) {
+        this.makeblood = makeblood;
+    }
 
     public int getMove() {
         return move;
@@ -28,16 +55,19 @@ public class Hero {
         this.money = money;
     }
 
-    public Hero(String name, String type, int blood, int phyattack, int magicattavk, int phyfangyu, int attavknum, int move, int money) {
+    public Hero(String name, String type, int blood, int phyattack, int magicattavk, int phyfangyu, int attavknum, int move, int money, float cool, float attackspeed, float makeblood) {
         this.name = name;
         this.type = type;
         this.blood = blood;
         this.phyattack = phyattack;
-        this.Magicattavk = magicattavk;
+        Magicattavk = magicattavk;
         this.phyfangyu = phyfangyu;
-        this.attavknum= attavknum;
-        this.move= move;
-        this.money= money;
+        this.attavknum = attavknum;
+        this.move = move;
+        this.money = money;
+        this.cool = cool;
+        this.attackspeed = attackspeed;
+        this.makeblood = makeblood;
     }
 
     public Hero() {

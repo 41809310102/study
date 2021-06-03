@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/冒泡排序/冒泡排序.iml" filepath="$PROJECT_DIR$/冒泡排序/冒泡排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/可变参数/可变参数.iml" filepath="$PROJECT_DIR$/可变参数/可变参数.iml" />
+      <module fileurl="file://$PROJECT_DIR$/基数排数/基数排数.iml" filepath="$PROJECT_DIR$/基数排数/基数排数.iml" />
+      <module fileurl="file://$PROJECT_DIR$/堆排序/堆排序.iml" filepath="$PROJECT_DIR$/堆排序/堆排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/复习一轮.iml" filepath="$PROJECT_DIR$/.idea/复习一轮.iml" />
+      <module fileurl="file://$PROJECT_DIR$/对象练习/对象练习.iml" filepath="$PROJECT_DIR$/对象练习/对象练习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/希尔排序/希尔排序.iml" filepath="$PROJECT_DIR$/希尔排序/希尔排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/归并排序/归并排序.iml" filepath="$PROJECT_DIR$/归并排序/归并排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/快速排序/快速排序.iml" filepath="$PROJECT_DIR$/快速排序/快速排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/插入排序/插入排序.iml" filepath="$PROJECT_DIR$/插入排序/插入排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/数组练习/数组练习.iml" filepath="$PROJECT_DIR$/数组练习/数组练习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/美国节日/美国节日.iml" filepath="$PROJECT_DIR$/美国节日/美国节日.iml" />
+      <module fileurl="file://$PROJECT_DIR$/选择排序/选择排序.iml" filepath="$PROJECT_DIR$/选择排序/选择排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/顺序表/顺序表.iml" filepath="$PROJECT_DIR$/顺序表/顺序表.iml" />
+    </modules>
+  </component>
+</project>

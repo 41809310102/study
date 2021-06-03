@@ -8,6 +8,7 @@ public class Menulogin {
         System.out.println("按1 ：选择皮肤");
         System.out.println("按2 ：选择铭文");
         System.out.println("按3 ：进入游戏");
+        System.out.println("按4 ：查看英雄属性");
         System.out.println("*****************");
         Scanner sc = new Scanner(System.in);
         int res = sc.nextInt();
@@ -15,6 +16,7 @@ public class Menulogin {
             case 1: return 1;
             case 2: return 2;
             case 3: return 3;
+            case 4: return 4;
             default:
                 System.out.println("参数错误，尝试重新连接"); Menulogin();break;
         }

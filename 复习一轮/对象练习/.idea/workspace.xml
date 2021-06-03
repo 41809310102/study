@@ -20,15 +20,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af5d91eb-3e0d-4785-9d51-158e9eea9dac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../每日一题/数根/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../每日一题/数根/数根.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../每日一题/星际密码/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../每日一题/星际密码/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../每日一题/星际密码/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../每日一题/星际密码/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../每日一题/星际密码/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../每日一题/星际密码/星际密码.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/复杂链表地复制.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/复习一轮.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Menu/Menumingwen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mingwen/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mingwen/Green.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mingwen/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mingwen/Suming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mingwen/Tiaohe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mingwen/Xukong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../链表进阶/链表进阶.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../每日一题/text/src/TestPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../每日一题/text/text.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../phone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../phone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../phone/src/main/webapp/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../phone/src/main/webapp/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../phone/src/main/webapp/video/show.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../phone/target/phone.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../phone/target/phone.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../phone/target/phone/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../phone/target/phone/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/对象练习/CreatHero/Yase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/对象练习/Deom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/对象练习/Deom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/对象练习/Hero/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/对象练习/Hero/Hero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/对象练习/Menu/Menulogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/对象练习/Menu/Menulogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreatHero/Yase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreatHero/Yase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hero/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/Menulogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menulogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/代做项目/webdeom" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../phone" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,7 +91,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Deom">
     <configuration name="Deom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deom" />
       <module name="对象练习" />
@@ -73,9 +99,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Menumingwen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Menu.Menumingwen" />
+      <module name="对象练习" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Menu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Suming" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mingwen.Suming" />
+      <module name="对象练习" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mingwen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Deom" />
+        <item itemvalue="Application.Menumingwen" />
+        <item itemvalue="Application.Suming" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +154,7 @@
       <workItem from="1621083825180" duration="37000" />
       <workItem from="1621083880130" duration="16057000" />
       <workItem from="1621171231506" duration="1239000" />
+      <workItem from="1622626918254" duration="18206000" />
     </task>
     <servers />
   </component>
@@ -119,38 +174,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1621082843253">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1622642113401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1621082843253" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1621178942988">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1622642113401" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1622648560981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621178942988" />
-    <state width="1493" height="666" key="GridCell.Tab.0.bottom" timestamp="1621100781683">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622648560981" />
+    <state width="1493" height="666" key="GridCell.Tab.0.bottom" timestamp="1622650257179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621100781683" />
-    <state width="1493" height="666" key="GridCell.Tab.0.center" timestamp="1621100781683">
+    <state width="1493" height="666" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622650257179" />
+    <state width="1493" height="666" key="GridCell.Tab.0.center" timestamp="1622650257179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="666" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621100781683" />
-    <state width="1493" height="666" key="GridCell.Tab.0.left" timestamp="1621100781683">
+    <state width="1493" height="666" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622650257179" />
+    <state width="1493" height="666" key="GridCell.Tab.0.left" timestamp="1622650257179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="666" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621100781683" />
-    <state width="1493" height="666" key="GridCell.Tab.0.right" timestamp="1621100781683">
+    <state width="1493" height="666" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622650257179" />
+    <state width="1493" height="666" key="GridCell.Tab.0.right" timestamp="1622650257179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="666" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621100781683" />
+    <state width="1493" height="666" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622650257179" />
     <state x="499" y="172" key="extract.method.dialog" timestamp="1621088669519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="172" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1621088669519" />
-    <state x="178" y="22" key="new project wizard" timestamp="1621178762171">
+    <state x="178" y="22" key="new project wizard" timestamp="1622637743612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1621178762171" />
+    <state x="178" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1622637743612" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1620924420710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
