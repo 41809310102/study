@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+        function mysub(type) {
+            var username = jQuery("#username");
+            var password = jQuery("#password");
+            if(type==2) {
+                if (confirm("是否确认清空？")) {
+                    username.val("");
+                    password.val("");
+                }
+            }
+            if(type==1){
+                    if(username.val().trim()==""){
+                        alert("请输入昵称");
+                        return false;
+                    }
+                    if(password.val().trim()==""){
+                        alert("请输入登录密码")
+                        return false;
+                    }
+
+                    //发送请求
+                    jQuery.getJSON("log",{
+                        "username":username.val(),
+                        "password":password.val()
+                    },function (res) {
+
+                        if(res!=null&&res.succ!=null&&res.succ==1){
+                            alert("登陆成功！");
+                            location.href = "myhome.html";
+                        }else {
+                            alert("登录失败"+res.flag)
+                        }
+
+                    })
+                }
+
+
+        }
+    </script>
+</head>
+<body>
+<div style="margin-top: 200px;text-align: center">
+
+    <h2>用户登录</h2>
+    用户昵称<input name="username" id="username" type="text"><br><br>
+    登录密码<input name="password" id="password" type="password"><br>
+    <div style="text-align: center;margin-top: 20px">
+        <input value="登录" onclick="mysub(1)" type="button">
+        <input value="清空" onclick="mysub(2)" type="button">
+    </div><br>
+    <a href="regin.html"><textarea>没有账号？进入注册 </textarea></a>
+</div>
+
+</body>
+</html>

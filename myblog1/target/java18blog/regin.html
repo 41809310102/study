@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <script src="jquery-1.9.1.min.js"></script>
+
+    <script>
+        function mysub(type) {
+            var username = jQuery("#username");
+            var userpwd = jQuery("#userpwd");
+            var userpwd1 = jQuery("#userpwd1");
+            if(type==2){
+                if(confirm("是否清空信息？")){
+                    username.val("");
+                    userpwd.val("");
+                    userpwd1.val("");
+                }else {
+                    return false;
+                }
+            }
+            if(type==1){
+                //验证信息是不是合法的
+              if(username.val().trim()==""){
+                  alert("请填写昵称！");
+                  return false;
+              }
+                if(userpwd.val().trim()==""){
+                    alert("请输入注册密码！");
+                    return false;
+                }
+                if(userpwd1.val().trim()==""){
+                    alert("请确认注册密码！");
+                    return false;
+                }
+                //后端拼接AJAx请求；
+                jQuery.getJSON("reg",{
+                    "username":username.val(),
+                    "userpwd":userpwd.val()
+                },function (res) {
+                    if(res!=null&&res.succ!=null&&res.succ==1){
+                        alert("注册成功！");
+
+                    }else {
+                        alert("注册失败"+res.flag);
+                    }
+
+                });
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+
+<div style="text-align: center;margin-top: 200px;">
+    <h2>注册</h2>
+    用户昵称：<input name="username" id="username"  type="text"><p></p>
+    用户密码：<input name="userpwd" id="userpwd" type="password"><p></p>
+    密码验证：<input name="userpwd1" id="userpwd1"  type="password"><br>
+    <input onclick="mysub(1)" type="button" value=" 提 交 ">
+    <input onclick="mysub(2)" type="button" value=" 清 空 ">
+</div>
+
+</body>
+</html>
