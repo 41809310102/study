@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68a91a60-a63c-4099-ab31-2d1ff3186bdc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../剑指offer/复杂链表地复制/复杂链表地复制.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/.idea/复习一轮.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/src/Menu/Menumingwen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/src/mingwen/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/src/mingwen/Green.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/src/mingwen/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/src/mingwen/Suming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/src/mingwen/Tiaohe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/src/mingwen/Xukong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../复习一轮/对象练习/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../复习一轮/对象练习/out/production/对象练习/Deom.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/out/production/对象练习/Deom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../复习一轮/对象练习/src/Deom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../复习一轮/对象练习/src/Deom.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1tOQdaPeUKBPNHDOYLxkJGE4kNn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TestPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestPoint" />
+      <module name="text" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestPoint" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68a91a60-a63c-4099-ab31-2d1ff3186bdc" name="Default Changelist" comment="" />
+      <created>1622637743689</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622637743689</updated>
+      <workItem from="1622637746787" duration="1350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="56" key="GridCell.Tab.0.bottom" timestamp="1622639102861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="56" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622639102861" />
+    <state width="1493" height="56" key="GridCell.Tab.0.center" timestamp="1622639102861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="56" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622639102861" />
+    <state width="1493" height="56" key="GridCell.Tab.0.left" timestamp="1622639102861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="56" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622639102861" />
+    <state width="1493" height="56" key="GridCell.Tab.0.right" timestamp="1622639102861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="56" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622639102861" />
+  </component>
+</project>

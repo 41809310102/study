@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/ dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.deyunjiaoyu.sportplay.dao.pageDao">
+
+
+    <select id="getAllPage" resultType="com.deyunjiaoyu.sportplay.bean.Page">
+        SELECT * FROM pageblog
+        <if test="pagename !=null ">
+            WHERE pagename like #{pagename}
+        </if>
+        LIMIT #{pageStart},#{pageSize}
+    </select>
+
+
+    <select id="getPageCounts" resultType="java.lang.Integer">
+        SELECT count(*) FROM pageblog
+        <if test="pagename !=null ">
+            WHERE pagename like #{pagename}
+        </if>
+    </select>
+
+    <insert id="addPage">
+        INSERT INTO pageblog
+        (pagename,pageactor,pagedesc)
+        VALUE
+        (#{pagename},#{pageactor},#{pagedesc})
+    </insert>
+
+    <delete id="deletePage">
+        DELETE FROM pageblog WHERE id=#{id}
+    </delete>
+
+
+
+</mapper>

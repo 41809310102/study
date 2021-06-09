@@ -6,4 +6,53 @@
         SELECT * FROM user WHERE
         username = #{username} AND password=#{password} AND state=1
     </select>
+
+
+    <select id="getAllPage" resultType="com.deyunjiaoyu.sportplay.bean.Page">
+        SELECT * FROM pageblog
+        <if test="pagename !=null ">
+            WHERE pagename like #{pagename}
+        </if>
+        LIMIT #{pageStart},#{pageSize}
+    </select>
+
+
+    <select id="getAllUser" resultType="com.deyunjiaoyu.sportplay.bean.User">
+        SELECT * FROM user
+        <if test="username !=null ">
+            WHERE username like #{username}
+        </if>
+        LIMIT #{pageStart},#{pageSize}
+    </select>
+
+    <select id="getUserCounts" resultType="java.lang.Integer">
+        SELECT count(*) FROM user
+        <if test="username !=null ">
+            WHERE username like #{username}
+        </if>
+    </select>
+
+    <update id="updateState">
+        UPDATE user SET state = #{state} WHERE id = #{id}
+    </update>
+
+    <insert id="addUser">
+        INSERT INTO user
+        (username,password,email,role,state)
+        VALUE
+        (#{username},#{password},#{email},#{role},#{state})
+    </insert>
+
+    <delete id="deleteUser">
+        DELETE FROM user WHERE id=#{id}
+    </delete>
+
+    <select id="getUpdateUser" resultType="com.deyunjiaoyu.sportplay.bean.User">
+        SELECT*FROM user WHERE id= #{id}
+    </select>
+
+    <update id="editUser" >
+        UPDATE user SET username=#{username},password=#{password},email=#{email},role=#{role} WHERE id=#{id}
+    </update>
+
 </mapper>

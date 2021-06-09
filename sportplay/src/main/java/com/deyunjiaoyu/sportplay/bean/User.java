@@ -55,7 +55,7 @@ public class User {
         this.email = email;
     }
 
-    public boolean getState() {
+    public boolean getState(boolean b) {
         return state;
     }
 
