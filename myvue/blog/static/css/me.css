@@ -1,0 +1,52 @@
+.m-padded-tb-mini{
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+
+}
+.m-paddmax{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+.m-paddmax-small{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.m-paddmax-little_min{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+.m-paddmax-little{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.m-paddmax-mid{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+.m-paddmax-big{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+/*text*/
+.m-text-thin{
+    font-weight: 300 !important;
+}
+.m-Text-sapcing{
+    letter-spacing: 1px !important;
+}
+.m-text-lined{
+    line-height: 1.8;
+}
+.m-opacity-mini{
+    opacity: 0.8 !important;
+}
+/*显示属性*/
+.m-inline-block{
+    display: inline-block !important;
+
+}
+.m-container{
+    max-width: 72em !important;
+  margin-left: 10em !important;
+}

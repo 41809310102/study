@@ -18,7 +18,7 @@
 
 
     <select id="getAllUser" resultType="com.deyunjiaoyu.sportplay.bean.User">
-        SELECT * FROM user
+        SELECT * FROM flow
         <if test="username !=null ">
             WHERE username like #{username}
         </if>
