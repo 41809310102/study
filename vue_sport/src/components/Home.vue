@@ -103,7 +103,7 @@ export default {
     display: flex;
     align-items: center;
     span {
-      margin-left: 15px;
+      margin-left: 10px;
     }
   }
 }
@@ -120,8 +120,8 @@ export default {
   height: 100%;
 }
 .logo_img {
-  width: 20%;
-  height: 100%;
+  width: 70px;
+  height: 60px;
 }
 .iconfont{
   margin-right: 10px;

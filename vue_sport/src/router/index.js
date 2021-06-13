@@ -6,6 +6,9 @@ import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 import User from '../components/admin/User.vue'
 import flowblog from '../components/blog/flowblog.vue'
+import checkblog from '../components/blog/checkblog.vue'
+import safeblog from '../components/blog/safeblog.vue'
+import showblog from '../components/blog/showblog.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -33,6 +36,37 @@ const routes = [
     children: [
       { path:'/welcome', component: Welcome},
       { path:'/flowblog', component: flowblog}
+    ],
+  },
+
+  {
+    path: '/home',
+    component: Home,
+    redirect: '/welcome',
+    children: [
+      { path:'/welcome', component: Welcome},
+      { path:'/checkblog', component: checkblog}
+    ],
+  },
+
+
+  {
+    path: '/home',
+    component: Home,
+    redirect: '/welcome',
+    children: [
+      { path:'/welcome', component: Welcome},
+      { path:'/safeblog', component: safeblog}
+    ],
+  },
+
+  {
+    path: '/home',
+    component: Home,
+    redirect: '/welcome',
+    children: [
+      { path:'/welcome', component: Welcome},
+      { path:'/showblog', component:showblog}
     ],
   },
 ]

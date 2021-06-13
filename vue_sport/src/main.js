@@ -3,10 +3,12 @@ import App from './App.vue'
 import router from './router'
 import './plugins/element.js'
 import './assets/css/global.css'
+import echarts from 'echarts'
 // 导入iconfront
 import './assets/font/iconfont.css'
 // 导入axios
 import axios from 'axios'
+Vue.prototype.$echarts = window.echarts
 // 挂载axios 到Vue的原型prototype的$http
 Vue.prototype.$http = axios
 // 设置请求的根路径

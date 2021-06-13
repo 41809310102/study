@@ -4,14 +4,14 @@
     <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>网络日志</el-breadcrumb-item>
-      <el-breadcrumb-item>流量日志</el-breadcrumb-item>
+      <el-breadcrumb-item>审查日志</el-breadcrumb-item>
     </el-breadcrumb>
     <!-- 卡片视图区 -->
     <el-card>
       <el-row :gutter="25">
         <el-col :span="10">
           <!-- 搜索添加 -->
-          <el-input placeholder="通过ip地址搜索" v-model="queryInfo.query" clearable @clear="getUserList">
+          <el-input placeholder="URL搜素" v-model="queryInfo.query" clearable @clear="getUserList">
             <el-button slot="append" icon="el-icon-search" @click="getUserList"></el-button>
           </el-input>
         </el-col>
@@ -23,23 +23,18 @@
       <!-- 用户列表 -->
       <el-table :data="userlist" border stripe>
         <el-table-column type="index"></el-table-column>
-        <el-table-column label="接收时间" prop="responsetime"></el-table-column>
-        <el-table-column label="设备" prop="equipment"></el-table-column>
-        <el-table-column label="起始地址" prop="ipv4"></el-table-column>
-        <el-table-column label="目标地址" prop="adress"></el-table-column>
-         <el-table-column label="新端口号" prop="nowPort"></el-table-column>
-        <el-table-column label="是否异常" prop="error">
-          <!-- scope.row 就是当前行的信息 -->
-          <template slot-scope="scope">
-            <el-switch v-model="scope.row.error" @change="flowStateChanged(scope.row)"  active-color="red"
- ></el-switch>
-          </template>
-        </el-table-column>
+        <el-table-column label="产生时间" prop="createtime" width="140"></el-table-column>
+        <el-table-column label="地址追踪" prop="ipv4"></el-table-column>
+        <el-table-column label="检测方式" prop="type" width="80"></el-table-column>
+        <el-table-column label="URL" prop="url"></el-table-column>
+         <el-table-column label="请求方法" prop="method" width="80"> </el-table-column>
+        <el-table-column label="发送时间" prop="sendtime"></el-table-column>
 
-        <el-table-column label="操作">
+        <el-table-column label="是否异常" prop="error">
           <template slot-scope="scope">
+                          <el-switch v-model="scope.row.error" @change="flowStateChanged(scope.row)"  active-color="red"
+ ></el-switch>
             <!-- 修改 -->
-                <el-button type="warning" size="mini" :plain="true" v-if="scope.row.error"  @click="error" class="butt1">警告</el-button>
             <!-- 删除 -->
             <el-button type="danger" icon="el-icon-delete" size="mini" @click="deleteFlew(scope.row.id)" class="butt1"></el-button>
             <!-- 权限 -->
@@ -167,12 +162,11 @@ export default {
   methods: {
     async getUserList() {
       // 调用post请求
-      const { data: res } = await this.$http.get("allFlow", {
+      const { data: res } = await this.$http.get("allCheck", {
         params: this.queryInfo
       });
       this.userlist = res.data; // 将返回数据赋值
       this.total = res.numbers; // 总个数
-      console.log(userlist)
     },
     // 监听pageSize改变的事件
     handleSizeChange(newSize) {
@@ -187,7 +181,7 @@ export default {
     // 修改用户状态flowStateChanged(scope.row)
     async flowStateChanged(flewinfo) {
       const { data: res } = await this.$http.put(
-        `flewError?id=${flewinfo.id}&error=${flewinfo.error}`
+        `checkError?id=${flewinfo.id}&error=${flewinfo.error}`
       );
       if (res != "success") {
        flewinfo.error = !flewinfo.error;
@@ -260,7 +254,7 @@ export default {
       if(confirmResult!='confirm'){
         return this.$message.info("已取消删除");
       }
-      const {data:res} = await this.$http.delete("deleteFlow?id="+id);
+      const {data:res} = await this.$http.delete("deletecheck?id="+id);
       if (res != "success") {
         return this.$message.error("删除该日志失败！！！");
       }

@@ -1,9 +1,10 @@
 <template>
-  <div class="login_container">
+  <div class="login_container" >
+  <h1 style="color:#fff;font-size:65px; transform: translate(17%, 20%);">网络日志异常检测平台</h1>
     <div class="login_box">
       <div class="avatar_box">
         <!--头像-->
-        <img src="../assets/logo.png" alt />
+        <img src="https://th.bing.com/th/id/R1078a63ee84a205ab42ed0e41c0250e7?rik=Jq2uRH%2fml8dOXg&riu=http%3a%2f%2fpic131.nipic.com%2ffile%2f20170530%2f23159666_122900304000_2.jpg&ehk=5azagH6NiywyR8QgiO93%2fUXp0QuPdAUy0OkN1BK70Io%3d&risl=&pid=ImgRaw" alt />
       </div>
       <!--添加表单-->
       <el-form
@@ -74,23 +75,30 @@ export default {
 
 // 跟节点样式
 .login_container {
-  background-color: #2b4b6b;
+    display: flex;// 弹性布局
+   width: 100%;
   height: 100%;
+  background-image: url("https://gss0.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/64380cd7912397dd7bae29c85482b2b7d1a28723.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 0 10px #ddd;// 盒子阴影
+
 }
 // 登录框
 .login_box {
   width: 450px;
   height: 300px;
-  background-color: #fff;
+  background-color: rgba(244, 247, 250, 0.747);
   border-radius: 3px;// 圆角
   position: absolute;// 绝对定位
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);// 根据自己位置 以自己为长度位移
+  transform: translate(20%, -50%);// 根据自己位置 以自己为长度位移
   // 头像框
   .avatar_box {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     border: 1px solid #eee;
     border-radius: 50%; // 加圆角
     padding: 10px;
