@@ -50,3 +50,13 @@
     max-width: 72em !important;
   margin-left: 10em !important;
 }
+.m-magrn-tb-tiny{
+
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.m-black{
+    color: black !important;
+
+}
