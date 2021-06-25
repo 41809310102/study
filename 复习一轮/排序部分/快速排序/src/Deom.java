@@ -11,13 +11,15 @@ import java.util.Stack;
  * ————————————————
  *
  */
-
 public class Deom {
     public static void main(String[] args) {
         int[] arr = {25,89,56,88,21,3,56,66,8,663,55};
         int[] arr1 = {25,89,56,88,21,3,56,66,8,663,55};
-        System.out.println("递归实现");
-        QuickSort(arr,0,arr.length-1);//以第一个数为基准、
+     //   System.out.println("递归实现");
+       // QuickSort(arr,0,arr.length-1);//以第一个数为基准、
+        System.out.println("我的递归实现");
+        quickSortme(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
         System.out.println("非递归实现：");
         quickSortByStack(arr1);
     }
@@ -42,7 +44,7 @@ public class Deom {
         //开始递归；
         QuickSort(arr,low,left-1);
         QuickSort(arr,left+1,high);
-        System.out.println(Arrays.toString(arr));
+       // System.out.println(Arrays.toString(arr));
     }
     /**
      * 快速排序（非递归）
@@ -95,5 +97,30 @@ public class Deom {
         arr[l] = pivot;   //基准值填补到坑3中，准备分治递归快排
         System.out.println(Arrays.toString(arr));
         return l;
+    }
+
+
+    public static  void  quickSortme(int[] arr ,int low,int hight){
+      if(low>hight) return;
+      if(arr==null||arr.length==0) return;
+      int left = low;
+      int right = hight;
+      int temp = arr[left];//找基准
+        while (left<right){
+            while (left<right&&arr[right]>=temp){
+                right--;
+            }
+            arr[left] = arr[right];
+
+            while (left<right&&arr[left]<=temp){
+                left++;
+            }
+
+            arr[right] = arr[left];
+        }
+
+        arr[left] = temp;
+        quickSortme(arr,low,left-1);
+        quickSortme(arr,left+1,right);
     }
 }

@@ -11,10 +11,11 @@ public class Demo {
 
     public static void main(String[] args) {
         int[] arr  = {25,89,56,88,21,3,56,66,8,663,55};
-        Selectionchose(arr);
+    //    Selectionchose(arr);
         System.out.println("========================");
         int[] res = Selectchose1(arr);
-        System.out.println(Arrays.toString(res));
+       // System.out.println(Arrays.toString(res));
+        chosesort(arr);
 
     }
 //展示选择的过程
@@ -57,4 +58,26 @@ public class Demo {
         }
        return arr;
     }
+
+
+    public  static  void  chosesort(int[] arr){
+        if(arr==null||arr.length==0) return;
+        for(int i = 0;i<arr.length;i++){
+            int min = i;
+            for(int j =i+1;j<arr.length;j++){
+                if(arr[min]>arr[j]){
+                    min = j;
+                }
+            }
+
+            if(min!=i){
+                int temp = arr[min];
+                arr[min] = arr[i];
+                arr[i] =temp;
+             }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 }
+
+

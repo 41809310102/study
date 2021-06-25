@@ -8,7 +8,8 @@ public class Deom {
     public static void main(String[] args) {
         int[] arr = {25,89,56,88,21,3,56,66,8,663,55};
         //insertionSort(arr);
-        insertionSort1(arr);
+        //insertionSort1(arr);
+        insertSortme(arr);
     }
     //序列较少的情况下：
     public  static  void insertionSort(int[] arr){
@@ -41,6 +42,23 @@ public class Deom {
                 arr[j-1] = temp;
             }
         }
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public  static  void  insertSortme(int[] arr){
+        if(arr==null||arr.length==0) return;
+        int len = arr.length-1;
+        for(int i =0;i<len;i++){
+            for(int j = i+1;j>0;j--){
+                if(arr[j-1]<arr[j]){
+                    break;
+                }
+                int temp = arr[j-1];
+                arr[j-1] = arr[j];
+                arr[j]   =  temp;
+            }
+        }
+
         System.out.println(Arrays.toString(arr));
     }
 }
