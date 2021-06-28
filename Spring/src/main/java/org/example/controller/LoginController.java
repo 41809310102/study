@@ -26,7 +26,7 @@ public class LoginController {
 
     //3.通过构造方法注入
     private LoginService loginService;
-    @Autowired
+    @Autowired //类注解
     public LoginController(LoginService loginService) {
         this.loginService = loginService;
     }
@@ -36,7 +36,7 @@ public class LoginController {
         loginService.sayHi();
     }
 
-    @Bean
+    @Bean  //方法注解
     public User user(){
         User user = new User();
         user.setName("悟空");
