@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置整体页面高度 */
+html, body {
+    height: 100%;
+    background-image: url(../img/cat.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 上方导航栏 */
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(51, 51, 51, 0.4);
+    color: #fff;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* 导航栏中的图标 */
+.nav img {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* 导航栏中的占位器 */
+.nav .spacer {
+    width: 70%;
+}
+
+/* 导航栏中的按钮 */
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* 页面内容容器, 版心 */
+.container {
+    /* 使用 calc 计算高度 */
+    height: calc(100% - 50px);
+    /* 设置版心宽度 */
+    width: 1000px;
+    /* 水平居中 */
+    margin: 0 auto;
+    /* 使用弹性布局 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 左侧部分, 用来放置用户信息 */
+.container-left {
+    height: 100%;
+    width: 200px;
+}
+
+/* 右侧部分, 用来放置正文 */
+.container-right {
+    height: 100%;
+    /* 和左侧部分中间留出 5px 间隙 */
+    width: 795px;
+    /* 如果内容溢出就自动加上滚动条 */
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+/* 展示用户信息的卡片 */
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* 用户头像 */
+.card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+/* 用户名 */
+.card h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* 用户 github 链接 */
+.card a {
+    display: block;
+    text-align: center;
+    color: #999;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* 展示文章数目的面板 */
+.card .counter {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}

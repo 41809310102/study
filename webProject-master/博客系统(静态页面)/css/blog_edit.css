@@ -1,0 +1,42 @@
+.blog-edit-container {
+    width: 1000px;
+    height: calc(100% - 50px);
+    margin: 0 auto;
+}
+
+.blog-edit-container .title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-edit-container .title input {
+    height: 40px;
+    width: 890px;
+    text-indent: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+.blog-edit-container .title button {
+    height: 40px;
+    width: 100px;
+
+    color: white;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+#editor {
+    border-radius: 10px;
+    /* 针对 #editor 用 bgc 属性无法设置半透明了. 里面包含的内容带了背景色 */
+    /* background-color:rgba(255, 255, 255, 0.8); */
+    /* 可以使用 opacity 属性实现 */
+    opacity: 80%;
+}

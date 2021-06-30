@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import sprintboot628.demo.model.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 @RequestMapping("/mvc")
@@ -57,12 +59,17 @@ public class MvcController {
     }
 
     @RequestMapping("/index6")
-    @ResponseBody
-    public  User getIndex5(){
-        User user =  new User();
-        user.setUsername("罗琪");
-        user.setPassword("123456");
-        return user;
+    public  String getIndex5(@RequestBody  User user,HttpServletRequest request){
+        User user1 =  new User();
+        user1.setUsername("罗琪");
+        user1.setPassword("123456");
+        if(user1.getUsername().equals(user.getUsername())&&user1.getPassword().equals(user.getPassword())){
+            HttpSession session =request.getSession();
+            session.setAttribute("userinfo",user);
+            return "密码"+user.getPassword()+"姓名"+user.getUsername()+"登录成功";
+        }
+
+        return "登录失败！";
     }
 
 }

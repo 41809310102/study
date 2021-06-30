@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客列表</title>
+    <link rel="stylesheet" href="css/conmmon.css">
+    <link rel="stylesheet" href="css/blog_list.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <img src="img/logo2.jpg" alt="">
+        <span class="title">我的博客系统</span>
+        <!-- 用来占据中间位置 -->
+        <span class="spacer"></span>
+        <a href="blog_list.html">主页</a>
+        <a href="blog_edit.html">写博客</a>
+        <a href="login.html">登陆</a>
+        <!-- <a href="#">注销</a> -->
+    </div>
+    <!-- 版心 -->
+    <div class="container">
+        <!-- 左侧个人信息 -->
+        <div class="container-left">
+            <div class="card">
+                <img src="img/doge.jpg" class="avtar" alt="">
+                <h3>比特小可爱</h3>
+                <a href="http:www.github.com">github 地址</a>
+                <div class="counter">
+                    <span>文章</span>
+                    <span>分类</span>
+                </div>
+                <div class="counter">
+                    <span>2</span>
+                    <span>1</span>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧内容详情 -->
+        <div class="container-right">
+            <!-- 每一篇博客包含标题, 摘要, 时间 -->
+            <div class="blog">
+                <div class="title">我的第一篇博客</div>
+                <div class="date">2021-06-02</div>
+                <div class="desc">
+                    从今天起, 我要认真敲代码. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum distinctio ullam eum ut
+                    veroab laborum numquam tenetur est in dolorum a sint, assumenda adipisci similique quaerat vel.
+                    Facere,
+                    et.
+                </div>
+                <a href="blog_content.html?id=1" class="detail">查看全文 &gt;&gt;</a>
+            </div>
+            <div class="blog">
+                <div class="title">我的第二篇博客</div>
+                <div class="date">2021-06-02</div>
+                <div class="desc">
+                    从今天起, 我要认真敲代码. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum distinctio ullam eum ut
+                    veroab laborum numquam tenetur est in dolorum a sint, assumenda adipisci similique quaerat vel.
+                    Facere,
+                    et.
+                </div>
+                <a href="blog_content.html?id=2" class="detail">查看全文 &gt;&gt;</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

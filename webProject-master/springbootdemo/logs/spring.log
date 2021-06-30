@@ -1,13 +1,32 @@
-2021-06-29 22:26:05.255  INFO 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-06-29 22:26:05.258 DEBUG 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2021-06-29 22:26:05.258 DEBUG 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2021-06-29 22:26:05.258 DEBUG 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2021-06-29 22:26:05.259 DEBUG 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6048f63d
-2021-06-29 22:26:05.260 DEBUG 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@254a7450
-2021-06-29 22:26:05.260 DEBUG 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2021-06-29 22:26:05.260  INFO 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-06-29 22:26:05.260 DEBUG 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/mvc/index6", parameters={}
-2021-06-29 22:26:05.260 DEBUG 27776 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sprintboot628.demo.controller.MvcController#getIndex5()
-2021-06-29 22:26:05.264 DEBUG 27776 --- [http-nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2021-06-29 22:26:05.265 DEBUG 27776 --- [http-nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [User(username=罗琪, password=123456)]
-2021-06-29 22:26:05.266 DEBUG 27776 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-30 18:17:04.776  INFO 7468 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-30 18:17:04.779  INFO 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-30 18:17:04.780 DEBUG 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-06-30 18:17:04.780 DEBUG 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-06-30 18:17:04.780 DEBUG 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-06-30 18:17:04.781 DEBUG 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3257509e
+2021-06-30 18:17:04.782 DEBUG 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@a8ba56
+2021-06-30 18:17:04.782 DEBUG 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-06-30 18:17:04.782  INFO 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-06-30 18:17:04.790 DEBUG 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login/user?username=%E8%83%A1%E4%BF%8A%E6%9D%B0&password=123456", parameters={masked}
+2021-06-30 18:17:04.793 DEBUG 7468 --- [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sprintboot628.demo.controller.LoginController#getIndex5(String, String, HttpServletRequest)
+2021-06-30 18:17:04.824 DEBUG 7468 --- [http-nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-30 18:17:04.824 DEBUG 7468 --- [http-nio-9000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [{flag=登录成功！, status=0}]
+2021-06-30 18:17:04.840 DEBUG 7468 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-30 18:17:06.238 DEBUG 7468 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/blog_list.html", parameters={}
+2021-06-30 18:17:06.241 DEBUG 7468 --- [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-30 18:17:06.244 DEBUG 7468 --- [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-30 18:17:06.255 DEBUG 7468 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/blog_list.css", parameters={}
+2021-06-30 18:17:06.255 DEBUG 7468 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/conmmon.css", parameters={}
+2021-06-30 18:17:06.256 DEBUG 7468 --- [http-nio-9000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-30 18:17:06.256 DEBUG 7468 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/img/logo2.jpg", parameters={}
+2021-06-30 18:17:06.256 DEBUG 7468 --- [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-30 18:17:06.256 DEBUG 7468 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/img/doge.jpg", parameters={}
+2021-06-30 18:17:06.256 DEBUG 7468 --- [http-nio-9000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-30 18:17:06.256 DEBUG 7468 --- [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-30 18:17:06.258 DEBUG 7468 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-30 18:17:06.258 DEBUG 7468 --- [http-nio-9000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-30 18:17:06.258 DEBUG 7468 --- [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-30 18:17:06.259 DEBUG 7468 --- [http-nio-9000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-30 18:17:06.265 DEBUG 7468 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/img/cat.jpg", parameters={}
+2021-06-30 18:17:06.265 DEBUG 7468 --- [http-nio-9000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-30 18:17:06.270 DEBUG 7468 --- [http-nio-9000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
