@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3bb8780-1a9a-42f8-b57a-a403f2361228" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../两个链表的第一个公共结点/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../数字在升序数组中出现的次数/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../数字在升序数组中出现的次数/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../数字在升序数组中出现的次数/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../数字在升序数组中出现的次数/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../数字在升序数组中出现的次数/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../数组中的逆序对/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../第一次出现的字符/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../第一次出现的字符/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../第一次出现的字符/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../第一次出现的字符/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../第一次出现的字符/src/Solution.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1unWm6x1PnAlEmWeWbaLWSjkEl5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3bb8780-1a9a-42f8-b57a-a403f2361228" name="Default Changelist" comment="" />
+      <created>1625301989310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625301989310</updated>
+      <workItem from="1625301992891" duration="1505000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
