@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/可变参数/可变参数.iml" filepath="$PROJECT_DIR$/可变参数/可变参数.iml" />
+      <module fileurl="file://$PROJECT_DIR$/对象练习/对象练习.iml" filepath="$PROJECT_DIR$/对象练习/对象练习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/对象部分.iml" filepath="$PROJECT_DIR$/.idea/对象部分.iml" />
+      <module fileurl="file://$PROJECT_DIR$/美国节日/美国节日.iml" filepath="$PROJECT_DIR$/美国节日/美国节日.iml" />
+    </modules>
+  </component>
+</project>

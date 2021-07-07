@@ -1,7 +1,14 @@
 body{
     background: url("../image/bk.jpg");
 }
-
+.m-midding{
+    position: fixed !important;
+    z-index: 10 !important;
+}
+.m-right-botton{
+    bottom: 0 !important;
+    right: 0 !important;
+}
 .m-padded-tb-mini{
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
