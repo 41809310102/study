@@ -20,16 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f86fb84f-3b2c-4e6f-bd5d-2f25be300527" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../webProject-master/springbootdemo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webProject-master/springbootdemo/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/config/MyAppation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/service/LoginService.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/blog/static/lib/qrcode/qrcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/blog/static/lib/qrcode/qrcode.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/blog/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/blog/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/blog/static/lib/tocbot/tocbot.css" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/blog/static/lib/tocbot/tocbot.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../webProject-master/springbootdemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -114,6 +108,7 @@
       <workItem from="1624867914727" duration="2740000" />
       <workItem from="1624873450243" duration="1419000" />
       <workItem from="1624887092694" duration="22000" />
+      <workItem from="1625718833198" duration="12000" />
     </task>
     <servers />
   </component>
