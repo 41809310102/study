@@ -20,10 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f86fb84f-3b2c-4e6f-bd5d-2f25be300527" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../myvue/blog/static/lib/qrcode/qrcode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myvue/blog/static/lib/qrcode/qrcode.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myvue/blog/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/blog/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myvue/blog/static/lib/tocbot/tocbot.css" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/blog/static/lib/tocbot/tocbot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/myblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/myblog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/MyblogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/MyblogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/com/example/myblog/MyblogApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/com/example/myblog/MyblogApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../剑指offer/myblog/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer/myblog/log/blog-dev.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +124,8 @@
       <workItem from="1624873450243" duration="1419000" />
       <workItem from="1624887092694" duration="22000" />
       <workItem from="1625718833198" duration="12000" />
+      <workItem from="1625805323896" duration="21000" />
+      <workItem from="1625822749383" duration="190000" />
     </task>
     <servers />
   </component>

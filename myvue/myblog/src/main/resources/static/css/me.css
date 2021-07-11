@@ -69,6 +69,10 @@ padding-left: 4em !important;
     max-width: 78em !important;
     margin-left: 10em !important;
 }
+.m-container-mid-responsive{
+    max-width: 78em !important;
+    margin-left: 38em !important;
+}
 .m-magrn-tb-tiny{
 
     margin-top: 0.3em !important;
@@ -88,8 +92,8 @@ padding-left: 4em !important;
     display: none !important;
 }
 .m-shadow-smail{
-    -webkit-box-shadow:0 4px 8px rgbe(0,0,0,0.2) !important;
-    box-shadow: 0 4px 8px rgbe(0,0,0,0.2) !important;
+    -webkit-box-shadow:0 4px 8px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
 }
 @media screen and (max-width: 760px){
     .m-moblie-hide{

@@ -20,9 +20,15 @@
     </properties>
 
     <dependencies>
+        <!--导入spring data jpa-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!--spring data jpa自动生成数据库表需要的依赖-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -63,6 +69,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.18.Final</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -80,6 +96,21 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <!-- 指定resources插件处理哪个目录下的资源文件 -->
+                <directory>${basedir}/src/main/resources</directory>
+                <!-- 需要将资源文件放到该目录下才能访问 -->
+                <targetPath>META-INF/resources</targetPath>
+                <includes>
+                    <include>**/**</include>
+                </includes>
+            </resource>
+
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+            </resource>
+        </resources>
     </build>
 
 </project>

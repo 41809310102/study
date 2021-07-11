@@ -1,0 +1,122 @@
+body{
+    background: url("../image/bk.jpg");
+}
+.m-midding{
+    position: fixed !important;
+    z-index: 10 !important;
+}
+.m-right-botton{
+    bottom: 0 !important;
+    right: 0 !important;
+}
+.m-padded-tb-mini{
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+
+}
+.m-paddmax{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+.m-paddmax-small{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.m-paddmax-little_min{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+.m-paddmax-little{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.m-paddmax-mid{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+.m-paddmax-big{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+.m-padded-lr-responsive{
+padding-left: 4em !important;
+    padding-right: 4em; !important;
+}
+/*text*/
+.m-text-thin{
+    font-weight: 300 !important;
+}
+.m-Text-sapcing{
+    letter-spacing: 1px !important;
+}
+.m-text-lined{
+    line-height: 1.8;
+}
+.m-opacity-mini{
+    opacity: 0.3 !important;
+}
+/*显示属性*/
+.m-inline-block{
+    display: inline-block !important;
+
+}
+.m-container-responsive{
+    max-width: 80em !important;
+  margin-left: 12em !important;
+}
+.m-container-small-responsive{
+    max-width: 78em !important;
+    margin-left: 10em !important;
+}
+.m-container-mid-responsive{
+    max-width: 78em !important;
+    margin-left: 38em !important;
+}
+.m-magrn-tb-tiny{
+
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.m-black{
+    color: black !important;
+
+}
+.m-right-top{
+    position: absolute ;
+    top:0;
+    right: 0;
+}
+.m-mobile-show{
+    display: none !important;
+}
+.m-shadow-smail{
+    -webkit-box-shadow:0 4px 8px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+@media screen and (max-width: 760px){
+    .m-moblie-hide{
+        display: none !important;
+    }
+    .m-mobile-show{
+        display: block !important;
+    }
+    .m-padded-lr-responsive{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .m-container-small-responsive{
+        max-width: 50em !important;
+        margin-left:0em !important;
+    }
+    .m-container-responsive{
+        max-width: 80em !important;
+        margin-left: 0em !important;
+    }
+    .m-container-clear-responsive{
+        max-width: 0em !important;
+        margin-left:0em !important;
+    }
+
+}

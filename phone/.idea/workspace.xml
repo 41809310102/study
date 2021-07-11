@@ -26,14 +26,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d15f1af-e919-4faf-9ec5-00266c82593d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../vue_sport/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_sport/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_sport/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_sport/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_sport/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_sport/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_sport/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_sport/src/components/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_sport/src/components/Welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_sport/src/components/Welcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_sport/src/components/blog/flowblog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_sport/src/components/blog/flowblog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_sport/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_sport/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue_sport/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue_sport/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/dao/BlogReqository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/dao/TagsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/dao/TypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/interceptor/Loginterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/interceptor/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/service/BlogServicelmi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/service/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/service/TagServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/service/TypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/service/TypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/utils/md5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/web/admin/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/web/admin/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/web/admin/TagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/web/admin/TypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/inputtags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/inputtype.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/types.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../剑指offer/myblog/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/myblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/myblog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/MyblogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/java/com/example/myblog/MyblogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/static/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/static/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/blogadmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/blogadmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/inputblog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/admin/inputblog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/src/main/resources/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/com/example/myblog/MyblogApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/com/example/myblog/MyblogApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/static/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/static/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/templates/admin/blogadmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/templates/admin/blogadmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/templates/admin/inputblog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/templates/admin/inputblog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myvue/myblog/target/classes/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myvue/myblog/target/classes/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../剑指offer/myblog/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer/myblog/log/blog-dev.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +233,7 @@
       <workItem from="1622648571368" duration="800000" />
       <workItem from="1622712719762" duration="793000" />
       <workItem from="1623525006412" duration="38000" />
+      <workItem from="1625941985536" duration="49000" />
     </task>
     <servers />
   </component>
