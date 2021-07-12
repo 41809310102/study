@@ -57,19 +57,22 @@ public class BlogController {
 //访问博客编辑页面,初始化
     @GetMapping("/inputblog")
     public String inputblog(Model model) {
-        model.addAttribute("types",typeService.listType());
-        model.addAttribute("tags",tagService.listTag());
+        setTYpeAndTag(model);
         model.addAttribute("blog",new Blog());
         return "admin/inputblog";
+    }
+
+    public void setTYpeAndTag(Model model){
+        model.addAttribute("types",typeService.listType());
+        model.addAttribute("tags",tagService.listTag());
     }
 
     //访问博客编辑页面,初始化,修改博客
     @GetMapping("/blogadmin/{id}/input")
     public String list2(Model model,@PathVariable Long id) {
-        Blog blog = blogService.getBlog(id);
-        model.addAttribute("types",typeService.listType());
-        model.addAttribute("tags",tagService.listTag());
-        blog.init();
+        setTYpeAndTag(model);
+        Blog blog = blogService.getBlog(id);//拿到id
+        blog.init();//得到标签的字符串
         model.addAttribute("blog",blog);
         return "admin/inputblog";
     }
@@ -88,6 +91,14 @@ public class BlogController {
          attributes.addFlashAttribute("message","发布成功！");
      }
         return "/admin/index";
+    }
+
+    //删除博客
+    @GetMapping("/blogadmin/{id}/delete")
+    public  String delete(@PathVariable Long id,RedirectAttributes attributes){
+        blogService.deleteBlog(id);
+        attributes.addFlashAttribute("message","删除成功！");
+        return  "redirect:/admin/blogadmin";
     }
 
 }

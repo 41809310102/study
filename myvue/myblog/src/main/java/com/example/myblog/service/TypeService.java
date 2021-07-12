@@ -15,6 +15,7 @@ public interface TypeService {
   Type getType(Long id);
   List<Type> listType();
   Page<Type> listType(Pageable pageable);
+  List<Type> listTypeTop(Integer numbers);//排序
   Type updateType(Long id, Type type) throws NotFoundException;
   void deleteType(long id) throws NotFoundException;
 }

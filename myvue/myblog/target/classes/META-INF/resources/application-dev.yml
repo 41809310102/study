@@ -4,7 +4,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&charactionEncoding=UTF-8
     username: root
-    password: 318422
+    password: 12345678
    jpa:
      hibernate:
        ddl-auto: update
@@ -20,4 +20,4 @@ logging:
         name: log/blog-dev.log
 
 server:
-      port: 8085
+      port: 8086

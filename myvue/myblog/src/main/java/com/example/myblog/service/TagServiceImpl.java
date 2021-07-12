@@ -7,7 +7,9 @@ import javassist.NotFoundException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -48,6 +50,15 @@ public class TagServiceImpl  implements TagService{
     public Page<Tag> listTag(Pageable pageable) {
        return tagsRepository.findAll(pageable);
     }
+
+    @Override
+    public List<Tag> ListTagTop(Integer numbers) {
+        Sort sort = Sort.by(Sort.Direction.DESC,"blogs.size");
+        Pageable pageable = PageRequest.of(0,numbers,sort);
+        return tagsRepository.findTop(pageable);
+    }
+
+
     @Transactional
     @Override
     public Tag updateTag(Long id, Tag tag) throws NotFoundException {

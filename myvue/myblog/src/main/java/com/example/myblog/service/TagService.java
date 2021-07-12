@@ -16,7 +16,12 @@ public interface TagService {
     Tag getTag(Long id);
     List<Tag> listTag();
     Page<Tag> listTag(Pageable pageable);
+
+    List<Tag> ListTagTop(Integer numbers);
+
     Tag updateTag(Long id, Tag tag) throws NotFoundException;
+
     void deleteTag(long id) throws NotFoundException;
+
     List<Tag> ListTag(String ids);
 }

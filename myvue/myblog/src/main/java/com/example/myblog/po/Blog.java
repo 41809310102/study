@@ -18,12 +18,11 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    @Basic(fetch = FetchType.LAZY)
-    @Lob
     private String content;
     private String firstPicture;
     private String flag;
     private Integer views;
+    private String description;
     private boolean apprecition;
     private boolean shareStatlment;
     private boolean commentabled;

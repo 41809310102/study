@@ -2,21 +2,19 @@ package com.example.myblog.service;
 
 import com.example.myblog.dao.BlogReqository;
 import com.example.myblog.po.Blog;
-import com.example.myblog.po.Type;
+
 import javassist.NotFoundException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.domain.Sort;
+
 import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
-import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
 
@@ -35,6 +33,23 @@ public class BlogServicelmi implements  BlogService{
            return blogReqository.findAll(pageable);
     }
 
+    @Override
+    public Page<Blog> listBlog(Pageable pageable) {
+        return blogReqository.findAll(pageable);
+    }
+
+    @Override
+    public List<Blog> listBlogTop(Integer numbers) {
+        Sort sort = Sort.by(Sort.Direction.DESC,"updatetime");
+        Pageable pageable = PageRequest.of(0,numbers,sort);
+        return blogReqository.findTop(pageable);
+    }
+
+    @Override
+    public Page<Blog> listBlog(String query, Pageable pageable) {
+      return blogReqository.finfQuery(query,pageable);
+    }
+
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
@@ -43,9 +58,9 @@ public class BlogServicelmi implements  BlogService{
             blog.setCreatetime(new Date());//创建时间
             blog.setUpdatetime(new Date());//修改时间
         }else{
+            blog.setCreatetime(new Date());//创建时间
             blog.setUpdatetime(new Date());//修改时间
         }
-
         return blogReqository.save(blog);
     }
     @Transactional
