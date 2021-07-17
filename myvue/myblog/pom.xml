@@ -20,6 +20,23 @@
     </properties>
 
     <dependencies>
+        <!--将文本转为html-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark</artifactId>
+            <version>0.18.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.commonmark</groupId>
+            <artifactId>commonmark-ext-heading-anchor</artifactId>
+            <version>0.10.0</version>
+        </dependency>
+        <!--导入table-->
+        <dependency>
+            <groupId>org.commonmark</groupId>
+            <artifactId>commonmark-ext-gfm-tables</artifactId>
+            <version>0.18.0</version>
+        </dependency>
         <!--导入spring data jpa-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -96,21 +113,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <!-- 指定resources插件处理哪个目录下的资源文件 -->
-                <directory>${basedir}/src/main/resources</directory>
-                <!-- 需要将资源文件放到该目录下才能访问 -->
-                <targetPath>META-INF/resources</targetPath>
-                <includes>
-                    <include>**/**</include>
-                </includes>
-            </resource>
-
-            <resource>
-                <directory>${basedir}/src/main/resources</directory>
-            </resource>
-        </resources>
     </build>
 
 </project>

@@ -17,4 +17,8 @@ public interface BlogReqository extends JpaRepository<Blog,Long>, JpaSpecificati
 
     @Query("select  b from  Blog b where b.title like ?1 or b.content like ?1")
     Page<Blog> finfQuery(String query,Pageable pageable);//搜索文章
+
+
+    @Query("update  Blog b set b.views = b.views+?1 where  b.id =?2 ")
+    Blog  updateViews(int n,Long id);//阅读量+1
 }

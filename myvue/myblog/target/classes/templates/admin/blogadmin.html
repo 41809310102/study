@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>后台管理</title>
+    <title>个人管理</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
 </head>
@@ -21,28 +21,27 @@
     </div>
     <div class="ui container">
         <div class="ui  inverted secondary stackable menu">
-            <h2 class="ui teal header item">后台管理</h2>
+            <h2 class="ui teal header item">个人管理</h2>
 
-
-            <a href="" th:href="@{/admin/blogadmin}" class="active m-item item m-moblie-hide"><i class="home icon"></i>首页</a>
-            <a href="" th:href="@{/admin/types}" class=" m-item item m-moblie-hide"><i class="idea icon"></i>分类</a>
-            <a href="" th:href="@{/admin/tags}" class="m-item item m-moblie-hide"><i class="tags icon"></i>标签</a>
-            <a href="" th:href="@{/admin/inputblog}" class="m-item item m-moblie-hide"><i class="info icon"></i>发布</a>
+            <a href="index.html" th:href="@{/}"  class="m-item item m-moblie-hide"><i class="home icon"></i>博客首页</a>
+            <a href="" th:href="@{/admin/blogadmin}" class="active m-item item m-moblie-hide"><i class="home icon"></i>进期博文</a>
+            <a href="" th:href="@{/admin/types}" class=" m-item item m-moblie-hide"><i class="idea icon"></i>博文分类</a>
+            <a href="" th:href="@{/admin/tags}" class="m-item item m-moblie-hide"><i class="tags icon"></i>博文标签</a>
+            <a href="" th:href="@{/admin/inputblog}" class="m-item item m-moblie-hide"><i class="info icon"></i>博文发布</a>
 
 
             <div class="right menu item m-moblie-hide">
-    <div class="ui dropdown item">
-        <div class="text">
-            <img src="../../static/image/myhead.jpg" alt="" class="ui actor image">
-            胡俊杰
-        </div>
-        <i class="dropdown icon"></i>
-        <div class="menu">
-            <a href="#" class="item">注销</a>
-        </div>
-
-    </div>
-</div>
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="https://up.enterdesk.com/photo/2012-3-16/enterdesk.com-698A0F2F1D9370844843D32CED3B91F6.jpg" alt="" class="ui actor image" width="150" height="150">
+                        胡俊杰
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -111,7 +110,7 @@
                         <tfoot>
                         <tr>
                             <th colspan="6">
-                                <div class="ui pagination menu" th:if="${page.totalPages}>1">
+                                <div class="ui pagination menu" >
                                     <a onclick="page(this)" th:attr="${page.number}-1" th:unless="${page.first}"   class="item">上一页</a>
                                     <a onclick="page(this)" th:attr="${page.number}+1" th:unless="${page.last}"  class="item">下一页</a>
                                 </div>
@@ -152,14 +151,11 @@
                     <h4 CLASS="ui inverted header">最新博客</h4>
                     <div class="ui inverted link list">
                         <a href="" class="item">用户故事【 user is story】</a>
-                        <a href="" class="item">用户故事【 user is story】</a>
-                        <a href="" class="item">用户故事【 user is story】</a>
                     </div>
                 </div>
                 <div class="three wide column">
                     <h4 CLASS="ui inverted header">联系我</h4>
                     <div class="ui inverted link list">
-                        <a href="" class="item">毕设代做【 user is story】</a>
                         <a href="" class="item">微信【hjj18891636438】</a>
                         <a href="" class="item">qq【2857154359】</a>
                     </div>

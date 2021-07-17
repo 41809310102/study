@@ -21,12 +21,10 @@
     <div class="ui container">
         <div class="ui  inverted secondary stackable menu">
             <h2 class="ui teal header item">MY blog</h2>
-
-                    <a href="index.html" th:href="@{/}" class="active m-item item m-moblie-hide"><i class="home icon"></i>首页</a>
-                    <a href="class.html" class="m-item item m-moblie-hide"><i class="idea icon"></i>分类</a>
-                    <a href="tags.html" class="m-item item m-moblie-hide"><i class="tags icon"></i>标签</a>
-                    <a href="guidang.html" class="m-item item m-moblie-hide"><i class="clone icon"></i>归档</a>
-                    <a href="#" class="m-item item m-moblie-hide"><i class="info icon"></i>关于我</a>
+            <a href="index.html" th:href="@{/}"  class="active m-item item m-moblie-hide"><i class="home icon"></i>博客首页</a>
+            <a href="class.html" th:href="@{/admin}" class="m-item item m-moblie-hide"><i class="idea icon"></i>发布博客</a>
+            <a href="tags.html"  th:href="@{/class}" class="m-item item m-moblie-hide"><i class="tags icon"></i>博客排行</a>
+            <a href="#" th:href="@{/me}"  class="m-item item m-moblie-hide"><i class="info icon"></i>博主简介</a>
 
 
             <div class="right m-item item m-moblie-hide">
@@ -61,10 +59,10 @@
                             <!--信息框-->
                             <div class="ui attached  segment">
                                 <div class="ui padded vertical  sugment m-paddmax-little_min">
-                                    <div class="ui middle aligned  stackable  mobile reversed  grid" th:each="blog : ${page.content}">
+                                    <div class="ui middle aligned  stackable  mobile reversed  grid" style="margin-top: 5px ;color:#bababa" th:each="blog : ${page.content}">
                                         <div class="eleven wide column">
-                                            <h3 class="ui header"><a href="#"  th:href="@{$/blog/{id}(id=${blog.id})}" th:text="${blog.title}" target="_blank">你会Spring框架吗</a></h3>
-                                            <p th:text="${blog.description}"></p>
+                                            <h3 class="ui header"><a href="#"  th:href="@{/blog/{id}(id=${blog.id})}" th:text="${blog.title}" target="_blank">你会Spring框架吗</a></h3>
+                                            <a th:text="${blog.description}" th:href="@{/blog/{id}(id=${blog.id})}" style="color: black" ></a>
                                           <div class="ui grid">
                                               <div class="eleven wide column">
                                                <div class="ui horizontal link list">
@@ -89,7 +87,7 @@
                                         </div>
 
                                         <div class="five wide column">
-                                            <a href="#" th:href="@{$/blog/{id}(id=${blog.id})}"   class="_blank" >
+                                            <a href="#" th:href="@{$/blog/{id}(id=${blog.id})}"  class="_blank" >
                                                 <img src="" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
                                             </a>
                                         </div>
@@ -204,7 +202,6 @@
           <div class="three wide column">
               <h4 CLASS="ui inverted header">联系我</h4>
               <div class="ui inverted link list">
-                  <a href="" class="item">毕设代做【 user is story】</a>
                   <a href="" class="item">微信【hjj18891636438】</a>
                   <a href="" class="item">qq【2857154359】</a>
               </div>

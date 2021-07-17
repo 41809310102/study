@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -21,20 +21,13 @@
     <div class="ui container">
         <div class="ui  inverted secondary stackable menu">
             <h2 class="ui teal header item">MY blog</h2>
-
-            <a href="index.html" class="m-item item m-moblie-hide"><i class="home icon"></i>首页</a>
-            <a href="class.html" class="m-item item m-moblie-hide"><i class="idea icon"></i>分类</a>
-            <a href="tags.html" class="m-item item m-moblie-hide"><i class="tags icon"></i>标签</a>
-            <a href="guidang.html" class="m-item item m-moblie-hide"><i class="clone icon"></i>归档</a>
-            <a href="me.html" class="active m-item item m-moblie-hide"><i class="info icon"></i>关于我</a>
+            <a href="index.html" th:href="@{/}"  class=" m-item item m-moblie-hide"><i class="home icon"></i>博客首页</a>
+            <a href="class.html" th:href="@{/admin}" class="m-item item m-moblie-hide"><i class="idea icon"></i>发布博客</a>
+            <a href="tags.html"  th:href="@{/class}" class="m-item item m-moblie-hide"><i class="tags icon"></i>博客排行</a>
+            <a href="#" th:href="@{/me}"  class="active m-item item m-moblie-hide"><i class="info icon"></i>博主简介</a>
 
 
-            <div class="right m-item item m-moblie-hide">
-                <div class="ui icon inverted input ">
-                    <input type="text" placeholder="搜索">
-                    <i class="search link icon "></i>
-                </div>
-            </div>
+
         </div>
     </div>
 </nav>
@@ -53,10 +46,20 @@
                   </div>
                     <div class="ui top attached segment">
                        <p class="m-text-thin">
-                           数据库擦擦三看下喀纳斯科学萨卡是开心卡出来骂了村民拉吃辣开辟出卡萨从帕卡贫困擦口萨克随时踩刹车时可参考数据库
+                           我是一名热爱编程，喜欢分享的阳光程序员！
                        </p>
                         <p class="m-text-thin">
-                            数据库擦擦三看下喀纳斯科学萨卡是开心卡出来骂了村民拉吃辣开辟出卡萨从帕卡贫困擦口萨克随时踩刹车时可参考数据库
+                           姓名：胡俊杰 <br>
+                            自我介绍：双非一本西安**大学 <br>
+                            学历：本科，<br>
+                            专业：计算机科学与技术卓越班<br>
+                            爱好：编程，绘画，唱歌 <br>
+                            个人荣誉：
+                                全国大学生数学竞赛三等奖 <br>
+                                全国大学生计算机设计大赛全国二等奖 <br>
+                                微信小程序设计大赛西北赛区二等奖 <br>
+                                国家励志奖学金 <br>
+
                         </p>
                     </div>
                     <div class="ui top attached segment">

@@ -24,5 +24,10 @@ public interface BlogService {
 
     void  deleteBlog(Long id);
 
+    void updateBlog1(Blog blog,Long id) throws NotFoundException;
+
+    //将文本转化为HTML
+    Blog getAndConvert(Long id) throws NotFoundException;
+
 
 }

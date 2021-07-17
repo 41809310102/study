@@ -21,20 +21,13 @@
     <div class="ui container">
         <div class="ui  inverted secondary stackable menu">
             <h2 class="ui teal header item">MY blog</h2>
-
-            <a href="index.html" class="m-item item m-moblie-hide"><i class="home icon"></i>首页</a>
-            <a href="class.html" class="active m-item item m-moblie-hide"><i class="idea icon"></i>分类</a>
-            <a href="tags.html" class="m-item item m-moblie-hide"><i class="tags icon"></i>标签</a>
-            <a href="guidang.html" class="m-item item m-moblie-hide"><i class="clone icon"></i>归档</a>
-            <a href="#" class="m-item item m-moblie-hide"><i class="info icon"></i>关于我</a>
+            <a href="index.html" th:href="@{/}"  class="m-item item m-moblie-hide"><i class="home icon"></i>博客首页</a>
+            <a href="class.html" th:href="@{/admin}" class="m-item item m-moblie-hide"><i class="idea icon"></i>发布博客</a>
+            <a href="tags.html"  th:href="@{/class}" class="m-item item m-moblie-hide"><i class="tags icon"></i>博客排行</a>
+            <a href="#" th:href="@{/me}"  class="m-item item m-moblie-hide"><i class="info icon"></i>博主简介</a>
 
 
-            <div class="right m-item item m-moblie-hide">
-                <div class="ui icon inverted input ">
-                    <input type="text" placeholder="搜索">
-                    <i class="search link icon "></i>
-                </div>
-            </div>
+
         </div>
     </div>
 </nav>

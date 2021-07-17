@@ -40,7 +40,7 @@ public class BlogController {
         return "admin/blogadmin";
     }*/
     @GetMapping("/blogadmin")
-    public String tags(@PageableDefault(size = 5,sort = {"id"},direction = Sort.Direction.DESC)
+    public String tags(@PageableDefault(size = 5,sort = {"updatetime"},direction = Sort.Direction.DESC)
                                    Blog blog,  Pageable pageable, Model model){
         model.addAttribute("types",typeService.listType());
         model.addAttribute("tags",tagService.listTag());
