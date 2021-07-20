@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc4d474-ff22-41f4-b3e3-3af74a33b52e" name="Default Changelist" comment="" />
+    <list default="true" id="ddc4d474-ff22-41f4-b3e3-3af74a33b52e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ArrayList类/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ArrayList类/src/Demo/demoArraryList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ArrayList类/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ArrayList类/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../插入排序" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../堆排序" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,6 +85,7 @@
       <workItem from="1621255955862" duration="3599000" />
       <workItem from="1623341892602" duration="665000" />
       <workItem from="1624595806223" duration="3382000" />
+      <workItem from="1626594093217" duration="229000" />
     </task>
     <servers />
   </component>
@@ -100,10 +105,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1624599198568">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1626594319215">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1624599198568" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1626594319215" />
     <state width="1478" height="331" key="GridCell.Tab.0.bottom" timestamp="1624599202929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
